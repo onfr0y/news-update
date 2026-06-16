@@ -1,5 +1,35 @@
 const newsData = [
   {
+    date: "2026-06-16",
+    tech: {
+      summary: [
+        "UK Prime Minister Sir Keir Starmer announces policy to ban children under 16 from major social media platforms starting Spring 2027.",
+        "Amazon CEO Andy Jassy shifts strategies in India, focusing on sustainable e-commerce growth over high-risk 'Bezos era' media acquisitions.",
+        "Ricoh announces strategic investment in AI-native vector database startup Weaviate via the RICOH Innovation Fund.",
+        "Lockheed Martin's Skunk Works unveils 'Project Dragonfly,' an additively manufactured, robotically assembled attack drone."
+      ],
+      trendAnalysis: "The technology sector is seeing a shift from unrestricted consumer tech and speculative capital to highly structured regulatory boundaries and targeted enterprise AI infrastructure. The UK's planned social media ban on children under 16 points to a growing global trend of state-imposed guardrails on digital platforms. Simultaneously, enterprise investments like Ricoh's backing of Weaviate emphasize a focus on scaling robust retrieval systems for unstructured data, while defense tech companies are adopting advanced manufacturing pipelines to speed up physical hardware deployments."
+    },
+    stocks: {
+      summary: [
+        "Global equity markets remain strong as a memorandum of understanding (MoU) between the US and Iran is signed, promising stability in the Strait of Hormuz.",
+        "Brent and WTI crude futures drop significantly, easing energy inflation fears and giving central banks room to maneuver.",
+        "Yorkville International Capital Corp. begins trading on Nasdaq following its initial public offering (YICCU).",
+        "Markets adopt a cautious 'wait-and-see' stance ahead of the Federal Reserve policy announcement under new Chair Kevin Warsh."
+      ],
+      trendAnalysis: "The geopolitical breakthrough between the US and Iran has successfully relieved the energy market premium, leading to a significant drop in crude prices and triggering a global risk-on rally. However, equity indices are displaying near-term consolidation as investors turn their focus to central bank policy. Kevin Warsh's debut Federal Reserve meeting is the primary macro catalyst; markets are pricing in paused rates but remain hypersensitive to how the new leadership will balance cooling energy costs against persistent core service inflation."
+    },
+    crypto: {
+      summary: [
+        "BlackRock launches the iShares Bitcoin Premium Income ETF (BITA) on Nasdaq, utilizing a covered-call strategy to target a 15%–25% annual yield.",
+        "Bitmine Immersion Technologies (NYSE: BMNR) announces its Ethereum treasury holdings have reached 5.62 million tokens.",
+        "Bitmine's Series A Preferred Stock (BMNP) begins trading on the NYSE, expanding public options for crypto equity.",
+        "Bitcoin and major digital assets hover around the $65,000–$65,750 range as the market digests the new yield-focused institutional products."
+      ],
+      trendAnalysis: "The launch of BlackRock's covered-call Bitcoin ETF represents a major milestone in the maturation of crypto-financial instruments, shifting the focus from simple spot exposure to structured yield-generating products. This transition appeals directly to income-focused institutional accounts, establishing digital assets as standard portfolio diversifiers. Concurrently, major miners like Bitmine aggressively scaling corporate treasuries into Ethereum demonstrates a structural pivot toward protocol-level staking yields, indicating that the industry is preparing for a yield-centric growth cycle."
+    }
+  },
+  {
     date: "2026-06-15",
     tech: {
       summary: [
