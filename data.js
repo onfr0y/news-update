@@ -5,10 +5,10 @@ const newsData = [
       summary: [
         "The global VivaTech 2026 conference kicks off in Paris, showcasing AI innovation with keynote speakers Jeff Bezos, Yann LeCun, and Shantanu Narayen.",
         "Univers debuts a new 'Platform for Physical AI' focusing on automating and optimizing physical industrial operations such as logistics, energy, and factory automation.",
-        "The 2026 Asia-Pacific Pro AV Market Playbook forecasts the industry to expand to $151.4 billion by 2030, accelerated by immersive technologies and smart buildings.",
+        "SpaceX stock surges on its third day of trading, driving the private aerospace company's valuation to exceed that of Amazon.",
         "Broadcom, Nvidia, and other semiconductor heavyweights experience valuation pullbacks as investors raise caution over near-term pricing momentum."
       ],
-      trendAnalysis: "AI is moving rapidly from pure-software digital assistants to physical, industrial infrastructure applications, as evidenced by Univers' Physical AI launch and the growing integration of immersive Pro AV systems in smart buildings. Simultaneously, the tech sector is exhibiting signs of capital consolidation and evaluation reassessment, with high-flying AI chip stocks pulling back as the market prepares for potential macroeconomic tightening and scrutinizes high-multiple valuations."
+      trendAnalysis: "AI is moving rapidly from pure-software digital assistants to physical, industrial infrastructure applications, as evidenced by Univers' Physical AI launch and the growing integration of immersive Pro AV systems in smart buildings. In the public equity market, SpaceX's historic IPO has reshuffled mega-cap dominance by overtaking Amazon's valuation, signaling a massive investor appetite for frontier space tech. Concurrently, traditional semiconductor heavyweights are seeing a healthy consolidation as high-multiple valuations undergo short-term repricing ahead of central bank updates."
     },
     stocks: {
       summary: [
@@ -21,12 +21,12 @@ const newsData = [
     },
     crypto: {
       summary: [
-        "Cryptocurrencies stabilize after a sharp dip below $61,000, with Bitcoin rebounding to hover near the $64,000 mark.",
+        "Bitcoin consolidates in a mid-morning trading range of $65,600–$65,800, showing resilience after earlier liquidations below the $61,000 level.",
+        "Prediction markets Kalshi and Polymarket report explosive transaction volumes and growth, largely driven by betting activity surrounding the ongoing World Cup.",
         "The Bitcoin++ conference starts in Nairobi, Kenya, emphasizing developer tools and Layer-2 scaling integrations.",
-        "DigiAssets 2026 wraps up in London, with institutional leaders outlining digital asset allocation and tokenization strategies.",
-        "Long-term investor sentiment remains subdued, with the Fear & Greed Index staying in 'Fear' territory due to ongoing regulatory and macroeconomic ambiguity."
+        "DigiAssets 2026 wraps up in London, with institutional leaders outlining digital asset allocation and tokenization strategies."
       ],
-      trendAnalysis: "The digital asset market remains highly reactive to geopolitical and macroeconomic developments, leveraging the U.S.-Iran peace optimism for a modest price rebound. However, persistent regulatory hurdles and a shifting macro rate landscape continue to keep institutional investor sentiment constrained. The market's structural evolution is shifting toward developer-centric ecosystems—exemplified by Bitcoin++ Nairobi—and institutional-grade digital assets, though a sustainable bull run will require clearer regulatory boundaries and macroeconomic easing."
+      trendAnalysis: "The cryptocurrency market is transitioning into a mature consolidation phase, finding support in the $65,000 range following the geopolitical relief rally. A key structural driver of digital asset utility this quarter is the rapid adoption of prediction markets like Polymarket and Kalshi, which have found massive mainstream product-market fit during the World Cup. While institutional plumbing and developer infrastructure (like Bitcoin++ L2 solutions) continue to strengthen, the market remains hypersensitive to regulatory clarity and the Fed's macro interest rate decision."
     }
   },
   {
