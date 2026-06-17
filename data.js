@@ -1,5 +1,35 @@
 const newsData = [
   {
+    date: "2026-06-17",
+    tech: {
+      summary: [
+        "The global VivaTech 2026 conference kicks off in Paris, showcasing AI innovation with keynote speakers Jeff Bezos, Yann LeCun, and Shantanu Narayen.",
+        "Univers debuts a new 'Platform for Physical AI' focusing on automating and optimizing physical industrial operations such as logistics, energy, and factory automation.",
+        "The 2026 Asia-Pacific Pro AV Market Playbook forecasts the industry to expand to $151.4 billion by 2030, accelerated by immersive technologies and smart buildings.",
+        "Broadcom, Nvidia, and other semiconductor heavyweights experience valuation pullbacks as investors raise caution over near-term pricing momentum."
+      ],
+      trendAnalysis: "AI is moving rapidly from pure-software digital assistants to physical, industrial infrastructure applications, as evidenced by Univers' Physical AI launch and the growing integration of immersive Pro AV systems in smart buildings. Simultaneously, the tech sector is exhibiting signs of capital consolidation and evaluation reassessment, with high-flying AI chip stocks pulling back as the market prepares for potential macroeconomic tightening and scrutinizes high-multiple valuations."
+    },
+    stocks: {
+      summary: [
+        "The Dow Jones Industrial Average sets new intraday records, continuing its historic multi-day winning streak despite tech-sector pressure.",
+        "Nasdaq and S&P 500 face downward pressure from a broader sell-off in mega-cap technology and AI-linked stocks.",
+        "Crude oil futures (Brent and WTI) fall below $80 per barrel for the first time since early March on optimism regarding a U.S.-Iran diplomatic agreement.",
+        "Investors focus on the FOMC meeting today, the first led by new Chair Kevin Warsh, where interest rates are expected to hold steady at 3.50%–3.75%."
+      ],
+      trendAnalysis: "The stock market is exhibiting a notable sector rotation, where capital is drifting out of high-flying technology giants and flowing into more defensive and cyclical Dow components. Geopolitical progress between the U.S. and Iran has effectively deflated the energy risk premium, pushing oil below $80 and helping to curb mid-term inflation concerns. However, the overarching market trajectory hinges on Kevin Warsh's debut Federal Reserve guidance, with investors dissecting updated 'dot plot' forecasts for indications of when the Fed will begin its rate-cutting cycle."
+    },
+    crypto: {
+      summary: [
+        "Cryptocurrencies stabilize after a sharp dip below $61,000, with Bitcoin rebounding to hover near the $64,000 mark.",
+        "The Bitcoin++ conference starts in Nairobi, Kenya, emphasizing developer tools and Layer-2 scaling integrations.",
+        "DigiAssets 2026 wraps up in London, with institutional leaders outlining digital asset allocation and tokenization strategies.",
+        "Long-term investor sentiment remains subdued, with the Fear & Greed Index staying in 'Fear' territory due to ongoing regulatory and macroeconomic ambiguity."
+      ],
+      trendAnalysis: "The digital asset market remains highly reactive to geopolitical and macroeconomic developments, leveraging the U.S.-Iran peace optimism for a modest price rebound. However, persistent regulatory hurdles and a shifting macro rate landscape continue to keep institutional investor sentiment constrained. The market's structural evolution is shifting toward developer-centric ecosystems—exemplified by Bitcoin++ Nairobi—and institutional-grade digital assets, though a sustainable bull run will require clearer regulatory boundaries and macroeconomic easing."
+    }
+  },
+  {
     date: "2026-06-16",
     tech: {
       summary: [
