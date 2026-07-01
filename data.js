@@ -1,5 +1,35 @@
 const newsData = [
   {
+    date: "2026-07-01",
+    tech: {
+      summary: [
+        "Taiwanese prosecutors expand an investigation into the smuggling of high-end Nvidia AI chips to China, executing raids on Super Micro Computer and other technology offices.",
+        "Commonwealth Fusion Systems joins the UK Atomic Energy Authority's £220 million Lithium Breeding Tritium Innovation (LIBRTI) program to accelerate tritium fuel commercialization.",
+        "Italian app publisher and tech unicorn Bending Spoons prices its IPO at $29.00 per share, beginning trading today on Nasdaq under the ticker BSP.",
+        "Global technology layoffs surpass 100,000 in the first half of 2026 as giants like Microsoft, Intel, and Cisco aggressively shift capital into AI infrastructure."
+      ],
+      trendAnalysis: "The technology sector is facing intensified regulatory scrutiny and resource reallocation. Taiwan's expansion of the Nvidia chip-smuggling probe highlights the geopolitical friction surrounding advanced computing nodes and the difficulty of enforcing dual-use tech export bans. At the same time, the transition of venture-backed tech giants to public markets remains active with Bending Spoons' Nasdaq debut. Structurally, the massive wave of over 100,000 tech layoffs in H1 2026 signals a definitive pivot from speculative software growth to highly optimized AI compute infrastructure and clean-energy joint ventures like the LIBRTI fusion program."
+    },
+    stocks: {
+      summary: [
+        "U.S. equity indexes cap off a stellar second quarter, with the S&P 500 and Nasdaq registering their best quarterly performances since 2020.",
+        "The Bank of England's deputy governor issues a stark warning that AI-driven agentic trading algorithms and automated payment systems pose systemic risks of 'market meltdown' events.",
+        "The UK government announces it is considering intervening in the proposed $110 billion Paramount-Skydance merger with Warner Bros. Discovery on national security grounds.",
+        "Major changes to federal student loan rules under the 'One Big Beautiful Bill Act' take effect today, introducing strict borrowing limits and phasing out the SAVE plan."
+      ],
+      trendAnalysis: "Public equity markets are entering the third quarter on solid footing after a record-breaking Q2, though the structural backdrop is shifting. Regulatory and systemic watchdogs are focusing heavily on the rise of automated agentic workflows, with the Bank of England's warning pointing to a future framework of risk control for AI trading. Furthermore, geopolitical interventions in media consolidations (Paramount-Skydance-WBD) and major policy shifts in U.S. consumer debt rules (student loan caps) represent a changing regulatory regime that could restrict corporate leverage and consumer discretionary spending in the quarters ahead."
+    },
+    crypto: {
+      summary: [
+        "The European Union's Markets in Crypto-Assets (MiCA) regulation takes full effect today, forcing unlicensed exchanges to immediately suspend EEA client access.",
+        "Russia officially greenlights the use of Bitcoin and stablecoins for international cross-border trade settlements under the oversight of its Central Bank.",
+        "Bitcoin slips below $59,000, testing the 200-week moving average near $58,000 and triggering hundreds of millions in leveraged long liquidations.",
+        "U.S. President Donald Trump's newly released financial disclosures reveal he earned over $1 billion in 2025 from cryptocurrency ventures and memecoins."
+      ],
+      trendAnalysis: "July 1 represents a historic regulatory watershed for the cryptocurrency industry. The enforcement of MiCA in Europe is introducing immediate market friction, accelerating consolidation as retail clients migrate away from non-compliant offshore platforms. Simultaneously, the integration of digital assets for Russian trade settlements underlines a growing trend of state-sponsored crypto utilization for sanction bypass. While these structural and political developments (including President Trump's billion-dollar disclosures) validate the sector's scale, near-term price action remains weak due to heavy liquidation leverage, keeping the market locked in a cautious phase."
+    }
+  },
+  {
     date: "2026-06-17",
     tech: {
       summary: [
