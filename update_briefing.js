@@ -262,6 +262,36 @@ ${cryptoItems.map((item, idx) => `${idx + 1}. Title: ${item.title}\n   Descripti
   fs.writeFileSync(dataPath, newFileContent, 'utf8');
 
   console.log('Update complete! data.js has been successfully written.');
+
+  // Auto commit and push to Git (skip on dry runs)
+  if (!isDryRun) {
+    const { execSync } = require('child_process');
+    try {
+      console.log('Checking git status...');
+      const status = execSync('git status --porcelain', { encoding: 'utf8' });
+      if (status.includes('data.js')) {
+        console.log('Staging changes to data.js...');
+        execSync('git add data.js');
+        
+        if (process.env.GITHUB_ACTIONS) {
+          console.log('Configuring git bot credentials...');
+          execSync('git config user.name "github-actions[bot]"');
+          execSync('git config user.email "github-actions[bot]@users.noreply.github.com"');
+        }
+        
+        console.log('Committing changes...');
+        execSync(`git commit -m "auto: update daily briefing for ${newEntry.date} [skip ci]"`);
+        
+        console.log('Pushing to origin...');
+        execSync('git push');
+        console.log('Successfully pushed changes to remote Git!');
+      } else {
+        console.log('No changes detected in data.js. Skipping Git push.');
+      }
+    } catch (gitError) {
+      console.error('Git auto-commit/push failed:', gitError.message);
+    }
+  }
 }
 
 main().catch(err => {
