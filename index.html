@@ -20,7 +20,7 @@
         <h1>Daily Intelligence Briefing</h1>
       </div>
       <div class="meta-controls">
-        <time id="current-date-id" class="brief-date" datetime="2026-06-14">Sunday, 14 June 2026</time>
+        <time id="current-date-id" class="brief-date" datetime="2026-07-02">Thursday, 2 July 2026</time>
         <button id="theme-toggle-id" class="theme-toggle" aria-label="Toggle dark mode">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="sun-icon"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="moon-icon"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
@@ -29,15 +29,48 @@
     </div>
   </header>
 
+  <!-- Real-Time Macro Ticker strip -->
+  <section class="macro-ticker-bar" id="macro-ticker-id" aria-label="Real-time macro indicators">
+    <div class="ticker-wrapper">
+      <div class="ticker-item" id="ticker-crude-id">
+        <span class="ticker-label">Brent Crude</span>
+        <span class="ticker-val">—</span>
+        <span class="ticker-change">—</span>
+      </div>
+      <div class="ticker-item" id="ticker-sp-id">
+        <span class="ticker-label">S&P 500</span>
+        <span class="ticker-val">—</span>
+        <span class="ticker-change">—</span>
+      </div>
+      <div class="ticker-item" id="ticker-nasdaq-id">
+        <span class="ticker-label">Nasdaq</span>
+        <span class="ticker-val">—</span>
+        <span class="ticker-change">—</span>
+      </div>
+      <div class="ticker-item" id="ticker-btc-id">
+        <span class="ticker-label">Bitcoin</span>
+        <span class="ticker-val">—</span>
+        <span class="ticker-change">—</span>
+      </div>
+    </div>
+  </section>
+
   <!-- Main Grid Layout -->
   <main class="dashboard-container" id="dashboard-container-id">
     
     <!-- Sidebar / Navigation -->
     <aside class="sidebar" id="sidebar-id">
+      <section class="view-mode-section" aria-label="View mode">
+        <div class="toggle-switch">
+          <button id="view-mode-daily-id" class="mode-btn active">Daily Briefs</button>
+          <button id="view-mode-weekly-id" class="mode-btn">Weekly Digest</button>
+        </div>
+      </section>
+
       <section class="archive-section" aria-label="Archive navigation">
-        <h2 class="sidebar-title">Archive</h2>
+        <h2 class="sidebar-title" id="archive-title-id">Archive</h2>
         <div class="search-box">
-          <input type="text" id="search-input-id" placeholder="Search archive..." aria-label="Search updates">
+          <input type="text" id="search-input-id" placeholder="Search entries..." aria-label="Search updates">
           <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
         </div>
         <nav class="date-list" id="date-list-id" aria-label="Historical dates">
@@ -49,7 +82,7 @@
     <!-- Main Content Area -->
     <div class="content-area" id="content-area-id">
       
-      <!-- Sector Navigation tabs for mobile / layout control -->
+      <!-- Sector Navigation tabs for mobile -->
       <nav class="sector-tabs" id="sector-tabs-id" aria-label="Sector navigation">
         <button class="tab-btn active" id="tab-all-id" data-target="all">All Sectors</button>
         <button class="tab-btn" id="tab-tech-id" data-target="tech">Technology</button>
@@ -66,11 +99,17 @@
             <div class="card-icon-container tech-icon">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="16" x="4" y="4" rx="2"/><rect width="6" height="6" x="9" y="9" rx="1"/><path d="M9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 15h3M1 9h3M1 15h3"/></svg>
             </div>
-            <h2 class="card-title">Technology</h2>
+            <div class="card-title-area">
+              <h2 class="card-title">Technology</h2>
+              <span class="sentiment-badge" id="tech-sentiment-id">Neutral</span>
+            </div>
           </header>
           <div class="card-content">
             <section class="summary-section">
-              <h3>Summarised Intel</h3>
+              <div class="summary-header">
+                <h3>Summarised Intel</h3>
+                <span class="interactive-tip">Click to highlight</span>
+              </div>
               <ul class="bullet-list" id="tech-summary-list-id">
                 <!-- Summary items will be injected here -->
               </ul>
@@ -80,6 +119,20 @@
               <p class="trend-prose" id="tech-trend-prose-id">
                 <!-- Trend analysis will be injected here -->
               </p>
+              
+              <!-- SVG Mini Trend Chart -->
+              <div class="chart-container" id="tech-chart-container-id">
+                <h4>Tech Sentiment Heat & layover</h4>
+                <div class="svg-chart-wrapper">
+                  <!-- Injected dynamic SVG chart -->
+                </div>
+              </div>
+
+              <!-- Private User Notes Section -->
+              <div class="notes-container" id="tech-notes-container-id">
+                <h4>Private Annotations</h4>
+                <textarea id="tech-note-input-id" placeholder="Add private annotations for this sector... (Auto-saves)"></textarea>
+              </div>
             </section>
           </div>
         </article>
@@ -90,11 +143,17 @@
             <div class="card-icon-container stocks-icon">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
             </div>
-            <h2 class="card-title">Stock Market</h2>
+            <div class="card-title-area">
+              <h2 class="card-title">Stock Market</h2>
+              <span class="sentiment-badge" id="stocks-sentiment-id">Bullish</span>
+            </div>
           </header>
           <div class="card-content">
             <section class="summary-section">
-              <h3>Summarised Intel</h3>
+              <div class="summary-header">
+                <h3>Summarised Intel</h3>
+                <span class="interactive-tip">Click to highlight</span>
+              </div>
               <ul class="bullet-list" id="stocks-summary-list-id">
                 <!-- Summary items will be injected here -->
               </ul>
@@ -104,6 +163,20 @@
               <p class="trend-prose" id="stocks-trend-prose-id">
                 <!-- Trend analysis will be injected here -->
               </p>
+
+              <!-- SVG Mini Trend Chart -->
+              <div class="chart-container" id="stocks-chart-container-id">
+                <h4>S&P 500 Performance Index</h4>
+                <div class="svg-chart-wrapper">
+                  <!-- Injected dynamic SVG chart -->
+                </div>
+              </div>
+
+              <!-- Private User Notes Section -->
+              <div class="notes-container" id="stocks-notes-container-id">
+                <h4>Private Annotations</h4>
+                <textarea id="stocks-note-input-id" placeholder="Add private annotations for this sector... (Auto-saves)"></textarea>
+              </div>
             </section>
           </div>
         </article>
@@ -114,11 +187,17 @@
             <div class="card-icon-container crypto-icon">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v12M14 8H10c-1.5 0-2.5 1-2.5 2.5s1 2.5 2.5 2.5h4c1.5 0 2.5 1 2.5 2.5S15.5 18 14 18h-4"/><path d="M10 6h4M10 18h4"/></svg>
             </div>
-            <h2 class="card-title">Cryptocurrency</h2>
+            <div class="card-title-area">
+              <h2 class="card-title">Cryptocurrency</h2>
+              <span class="sentiment-badge" id="crypto-sentiment-id">Bullish</span>
+            </div>
           </header>
           <div class="card-content">
             <section class="summary-section">
-              <h3>Summarised Intel</h3>
+              <div class="summary-header">
+                <h3>Summarised Intel</h3>
+                <span class="interactive-tip">Click to highlight</span>
+              </div>
               <ul class="bullet-list" id="crypto-summary-list-id">
                 <!-- Summary items will be injected here -->
               </ul>
@@ -128,6 +207,20 @@
               <p class="trend-prose" id="crypto-trend-prose-id">
                 <!-- Trend analysis will be injected here -->
               </p>
+
+              <!-- SVG Mini Trend Chart -->
+              <div class="chart-container" id="crypto-chart-container-id">
+                <h4>Bitcoin price trajectory</h4>
+                <div class="svg-chart-wrapper">
+                  <!-- Injected dynamic SVG chart -->
+                </div>
+              </div>
+
+              <!-- Private User Notes Section -->
+              <div class="notes-container" id="crypto-notes-container-id">
+                <h4>Private Annotations</h4>
+                <textarea id="crypto-note-input-id" placeholder="Add private annotations for this sector... (Auto-saves)"></textarea>
+              </div>
             </section>
           </div>
         </article>

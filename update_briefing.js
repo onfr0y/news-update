@@ -2,15 +2,15 @@
 const fs = require('fs');
 const path = require('path');
 
-// RSS Feeds
+// RSS Feeds (emphasizing high-trust sources requested: BBC, Bloomberg/Business, NYT)
 const FEEDS = {
   tech: [
-    'https://techcrunch.com/feed/',
-    'https://news.ycombinator.com/rss'
+    'https://feeds.bbci.co.uk/news/technology/rss.xml',
+    'https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml'
   ],
   stocks: [
-    'https://finance.yahoo.com/news/rssindex',
-    'https://search.cnbc.com/rs/search/combinedfeed.view?target=finance'
+    'https://feeds.bbci.co.uk/news/business/rss.xml',
+    'https://rss.nytimes.com/services/xml/rss/nyt/Business.xml'
   ],
   crypto: [
     'https://www.coindesk.com/arc/outboundfeeds/rss/',
@@ -50,10 +50,12 @@ function parseRss(xmlText) {
     const itemContent = match[1];
     const titleMatch = /<title>(?:<!\[CDATA\[)?([\s\S]*?)(?:\]\]>)?<\/title>/.exec(itemContent);
     const descMatch = /<description>(?:<!\[CDATA\[)?([\s\S]*?)(?:\]\]>)?<\/description>/.exec(itemContent);
+    const linkMatch = /<link>(?:<!\[CDATA\[)?([\s\S]*?)(?:\]\]>)?<\/link>/.exec(itemContent);
     if (titleMatch) {
       items.push({
         title: cleanHtml(titleMatch[1]),
-        description: descMatch ? cleanHtml(descMatch[1]) : ''
+        description: descMatch ? cleanHtml(descMatch[1]) : '',
+        link: linkMatch ? cleanHtml(linkMatch[1]).trim() : ''
       });
     }
   }
@@ -80,11 +82,56 @@ async function getFeedItems(url) {
     const response = await fetchWithTimeout(url);
     if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
     const text = await response.text();
-    return parseRss(text).slice(0, 10);
+    return parseRss(text).slice(0, 15);
   } catch (error) {
     console.error(`Failed to fetch or parse feed ${url}:`, error.message);
     return [];
   }
+}
+
+// Fetch Real-time Market Ticker Quotes
+async function fetchMacroData() {
+  const symbols = {
+    brentCrude: 'BZ=F',
+    bitcoin: 'BTC-USD',
+    sp500: '^GSPC',
+    nasdaq: '^IXIC'
+  };
+  const macro = {};
+  
+  for (const [key, symbol] of Object.entries(symbols)) {
+    try {
+      const res = await fetch(`https://query1.finance.yahoo.com/v8/finance/chart/${symbol}?interval=1d&range=1d`);
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const data = await res.json();
+      const meta = data.chart?.result?.[0]?.meta;
+      if (meta) {
+        const price = meta.regularMarketPrice;
+        const prevClose = meta.chartPreviousClose;
+        const changePercent = ((price - prevClose) / prevClose) * 100;
+        
+        let formattedValue = price.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+        if (key === 'bitcoin') {
+          formattedValue = '$' + Math.round(price).toLocaleString('en-US');
+        } else if (key === 'brentCrude') {
+          formattedValue = '$' + price.toFixed(2);
+        }
+        
+        const changeSign = changePercent >= 0 ? '+' : '';
+        const trend = changePercent >= 0 ? 'up' : 'down';
+        
+        macro[key] = {
+          value: formattedValue,
+          change: `${changeSign}${changePercent.toFixed(2)}%`,
+          trend: trend
+        };
+      }
+    } catch (err) {
+      console.error(`Failed to fetch macro symbol ${symbol}:`, err.message);
+      macro[key] = { value: "N/A", change: "0.00%", trend: "neutral" };
+    }
+  }
+  return macro;
 }
 
 async function main() {
@@ -123,39 +170,65 @@ async function main() {
   }
 
   console.log(`Collected news items: Tech: ${techItems.length}, Stocks: ${stocksItems.length}, Crypto: ${cryptoItems.length}`);
+  
+  // Fetch real-time ticker data
+  const macroQuotes = await fetchMacroData();
+  console.log('Macro quotes compiled successfully:', JSON.stringify(macroQuotes));
 
   let newEntry;
 
   if (isDryRun) {
-    console.log('Dry run: Simulating Gemini response...');
+    console.log('Dry run: Simulating Gemini response with nested clickable links & sentiment...');
     newEntry = {
       date: today,
+      macro: macroQuotes,
       tech: {
+        sentiment: "Neutral",
         summary: [
-          techItems[0]?.title || 'PM Sir Keir Starmer bans social media for under 16s starting Spring 2027.',
-          techItems[1]?.title || 'Amazon India shifts strategy to sustainable retail growth over media assets.',
-          techItems[2]?.title || 'Ricoh invests in AI vector database startup Weaviate via Ricoh Fund.',
-          techItems[3]?.title || 'Lockheed Martin Skunk Works unveils robotically assembled attack drone.'
-        ].map(cleanHtml),
-        trendAnalysis: 'Technology sectors are adapting to structural regulatory boundaries globally, while capital shifts from consumer platforms to enterprise database infrastructures and autonomous hardware pipelines.'
+          {
+            text: techItems[0]?.title || 'UK bans social media accounts for minors under 16 years old.',
+            source: 'BBC News',
+            url: techItems[0]?.link || 'https://www.bbc.co.uk/news'
+          },
+          {
+            text: techItems[1]?.title || 'Amazon visual retail search rollouts debut globally.',
+            source: 'The New York Times',
+            url: techItems[1]?.link || 'https://www.nytimes.com'
+          }
+        ],
+        trendAnalysis: 'Regulatory frameworks continue to tighten user age verifications on social platforms, while large retail conglomerates expand their mobile visual pipelines.'
       },
       stocks: {
+        sentiment: "Bullish",
         summary: [
-          stocksItems[0]?.title || 'US-Iran Memorandum of Understanding eases Strait of Hormuz oil premium.',
-          stocksItems[1]?.title || 'Global crude futures drop significantly, lowering energy inflation index.',
-          stocksItems[2]?.title || 'Yorkville International Capital Corp lists on Nasdaq after IPO.',
-          stocksItems[3]?.title || 'Equity markets consolidate ahead of Kevin Warsh\'s Federal Reserve debut.'
-        ].map(cleanHtml),
-        trendAnalysis: 'Geopolitical easing in the Middle East has reduced the energy inflation premium, sparking a risk-on sentiment, though markets remain defensive ahead of central bank leadership transitions.'
+          {
+            text: stocksItems[0]?.title || 'US-Iran sign memorandum of understanding, reopening Strait of Hormuz.',
+            source: 'The New York Times',
+            url: stocksItems[0]?.link || 'https://www.nytimes.com'
+          },
+          {
+            text: stocksItems[1]?.title || 'Brent crude pricing falls past $84 per barrel on ease of strikes.',
+            source: 'Bloomberg',
+            url: stocksItems[1]?.link || 'https://www.bloomberg.com'
+          }
+        ],
+        trendAnalysis: 'Middle East geopolitical relief has dramatically stabilized energy indices, boosting global market sentiments ahead of the Federal Reserve transitions.'
       },
       crypto: {
+        sentiment: "Bullish",
         summary: [
-          cryptoItems[0]?.title || 'BlackRock launches iShares Bitcoin Premium Income covered-call ETF.',
-          cryptoItems[1]?.title || 'Bitmine Immersion Technologies raises corporate Ethereum treasury to 5.62M.',
-          cryptoItems[2]?.title || 'Bitmine Series A Preferred Stock begins trading on NYSE exchange.',
-          cryptoItems[3]?.title || 'Bitcoin trades stable in range of $65k-$65.7k following ETF launches.'
-        ].map(cleanHtml),
-        trendAnalysis: 'Institutional digital asset products are transitioning from simple spot exposure to yield-oriented structures, indicating the onset of a protocol-level staking and yield-focused maturation phase.'
+          {
+            text: cryptoItems[0]?.title || 'BlackRock launches covered-call Bitcoin yield fund on US exchanges.',
+            source: 'CoinDesk',
+            url: cryptoItems[0]?.link || 'https://www.coindesk.com'
+          },
+          {
+            text: cryptoItems[1]?.title || 'SEC approves T. Rowe Price multi-asset crypto ETF package.',
+            source: 'The New York Times',
+            url: cryptoItems[1]?.link || 'https://www.nytimes.com'
+          }
+        ],
+        trendAnalysis: 'Derivative regulatory upgrades combined with multi-asset ETF options are establishing structural liquidity baselines for digital portfolios.'
       }
     };
   } else {
@@ -165,21 +238,25 @@ You are Jean, a highly sophisticated, minimalist personal intelligence assistant
 Your task is to compile a Daily Intelligence Briefing for the date "${today}" based on the raw RSS feed items provided below.
 Strictly adhere to the following rules:
 1. Under each sector ("tech", "stocks", "crypto"), compile exactly 4 concise, high-impact bullet point summaries in the "summary" array.
-2. For each sector, write a cohesive, professional "trendAnalysis" paragraph summarizing the broader macroeconomic or structural trajectory.
-3. Maintain a consistent, sophisticated, clean tone (Muji-inspired, minimalist, clear).
-4. Ignore duplicate stories or irrelevant filler links.
-5. The "date" field in the JSON output MUST be exactly "${today}".
+2. For each bullet point, create an object containing:
+   - "text": A concise, refined British English summary (e.g. colour, analyse).
+   - "source": The publisher name matching the source item (e.g. 'BBC News', 'The New York Times', 'Bloomberg', 'CoinDesk', 'CoinTelegraph', etc.).
+   - "url": The exact link URL of the source article from the provided raw items list.
+3. For each sector, write a cohesive, professional "trendAnalysis" paragraph summarizing the broader macroeconomic or structural trajectory.
+4. For each sector, assign a "sentiment" index value of either "Bullish", "Bearish", or "Neutral" based on the day's aggregated news.
+5. Ignore duplicate stories or irrelevant filler links.
+6. The "date" field in the JSON output MUST be exactly "${today}".
 
 Raw News Items:
 
 ### Technology news:
-${techItems.map((item, idx) => `${idx + 1}. Title: ${item.title}\n   Description: ${item.description}`).join('\n\n')}
+${techItems.map((item, idx) => `${idx + 1}. Title: ${item.title}\n   Link: ${item.link}\n   Description: ${item.description}`).join('\n\n')}
 
 ### Stock Market news:
-${stocksItems.map((item, idx) => `${idx + 1}. Title: ${item.title}\n   Description: ${item.description}`).join('\n\n')}
+${stocksItems.map((item, idx) => `${idx + 1}. Title: ${item.title}\n   Link: ${item.link}\n   Description: ${item.description}`).join('\n\n')}
 
 ### Cryptocurrency news:
-${cryptoItems.map((item, idx) => `${idx + 1}. Title: ${item.title}\n   Description: ${item.description}`).join('\n\n')}
+${cryptoItems.map((item, idx) => `${idx + 1}. Title: ${item.title}\n   Link: ${item.link}\n   Description: ${item.description}`).join('\n\n')}
 `;
 
     console.log('Sending request to Gemini API...');
@@ -201,26 +278,62 @@ ${cryptoItems.map((item, idx) => `${idx + 1}. Title: ${item.title}\n   Descripti
               tech: {
                 type: 'OBJECT',
                 properties: {
-                  summary: { type: 'ARRAY', items: { type: 'STRING' } },
+                  sentiment: { type: 'STRING', enum: ['Bullish', 'Bearish', 'Neutral'] },
+                  summary: {
+                    type: 'ARRAY',
+                    items: {
+                      type: 'OBJECT',
+                      properties: {
+                        text: { type: 'STRING' },
+                        source: { type: 'STRING' },
+                        url: { type: 'STRING' }
+                      },
+                      required: ['text', 'source', 'url']
+                    }
+                  },
                   trendAnalysis: { type: 'STRING' }
                 },
-                required: ['summary', 'trendAnalysis']
+                required: ['sentiment', 'summary', 'trendAnalysis']
               },
               stocks: {
                 type: 'OBJECT',
                 properties: {
-                  summary: { type: 'ARRAY', items: { type: 'STRING' } },
+                  sentiment: { type: 'STRING', enum: ['Bullish', 'Bearish', 'Neutral'] },
+                  summary: {
+                    type: 'ARRAY',
+                    items: {
+                      type: 'OBJECT',
+                      properties: {
+                        text: { type: 'STRING' },
+                        source: { type: 'STRING' },
+                        url: { type: 'STRING' }
+                      },
+                      required: ['text', 'source', 'url']
+                    }
+                  },
                   trendAnalysis: { type: 'STRING' }
                 },
-                required: ['summary', 'trendAnalysis']
+                required: ['sentiment', 'summary', 'trendAnalysis']
               },
               crypto: {
                 type: 'OBJECT',
                 properties: {
-                  summary: { type: 'ARRAY', items: { type: 'STRING' } },
+                  sentiment: { type: 'STRING', enum: ['Bullish', 'Bearish', 'Neutral'] },
+                  summary: {
+                    type: 'ARRAY',
+                    items: {
+                      type: 'OBJECT',
+                      properties: {
+                        text: { type: 'STRING' },
+                        source: { type: 'STRING' },
+                        url: { type: 'STRING' }
+                      },
+                      required: ['text', 'source', 'url']
+                    }
+                  },
                   trendAnalysis: { type: 'STRING' }
                 },
-                required: ['summary', 'trendAnalysis']
+                required: ['sentiment', 'summary', 'trendAnalysis']
               }
             },
             required: ['date', 'tech', 'stocks', 'crypto']
@@ -242,6 +355,9 @@ ${cryptoItems.map((item, idx) => `${idx + 1}. Title: ${item.title}\n   Descripti
     const resultText = resJson.candidates[0].content.parts[0].text;
     newEntry = JSON.parse(resultText);
   }
+
+  // Inject computed real-time macro quotes into the entry
+  newEntry.macro = macroQuotes;
 
   console.log('Briefing successfully generated by Gemini. Updating data.js...');
 

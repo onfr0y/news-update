@@ -19,6 +19,14 @@
   --accent-clay: #b58d72;    /* Soft terracotta/clay */
   --accent-taupe: #8c8275;   /* Neutral earth taupe */
   
+  /* Sentiment Colors */
+  --sentiment-bullish-bg: rgba(107, 112, 92, 0.1);
+  --sentiment-bullish-text: #6b705c;
+  --sentiment-bearish-bg: rgba(181, 141, 114, 0.15);
+  --sentiment-bearish-text: #9e6b4f;
+  --sentiment-neutral-bg: rgba(140, 130, 117, 0.1);
+  --sentiment-neutral-text: #8c8275;
+
   --shadow-sm: 0 2px 8px rgba(44, 42, 41, 0.03);
   --shadow-md: 0 8px 24px rgba(44, 42, 41, 0.05);
   
@@ -39,6 +47,13 @@ body.dark-mode {
   --text-primary: #f2ede4;   /* Warm off-white */
   --text-secondary: #a39b90; /* Light taupe */
   --text-muted: #736d65;     /* Darker muted grey */
+
+  --sentiment-bullish-bg: rgba(140, 150, 120, 0.15);
+  --sentiment-bullish-text: #a8b092;
+  --sentiment-bearish-bg: rgba(200, 160, 130, 0.15);
+  --sentiment-bearish-text: #cca48a;
+  --sentiment-neutral-bg: rgba(160, 150, 140, 0.15);
+  --sentiment-neutral-text: #baa895;
   
   --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.2);
   --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.3);
@@ -73,9 +88,6 @@ body {
 .main-header {
   border-bottom: 1px solid var(--border-color);
   background-color: var(--bg-card);
-  position: sticky;
-  top: 0;
-  z-index: 100;
   transition: var(--transition-smooth);
 }
 
@@ -160,6 +172,54 @@ body.dark-mode .theme-toggle .sun-icon {
   display: block;
 }
 
+/* Real-Time Macro Ticker Bar */
+.macro-ticker-bar {
+  background-color: var(--bg-secondary);
+  border-bottom: 1px solid var(--border-color);
+  overflow-x: auto;
+  transition: var(--transition-smooth);
+  white-space: nowrap;
+}
+
+.ticker-wrapper {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0.65rem 2rem;
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+
+.ticker-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.85rem;
+}
+
+.ticker-label {
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.ticker-val {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.ticker-change {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.ticker-change.up {
+  color: var(--sentiment-bullish-text);
+}
+
+.ticker-change.down {
+  color: var(--sentiment-bearish-text);
+}
+
 /* Dashboard Container Layout */
 .dashboard-container {
   flex: 1;
@@ -176,6 +236,38 @@ body.dark-mode .theme-toggle .sun-icon {
 .sidebar {
   border-right: 1px solid var(--border-color);
   padding-right: 2rem;
+}
+
+.view-mode-section {
+  margin-bottom: 1.5rem;
+}
+
+.toggle-switch {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--bg-secondary);
+  padding: 2px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-color);
+}
+
+.mode-btn {
+  background: none;
+  border: none;
+  padding: 0.5rem 0;
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  cursor: pointer;
+  border-radius: 2px;
+  transition: var(--transition-smooth);
+}
+
+.mode-btn.active {
+  background-color: var(--bg-card);
+  color: var(--text-primary);
+  box-shadow: var(--shadow-sm);
 }
 
 .sidebar-title {
@@ -336,6 +428,12 @@ body.dark-mode .theme-toggle .sun-icon {
 .stocks-icon { color: var(--accent-clay); }
 .crypto-icon { color: var(--accent-taupe); }
 
+.card-title-area {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
 .card-title {
   font-family: var(--font-serif);
   font-size: 1.5rem;
@@ -343,10 +441,49 @@ body.dark-mode .theme-toggle .sun-icon {
   letter-spacing: -0.01em;
 }
 
+/* Sentiment Badge */
+.sentiment-badge {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 0.15rem 0.5rem;
+  border-radius: 12px;
+  letter-spacing: 0.05em;
+}
+
+.sentiment-badge.bullish {
+  background-color: var(--sentiment-bullish-bg);
+  color: var(--sentiment-bullish-text);
+}
+
+.sentiment-badge.bearish {
+  background-color: var(--sentiment-bearish-bg);
+  color: var(--sentiment-bearish-text);
+}
+
+.sentiment-badge.neutral {
+  background-color: var(--sentiment-neutral-bg);
+  color: var(--sentiment-neutral-text);
+}
+
 .card-content {
   display: grid;
   grid-template-columns: 1.2fr 1fr;
   gap: 2.5rem;
+}
+
+.summary-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 1rem;
+}
+
+.interactive-tip {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-style: italic;
 }
 
 .summary-section h3, .trends-section h3 {
@@ -367,16 +504,55 @@ body.dark-mode .theme-toggle .sun-icon {
 
 .bullet-list li {
   position: relative;
-  padding-left: 1.25rem;
+  padding: 0.5rem 0.5rem 0.5rem 1.5rem;
   font-size: 0.95rem;
   color: var(--text-primary);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: var(--transition-smooth);
 }
 
 .bullet-list li::before {
   content: "—";
   position: absolute;
-  left: 0;
+  left: 0.4rem;
   color: var(--text-muted);
+}
+
+.bullet-list li:hover {
+  background-color: var(--bg-secondary);
+}
+
+/* Wabi-Sabi Highlight Effect */
+.bullet-list li.highlighted {
+  background: linear-gradient(120deg, rgba(230, 215, 195, 0.45) 0%, rgba(230, 215, 195, 0.15) 100%);
+  font-weight: 500;
+}
+body.dark-mode .bullet-list li.highlighted {
+  background: linear-gradient(120deg, rgba(140, 110, 90, 0.3) 0%, rgba(140, 110, 90, 0.1) 100%);
+}
+
+.bullet-list li.highlighted::before {
+  color: var(--accent-clay);
+}
+
+/* Clickable Source Link Styling */
+.source-link {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  text-decoration: none;
+  margin-left: 0.5rem;
+  border-bottom: 1px solid transparent;
+  transition: var(--transition-smooth);
+  vertical-align: middle;
+}
+
+.source-link:hover {
+  color: var(--accent-clay);
+  border-bottom-color: var(--accent-clay);
 }
 
 .trend-prose {
@@ -384,6 +560,116 @@ body.dark-mode .theme-toggle .sun-icon {
   font-size: 1rem;
   color: var(--text-secondary);
   line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+/* SVG Chart Container */
+.chart-container {
+  margin-bottom: 1.5rem;
+  border-top: 1px dashed var(--border-color);
+  padding-top: 1rem;
+}
+
+.chart-container h4 {
+  font-size: 0.78rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 0.75rem;
+  letter-spacing: 0.05em;
+}
+
+.svg-chart-wrapper {
+  background-color: var(--bg-secondary);
+  border-radius: var(--radius-sm);
+  padding: 0.5rem;
+  border: 1px solid var(--border-color);
+}
+
+.trend-chart-svg {
+  display: block;
+  width: 100%;
+  height: 90px;
+  overflow: visible;
+}
+
+.chart-path {
+  fill: none;
+  stroke: var(--accent-taupe);
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.chart-area {
+  fill: url(#chart-gradient);
+  opacity: 0.08;
+}
+
+.chart-point {
+  fill: var(--bg-card);
+  stroke: var(--accent-taupe);
+  stroke-width: 1.5;
+  cursor: pointer;
+}
+
+/* Notes Container */
+.notes-container {
+  border-top: 1px dashed var(--border-color);
+  padding-top: 1rem;
+}
+
+.notes-container h4 {
+  font-size: 0.78rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.05em;
+}
+
+.notes-container textarea {
+  width: 100%;
+  height: 70px;
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  padding: 0.5rem 0.75rem;
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  color: var(--text-primary);
+  resize: none;
+  transition: var(--transition-smooth);
+}
+
+.notes-container textarea:focus {
+  outline: none;
+  border-color: var(--accent-clay);
+  background-color: var(--bg-card);
+}
+
+/* Weekly View layout adjustments */
+.weekly-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.weekly-header-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.weekly-summary-wrapper {
+  background-color: var(--bg-secondary);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  border: 1px solid var(--border-color);
+  margin-bottom: 1rem;
 }
 
 /* Footer Styling */
@@ -441,5 +727,10 @@ body.dark-mode .theme-toggle .sun-icon {
   .meta-controls {
     width: 100%;
     justify-content: space-between;
+  }
+  
+  .ticker-wrapper {
+    gap: 1.5rem;
+    padding: 0.5rem 1rem;
   }
 }
