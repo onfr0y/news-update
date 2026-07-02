@@ -1,5 +1,92 @@
 const newsData = [
   {
+    date: "2026-07-03",
+    macro: {
+      brentCrude: { value: "$71.80", change: "+2.08%", trend: "up" },
+      bitcoin: { value: "$61,430", change: "+0.24%", trend: "up" },
+      sp500: { value: "7,483.24", change: "+0.00%", trend: "up" },
+      nasdaq: { value: "25,832.67", change: "-0.80%", trend: "down" }
+    },
+    tech: {
+      sentiment: "Bearish",
+      summary: [
+        {
+          text: "OpenAI discusses a conceptual proposal to grant the U.S. government a 5% equity stake, potentially creating a public fund to distribute AI dividends to U.S. citizens.",
+          source: "Bloomberg",
+          url: "https://www.bloomberg.com"
+        },
+        {
+          text: "Washington's escalating export controls and restrictions on advanced AI systems spark tensions, prompting European and British firms to develop sovereign AI alternatives.",
+          source: "BBC News",
+          url: "https://www.bbc.co.uk/news"
+        },
+        {
+          text: "A report by outplacement firm Challenger, Gray & Christmas reveals that the tech sector accounted for nearly a third of all U.S. job cuts in the first half of 2026, driven by AI restructuring.",
+          source: "The New York Times",
+          url: "https://www.nytimes.com"
+        },
+        {
+          text: "Meta's plans to launch an enterprise cloud service to sell its surplus AI computing power spark fears of a capacity glut, causing a rotation out of semiconductor and chip stocks.",
+          source: "Bloomberg",
+          url: "https://www.bloomberg.com"
+        }
+      ],
+      trendAnalysis: "The technology sector is experiencing mixed momentum, characterised by concerns over an impending AI capacity glut following reports of Meta's planned computing-power rental service. This has triggered a rotation out of semiconductor stocks and chipmakers. In contrast, OpenAI's proposed 5% equity grant to the U.S. government signals a strategic shift in regulatory diplomacy, potentially sharing AI-driven economic gains directly with citizens. Meanwhile, AI-driven corporate restructuring continues to impact technology sector labour markets, accounting for a significant portion of U.S. layoffs in the first half of the year."
+    },
+    stocks: {
+      sentiment: "Neutral",
+      summary: [
+        {
+          text: "The Dow Jones Industrial Average gained 594.83 points (1.14%) to close at a record 52,900.07, while the S&P 500 finished flat at 7,483.24 and the Nasdaq Composite fell 0.81%.",
+          source: "Bloomberg",
+          url: "https://www.bloomberg.com"
+        },
+        {
+          text: "The U.S. economy added just 57,000 jobs in June, missing the 115,000 expectation, raising prospects of earlier Fed rate cuts and lowering bond yields.",
+          source: "Bloomberg",
+          url: "https://www.bloomberg.com"
+        },
+        {
+          text: "Crucial Doha negotiations between U.S. and Iranian delegates regarding the unfreezing of Iranian assets and Middle East regional stability help calm energy markets.",
+          source: "The New York Times",
+          url: "https://www.nytimes.com"
+        },
+        {
+          text: "Eurozone inflation cooled to 2.8% in June from 3.2% in May, easing pressure on the ECB for further interest rate hikes.",
+          source: "BBC News",
+          url: "https://www.bbc.co.uk/news"
+        }
+      ],
+      trendAnalysis: "Global equities closed mixed, marked by a sharp divergence as the Dow Jones surged to record highs whilst tech-heavy indices suffered under rotational selling. The primary catalyst was a weaker-than-expected June payrolls report showing just 57,000 new jobs, which significantly missed projections. Whilst the soft labour market data raised investor hopes for earlier Federal Reserve interest rate cuts, it also prompted concerns regarding underlying economic growth. Easing inflation figures in the Eurozone and continuing diplomatic talks in Doha have further stabilised the broader macroeconomic backdrop."
+    },
+    crypto: {
+      sentiment: "Bullish",
+      summary: [
+        {
+          text: "U.S. Office of Government Ethics filings reveal President Donald Trump earned over $1 billion from cryptocurrency-related ventures and stablecoin royalties in his first year back in office.",
+          source: "The New York Times",
+          url: "https://www.nytimes.com"
+        },
+        {
+          text: "Bitcoin rebounded to the $61,430 range, showing resiliency as it broke its recent tight correlation with Nasdaq tech stocks.",
+          source: "Bloomberg",
+          url: "https://www.bloomberg.com"
+        },
+        {
+          text: "Institutional digital asset products face pressure as spot Bitcoin ETFs experience net outflows, despite minor inflows into select Ethereum funds.",
+          source: "Bloomberg",
+          url: "https://www.bloomberg.com"
+        },
+        {
+          text: "The EU's comprehensive Markets in Crypto-Assets (MiCA) regulatory framework officially enters full effect, registering hundreds of regional crypto-asset service providers.",
+          source: "BBC News",
+          url: "https://www.bbc.co.uk/news"
+        }
+      ],
+      trendAnalysis: "Digital assets have demonstrated relative stability, with Bitcoin climbing above $61,400 and showing signs of decoupling from Nasdaq's technology sector selloff. The market's structural landscape is being reshaped by the full implementation of the European Union's MiCA regulations, bringing long-awaited compliance clarity. However, financial disclosures revealing the Trump family's massive crypto earnings have introduced new domestic political scrutiny, raising questions about the alignment of interest between administration-backed ventures and retail investors, all whilst spot Bitcoin ETF outflows persist."
+    }
+  },
+  {
     date: "2026-07-02",
     macro: {
       brentCrude: { value: "$70.34", change: "-1.72%", trend: "down" },
