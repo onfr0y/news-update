@@ -1,5 +1,92 @@
 const newsData = [
   {
+    date: "2026-07-04",
+    macro: {
+      brentCrude: { value: "$71.94", change: "+0.19%", trend: "up" },
+      bitcoin: { value: "$62,100", change: "+1.09%", trend: "up" },
+      sp500: { value: "7,483.24", change: "+0.00%", trend: "up" },
+      nasdaq: { value: "25,832.67", change: "+0.00%", trend: "down" }
+    },
+    tech: {
+      sentiment: "Neutral",
+      summary: [
+        {
+          text: "Financial disclosures reveal President Trump invested up to $5 million in major technology companies, including Nvidia, Apple, and Microsoft, on the same day his administration launched the national AI Action Plan in 2025.",
+          source: "The New York Times",
+          url: "https://www.nytimes.com"
+        },
+        {
+          text: "Chinese AI developer Kling is reportedly in negotiations to raise $2 billion in a funding round that could reprice peer firms in the sector.",
+          source: "Bloomberg",
+          url: "https://www.bloomberg.com"
+        },
+        {
+          text: "Global shares saw a recovery with selective bounces in key AI-related equities, helping to offset earlier losses despite a deepening valuation slump in certain sub-sectors.",
+          source: "Bloomberg",
+          url: "https://www.bloomberg.com"
+        },
+        {
+          text: "Apple continues negotiating with Chinese semiconductor firms to procure memory chips, aiming to stabilise supply chain issues amid Washington's export curbs.",
+          source: "Bloomberg",
+          url: "https://www.bloomberg.com"
+        }
+      ],
+      trendAnalysis: "The technology sector showed signs of stabilising, characterised by Kling's massive two-billion-dollar fundraising talks, which could revalue peer AI developers globally. Although a broader valuation slump persists in certain areas, investor interest in full-stack artificial intelligence remains robust. However, new political scrutiny has arisen following disclosures that President Trump invested millions in mega-cap technology firms, including Nvidia and Microsoft, on the very day his administration announced its AI Action Plan, raising potential conflict of interest questions."
+    },
+    stocks: {
+      sentiment: "Bullish",
+      summary: [
+        {
+          text: "U.S. markets were closed in observance of the Independence Day holiday, but European and Asian markets rallied, buoyed by the Dow's previous record high.",
+          source: "The New York Times",
+          url: "https://www.nytimes.com"
+        },
+        {
+          text: "Following the soft June jobs report adding just 57,000 payrolls, traders have completely priced out the probability of a July interest rate hike by the Federal Reserve.",
+          source: "Bloomberg",
+          url: "https://www.bloomberg.com"
+        },
+        {
+          text: "The Bank of England warned that climate change risks pose an imminent threat to UK financial stability, noting asset repricing could cause severe market stress.",
+          source: "BBC News",
+          url: "https://www.bbc.co.uk/news"
+        },
+        {
+          text: "European powers reportedly indicate a willingness to accept transit fees imposed by Iran and Oman in the Strait of Hormuz, easing regional market tensions.",
+          source: "Bloomberg",
+          url: "https://www.bloomberg.com"
+        }
+      ],
+      trendAnalysis: "With U.S. markets closed for the Independence Day bank holiday, global markets capitalised on the previous session's momentum. The primary driver remains the weak June non-farm payrolls data, which has led investors to fully price out any near-term rate hikes by the Federal Reserve. Whilst this 'bad news is good news' narrative spurred rallies across European and Asian stock indices, the Bank of England issued a stern warning that climate-related asset repricing poses a structural danger to UK financial stability."
+    },
+    crypto: {
+      sentiment: "Bullish",
+      summary: [
+        {
+          text: "Prominent real-world asset tokenisation firm Securitize officially listed on the New York Stock Exchange, trading under the ticker symbol SECZ.",
+          source: "Bloomberg",
+          url: "https://www.bloomberg.com"
+        },
+        {
+          text: "Japanese financial conglomerate SBI Holdings agreed to acquire local cryptocurrency exchange Bitbank in a deal valued at approximately $288.5 million.",
+          source: "Bloomberg",
+          url: "https://www.bloomberg.com"
+        },
+        {
+          text: "Bitcoin surged above $62,000, triggering $450 million in short liquidations following U.S. labor market data that increased expectations for Federal Reserve rate cuts.",
+          source: "BBC News",
+          url: "https://www.bbc.co.uk/news"
+        },
+        {
+          text: "Crypto exchange Bitget became the first major digital asset platform to offer U.S. stock options trading, further blending crypto and traditional markets.",
+          source: "Bloomberg",
+          url: "https://www.bloomberg.com"
+        }
+      ],
+      trendAnalysis: "Digital assets experienced a significant lift, with Bitcoin breaking past the sixty-two-thousand-dollar mark and triggering substantial short-seller liquidations. The rally was heavily assisted by macroeconomic rate-cut optimism and a return to net positive inflows for spot Bitcoin ETFs. Structurally, the sector continues to integrate with traditional finance, highlighted by tokenisation firm Securitize's debut listing on the New York Stock Exchange and SBI Holdings' acquisition of Bitbank, further legitimising cryptocurrency infrastructure."
+    }
+  },
+  {
     date: "2026-07-03",
     macro: {
       brentCrude: { value: "$71.80", change: "+2.08%", trend: "up" },
