@@ -1,5 +1,92 @@
 const newsData = [
   {
+    date: "2026-07-05",
+    macro: {
+      brentCrude: { value: "$71.94", change: "+0.00%", trend: "up" },
+      bitcoin: { value: "$62,480", change: "+0.61%", trend: "up" },
+      sp500: { value: "7,483.24", change: "+0.00%", trend: "up" },
+      nasdaq: { value: "25,832.67", change: "+0.00%", trend: "down" }
+    },
+    tech: {
+      sentiment: "Neutral",
+      summary: [
+        {
+          text: "The 'Five Eyes' intelligence alliance issued a joint warning that AI-enabled cyberattacks are a near-term threat, with capabilities expected within months rather than years.",
+          source: "BBC News",
+          url: "https://www.bbc.co.uk/news"
+        },
+        {
+          text: "Semiconductor industry association SEMI warned the U.S. government against intervening in memory chip production capacity or pricing, citing risks to the AI data centre supply chain.",
+          source: "Bloomberg",
+          url: "https://www.bloomberg.com"
+        },
+        {
+          text: "Tesla has reportedly capped weekly artificial intelligence token spending for its engineering staff at $200 in a bid to control rising compute resource costs.",
+          source: "Bloomberg",
+          url: "https://www.bloomberg.com"
+        },
+        {
+          text: "Michael Dell and the Trump administration announced a public-private partnership offering a $250 seeding gift to the first 25 million children under the 'Trump Accounts' financial programme.",
+          source: "The New York Times",
+          url: "https://www.nytimes.com"
+        }
+      ],
+      trendAnalysis: "The technology sector faces a dual challenge of security warnings and operational efficiency. The Five Eyes' joint warning on AI-fuelled cyberattacks underlines the urgent need for robust defence mechanisms, shifting the industry's attention towards AI safety and cybersecurity. Meanwhile, SEMI's cautionary stance on government market intervention and Tesla's engineering token caps highlight the physical and financial resource constraints currently limiting rapid expansion in compute capacity."
+    },
+    stocks: {
+      sentiment: "Bullish",
+      summary: [
+        {
+          text: "International stock markets maintained their rally through the holiday weekend, with Japan's Nikkei 225 rising 1.5% and South Korea's Kospi surging 5.8%.",
+          source: "Bloomberg",
+          url: "https://www.bloomberg.com"
+        },
+        {
+          text: "Bond yields slipped and the U.S. dollar weakened as investors consolidated positions following the downbeat 57,000 non-farm payrolls print.",
+          source: "Bloomberg",
+          url: "https://www.bloomberg.com"
+        },
+        {
+          text: "The U.S. stock and bond markets remained closed through Sunday, July 5, following the Independence Day holiday, with regular trading set to resume on Monday.",
+          source: "The New York Times",
+          url: "https://www.nytimes.com"
+        },
+        {
+          text: "Markets tracked rising political developments as President Trump and allies explored strategies to influence future Federal Reserve leadership openings.",
+          source: "The New York Times",
+          url: "https://www.nytimes.com"
+        }
+      ],
+      trendAnalysis: "Global stock markets enjoyed a holiday rally, capitalising on the fading threat of further U.S. interest rate hikes. Although U.S. exchanges were closed for the long weekend, the knock-on effect of the weak payrolls report triggered positive closures across major Asian and European stock indices. However, political manoeuvres targeting the Federal Reserve's leadership indicate that central bank independence will remain a highly contested issue throughout the year."
+    },
+    crypto: {
+      sentiment: "Bullish",
+      summary: [
+        {
+          text: "European digital banking giant Revolut is preparing to delist Tether's USDT stablecoin in Europe to comply with the EU's recently implemented MiCA rules.",
+          source: "BBC News",
+          url: "https://www.bbc.co.uk/news"
+        },
+        {
+          text: "Ripple's native token XRP rallied to approximately $1.18, completing a technical 'golden cross' on the back of rising institutional cross-border interest.",
+          source: "Bloomberg",
+          url: "https://www.bloomberg.com"
+        },
+        {
+          text: "Progress on the U.S. administration's landmark 'CLARITY Act' crypto regulation bill remains stalled in the Senate due to unresolved procedural hurdles.",
+          source: "The New York Times",
+          url: "https://www.nytimes.com"
+        },
+        {
+          text: "Major cryptocurrency exchange Bitget rolled out U.S. stock options trading for its users, marking another integration step between digital and traditional assets.",
+          source: "Bloomberg",
+          url: "https://www.bloomberg.com"
+        }
+      ],
+      trendAnalysis: "The cryptocurrency market is entering a phase of structural transition. Whilst Ripple's XRP experienced a sharp rally to $1.18, regulatory pressures in Europe are mounting as platforms like Revolut prepare to delist USDT ahead of full MiCA compliance. These developments, coupled with procedural delays for the CLARITY Act in the U.S. Senate, demonstrate that the regulatory framework continues to dictate market behaviour and asset viability."
+    }
+  },
+  {
     date: "2026-07-04",
     macro: {
       brentCrude: { value: "$71.94", change: "+0.19%", trend: "up" },
