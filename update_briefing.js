@@ -135,6 +135,18 @@ async function fetchMacroData() {
 }
 
 async function main() {
+  // Load local .env file if it exists (zero-dependency env loading)
+  const envPath = path.join(__dirname, '.env');
+  if (fs.existsSync(envPath)) {
+    const envContent = fs.readFileSync(envPath, 'utf8');
+    envContent.split(/\r?\n/).forEach(line => {
+      const match = line.match(/^\s*GEMINI_API_KEY\s*=\s*(.+)$/);
+      if (match) {
+        process.env.GEMINI_API_KEY = match[1].replace(/['"]/g, '').trim();
+      }
+    });
+  }
+
   const apiKey = process.env.GEMINI_API_KEY;
   const isDryRun = process.argv.includes('--dry-run');
 
