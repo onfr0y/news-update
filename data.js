@@ -1,6 +1,84 @@
 const newsData = [
   {
     "date": "2026-07-11",
+    "tech": {
+      "sentiment": "Bearish",
+      "summary": [
+        {
+          "text": "Apple has initiated a lawsuit against OpenAI, alleging the theft of trade secrets and describing its rival's nascent hardware division as rotten.",
+          "source": "The New York Times",
+          "url": "https://www.nytimes.com/2026/07/10/technology/apple-openai-lawsuit.html"
+        },
+        {
+          "text": "Meta has withdrawn its new artificial intelligence image-generation feature, Muse Image, following intense backlash from users and Hollywood over privacy concerns.",
+          "source": "The New York Times",
+          "url": "https://www.nytimes.com/2026/07/10/technology/meta-muse-images-instagram-removal.html"
+        },
+        {
+          "text": "European regulators have threatened Meta with substantial fines, asserting that features like infinite scroll encourage compulsive usage and unhealthy habits.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/c8j2dje3pldo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "text": "Microsoft has announced plans to reduce its global workforce by 2.1 per cent, cutting 4,800 jobs and restructuring its Xbox gaming division.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/c36yy27rnpeo?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "trendAnalysis": "The technology sector is facing mounting structural headwinds as regulatory bodies, legal battles, and market pressures intensify. Major players like Apple and OpenAI are locked in high-stakes legal combat over intellectual property, whilst Meta grapples with European regulatory crackdowns on addictive designs alongside immediate public backlash over its AI integration strategies. Additionally, sweeping corporate restructurings, illustrated by Microsoft's job cuts, suggest a phase of consolidation and heightened focus on operational efficiency rather than unbridled expansion."
+    },
+    "stocks": {
+      "sentiment": "Neutral",
+      "summary": [
+        {
+          "text": "British airline easyJet has accepted a surprise takeover bid from American private equity firm Apollo, surpassing a previous offer from Castlelake.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/cgjxqq9jg8yo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "text": "South Korean semiconductor manufacturer SK Hynix successfully raised 26.5 billion dollars in its Nasdaq debut, with shares surging up to 17 per cent.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/c4gym70r0y4o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "text": "Global oil prices have fluctuated sharply as shipping traffic through the critical Strait of Hormuz declines following recent hostile attacks on commercial vessels.",
+          "source": "The New York Times",
+          "url": "https://www.nytimes.com/2026/07/10/business/oil-gas-stocks-shipping-iran-hormuz.html"
+        },
+        {
+          "text": "John Deere has settled with the Federal Trade Commission, granting farmers and independent mechanics the right to repair their own agricultural equipment.",
+          "source": "The New York Times",
+          "url": "https://www.nytimes.com/2026/07/09/business/john-deere-ftc-right-to-repair.html"
+        }
+      ],
+      "trendAnalysis": "Global markets are experiencing a complex interplay of geopolitical instability and opportunistic corporate activity. Whilst the semiconductor and artificial intelligence sectors continue to enjoy robust capital inflows—evidenced by SK Hynix's stellar US listing—broader macroeconomic indicators are clouded by rising energy risks as maritime transport through the Strait of Hormuz suffers severe disruption. Simultaneously, regulatory interventions like the John Deere right-to-repair settlement and transatlantic M&A transactions are reshaping corporate operating models."
+    },
+    "crypto": {
+      "sentiment": "Bullish",
+      "summary": [
+        {
+          "text": "Stablecoin issuer Circle has secured final approval from the OCC for a US national trust bank charter, accelerating its integration into the formal banking system.",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/business/2026/07/10/circle-secures-u-s-trust-bank-approval-in-crypto-expansion"
+        },
+        {
+          "text": "A legislative ban on a US central bank digital currency is set to become law tonight, following the automatic enactment of a bipartisan housing bill.",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/policy/2026/07/10/u-s-government-digital-dollar-set-to-be-banned-tonight-under-housing-law-s-cbdc-limit"
+        },
+        {
+          "text": "Bitcoin rose to 64,000 dollars as whale investors propelled the Coinbase Premium above key technical levels, defying broader stock market weakness.",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/markets/bitcoin-whales-sent-btc-price-to-64k-as-coinbase-premium-broke-key-level-cryptoquant?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "text": "Crypto exchange Backpack has introduced 24/7 trading for tokenised US equities, capitalising on the rapidly expanding market for real-world asset tokenisation.",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/backpack-launches-247-trading-for-tokenized-us-equities?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        }
+      ],
+      "trendAnalysis": "The cryptocurrency landscape is demonstrating strong resilience, marked by institutional maturation and a clear pivot towards regulated financial services. Circle's landmark trust bank charter and the emergence of tokenised traditional equities signal a deepening convergence between decentralised finance and established banking frameworks. Furthermore, strong on-chain accumulation by large holders has successfully buoyed major asset prices, offsetting temporary outflows from spot exchange-traded funds and navigating shifting domestic regulatory policies."
+    },
     "macro": {
       "brentCrude": {
         "value": "$76.00",
@@ -8,8 +86,8 @@ const newsData = [
         "trend": "down"
       },
       "bitcoin": {
-        "value": "$64,045",
-        "change": "-0.13%",
+        "value": "$64,060",
+        "change": "-0.10%",
         "trend": "down"
       },
       "sp500": {
@@ -22,84 +100,6 @@ const newsData = [
         "change": "+0.29%",
         "trend": "up"
       }
-    },
-    "tech": {
-      "sentiment": "Bearish",
-      "summary": [
-        {
-          "text": "Apple has filed a major lawsuit against OpenAI, alleging that the generative AI startup systematically stole proprietary trade secrets and recruited its key engineers.",
-          "source": "The New York Times",
-          "url": "https://www.nytimes.com"
-        },
-        {
-          "text": "Meta pulled a newly released AI-powered image editing feature from Instagram following days of widespread public backlash over privacy and design concerns.",
-          "source": "BBC News",
-          "url": "https://www.bbc.co.uk/news"
-        },
-        {
-          "text": "The European Union has threatened Meta with substantial fines unless it redesigns the 'addictive design' on Facebook and Instagram.",
-          "source": "Bloomberg",
-          "url": "https://www.bloomberg.com"
-        },
-        {
-          "text": "The UK media regulator Ofcom proposed new guidelines forcing tech firms to proactively identify and remove scam advertisements from their platforms.",
-          "source": "BBC News",
-          "url": "https://www.bbc.co.uk/news"
-        }
-      ],
-      "trendAnalysis": "The technology sector is facing intensifying legal and regulatory pressure. Apple's lawsuit against OpenAI highlights escalating friction over talent and intellectual property in the generative AI race. Concurrently, regulatory pushbacks from the EU and UK against Meta and big tech's engagement with addictive design and scam advertisements signals a transition toward much stricter enforcement of digital platform safety and content curation."
-    },
-    "stocks": {
-      "sentiment": "Bullish",
-      "summary": [
-        {
-          "text": "US airline EasyJet accepted a surprise takeover bid from a US private equity firm, sparking consolidations across the transport sector.",
-          "source": "BBC News",
-          "url": "https://www.bbc.co.uk/news"
-        },
-        {
-          "text": "South Korean semiconductor giant SK Hynix closed higher on its first day of trading on US stock exchanges, reflecting strong demand for memory storage components.",
-          "source": "Bloomberg",
-          "url": "https://www.bloomberg.com"
-        },
-        {
-          "text": "Global shipping firms brace for disruption as the US and Iran compete for operational control of transit routes through the Strait of Hormuz.",
-          "source": "The New York Times",
-          "url": "https://www.nytimes.com"
-        },
-        {
-          "text": "A court ruled that Atlassian illegally terminated a software engineer, providing a landmark legal victory for Silicon Valley tech worker protections.",
-          "source": "Bloomberg",
-          "url": "https://www.bloomberg.com"
-        }
-      ],
-      "trendAnalysis": "Equities remain constructive, led by SK Hynix's positive US debut, signaling persistent appetite for physical AI infrastructure. However, geopolitical developments in the Strait of Hormuz present supply chain and energy price risks for shipping firms. Additionally, the Atlassian termination ruling highlights growing corporate liability regarding employment practices and labor protections in the tech industry."
-    },
-    "crypto": {
-      "sentiment": "Neutral",
-      "summary": [
-        {
-          "text": "A bill to ban a United States central bank digital currency (CBDC) is set to go into effect tonight, appended to a critical housing program bill.",
-          "source": "Bloomberg",
-          "url": "https://www.bloomberg.com"
-        },
-        {
-          "text": "Hyundai introduced internal stablecoin transfers for South Korean corporate divisions, becoming the country's first major industrial conglomerate to utilize stablecoins.",
-          "source": "Bloomberg",
-          "url": "https://www.bloomberg.com"
-        },
-        {
-          "text": "Major industry networks OKX, MetaMask, and Matter Labs partnered to build a decentralized arbitration court for resolving transactions between AI agents.",
-          "source": "The New York Times",
-          "url": "https://www.nytimes.com"
-        },
-        {
-          "text": "Kraken announced plans to overhaul its consumer application with a built-in AI-powered investment assistant.",
-          "source": "BBC News",
-          "url": "https://www.bbc.co.uk/news"
-        }
-      ],
-      "trendAnalysis": "Cryptocurrency integrations continue to bifurcate. On the regulatory front, the US CBDC ban restricts state-level digital dollar issuance, while stablecoins are seeing real-world utility through Hyundai's corporate networks. The emergence of a dispute court for AI agents backed by OKX and MetaMask highlights the growth of agentic commerce as the industry develops infrastructure for autonomous machine-to-machine economies."
     }
   },
   {
