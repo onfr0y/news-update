@@ -2,8 +2,8 @@ name: Daily Briefing Auto-Update
 
 on:
   schedule:
-    # Runs at 00:00 UTC (07:00 ICT) every day
-    - cron: '0 0 * * *'
+    # Runs at 23:00 UTC (06:00 ICT) every day
+    - cron: '0 23 * * *'
   workflow_dispatch: # Allows manual trigger from GitHub UI
 
 jobs:
