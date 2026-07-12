@@ -1,5 +1,108 @@
 const newsData = [
   {
+    "date": "2026-07-12",
+    "tech": {
+      "sentiment": "Bearish",
+      "summary": [
+        {
+          "text": "Microsoft has announced a significant restructuring programme, cutting approximately 4,800 jobs, representing 2.1 per cent of its global workforce, and heavily scaling down its Xbox division.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/c36yy27rnpeo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "text": "Apple has initiated legal action against OpenAI, accusing its partner of systematic trade secret theft to bolster its nascent hardware business, which Apple claims is rotten to its core.",
+          "source": "The New York Times",
+          "url": "https://www.nytimes.com/2026/07/10/technology/apple-openai-lawsuit.html"
+        },
+        {
+          "text": "Meta has removed its newly launched Muse Image AI generator from Instagram following intense backlash from users and Hollywood agencies over privacy, copyright, and the unauthorised utilisation of public photos.",
+          "source": "The New York Times",
+          "url": "https://www.nytimes.com/2026/07/10/technology/meta-muse-images-instagram-removal.html"
+        },
+        {
+          "text": "OpenAI has officially launched GPT-5.6 Sol, its most sophisticated artificial intelligence model to date, following delays caused by US government cybersecurity concerns and model restrictions.",
+          "source": "The New York Times",
+          "url": "https://www.nytimes.com/2026/07/09/technology/openai-sol-ai.html"
+        }
+      ],
+      "trendAnalysis": "The technology sector is experiencing a period of intense structural friction and regulatory pushback. While generational shifts continue with high-profile releases like OpenAI's GPT-5.6 Sol, major tech firms are grappling with severe legal challenges, workforce reductions, and public backlashes over privacy. Apple's aggressive litigation against OpenAI signals a fracturing of generative AI alliances, while Meta's forced retreat on user data harvesting for AI highlights a hardening regulatory environment that will likely slow down the deployment of consumer-facing AI features."
+    },
+    "stocks": {
+      "sentiment": "Neutral",
+      "summary": [
+        {
+          "text": "South Korean chip giant SK Hynix has raised 26.5 billion dollars in its historic US Nasdaq debut, with shares surging by up to 17 per cent as investors clamour for AI-related hardware exposure.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/c4gym70r0y4o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "text": "British airline EasyJet has accepted a surprise takeover bid from the US private equity firm Apollo, surpassing a previous proposal from Castlelake in a major consolidation move for European aviation.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/cgjxqq9jg8yo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "text": "Independent studio Lionsgate has engineered a dramatic financial comeback as its biographical film 'Michael' surpassed one billion dollars at the global box office.",
+          "source": "The New York Times",
+          "url": "https://www.nytimes.com/2026/07/12/business/media/michael-movie-lionsgate.html"
+        },
+        {
+          "text": "Commercial shipping traffic through the crucial Strait of Hormuz has plummeted dramatically following recent military strikes and escalating geopolitical friction between US and Iranian forces.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/c621k5r8764o?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "trendAnalysis": "Global equity markets are navigating a complex landscape of highly concentrated AI enthusiasm and severe geopolitical headwinds. The blockbuster listing of SK Hynix on the Nasdaq and Lionsgate’s record-breaking box office triumph demonstrate that liquid capital continues to reward dominant market narratives. However, supply chain risks are elevating as commercial shipping routes through the Strait of Hormuz experience severe disruption from escalating US-Iran conflict, threatening to reinflate energy prices and complicate the global central bank easing cycle."
+    },
+    "crypto": {
+      "sentiment": "Neutral",
+      "summary": [
+        {
+          "text": "A temporary ban on a US central bank digital currency is set to become law on Saturday, embedded within the housing bill that is passing into effect without President Donald Trump's signature.",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/us-cbdc-ban-donald-trump-housing-bill"
+        },
+        {
+          "text": "Hedera-based lending protocol Bonzo Lend has lost over 9 million dollars, representing 77 per cent of its total value locked, following an exploit targeting a third-party oracle contract.",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/bonzo-lend-9m-oracle-exploit-hedera"
+        },
+        {
+          "text": "Shares in Empery Digital rose after the firm liquidated approximately half of its Bitcoin treasury holdings to redirect capital towards financing artificial intelligence data centres.",
+          "source": "CoinTelegraph",
+          "url": "https://cointelegraph.com/news/empery-digital-shares-rise-after-selling-bitcoin-treasury-to-fund-ai-data-center-project?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        },
+        {
+          "text": "Stablecoin issuer Circle saw its market prospects soar after securing US federal trust bank approval, marking a significant step forward for the integration of crypto firms into the regulated banking system.",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/business/2026/07/10/circle-secures-u-s-trust-bank-approval-in-crypto-expansion"
+        }
+      ],
+      "trendAnalysis": "The cryptocurrency market is characterised by a transition toward institutional formalisation amid ongoing structural hurdles. The sector is seeing positive regulatory development in the US and UK, highlighted by Circle’s federal trust bank approval and the impending CBDC ban under the new housing bill. Nevertheless, persistent security vulnerabilities—exemplified by the multi-million-dollar oracle exploit on Hedera—and a visible rotation of venture capital from digital assets into artificial intelligence infrastructure continue to cap broader market momentum."
+    },
+    "macro": {
+      "brentCrude": {
+        "value": "$76.01",
+        "change": "-0.38%",
+        "trend": "down"
+      },
+      "bitcoin": {
+        "value": "$63,790",
+        "change": "+0.02%",
+        "trend": "up"
+      },
+      "sp500": {
+        "value": "7,575.39",
+        "change": "+0.42%",
+        "trend": "up"
+      },
+      "nasdaq": {
+        "value": "26,281.61",
+        "change": "+0.29%",
+        "trend": "up"
+      }
+    }
+  },
+  {
     "date": "2026-07-11",
     "tech": {
       "sentiment": "Bearish",
