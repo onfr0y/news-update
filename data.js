@@ -1,5 +1,108 @@
 const newsData = [
   {
+    "date": "2026-07-13",
+    "tech": {
+      "sentiment": "Bearish",
+      "summary": [
+        {
+          "text": "Apple has launched a lawsuit against OpenAI, accusing its former partner of stealing trade secrets to aid its nascent hardware business.",
+          "source": "The New York Times",
+          "url": "https://www.nytimes.com/2026/07/10/technology/apple-openai-lawsuit.html"
+        },
+        {
+          "text": "Microsoft has announced a significant restructuring, cutting 4,800 jobs across its workforce and drastically shrinking its Xbox division.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/c36yy27rnpeo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "text": "Meta has withdrawn its new AI-driven 'Muse Image' feature from Instagram following swift backlash over privacy and copyright concerns.",
+          "source": "The New York Times",
+          "url": "https://www.nytimes.com/2026/07/10/technology/meta-muse-images-instagram-removal.html"
+        },
+        {
+          "text": "The European Union has threatened Meta with substantial fines, alleging that features like infinite scroll constitute addictive and unhealthy designs.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/c8j2dje3pldo?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "trendAnalysis": "The tech sector is facing a confluence of regulatory, legal, and operational headwinds. Legal disputes, exemplified by Apple’s lawsuit against OpenAI, signal deepening friction over intellectual property within the artificial intelligence land grab. Concurrently, European regulators are intensifying their scrutiny of social media design, while corporate restructuring and workforce reductions at giants like Microsoft reflect a broader strategic consolidation."
+    },
+    "stocks": {
+      "sentiment": "Neutral",
+      "summary": [
+        {
+          "text": "South Korean chipmaker SK Hynix secured 26.5 billion dollars in a record-breaking Nasdaq debut, with shares surging up to 17 per cent.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/c4gym70r0y4o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "text": "EasyJet has agreed to a surprise takeover bid from US private equity firm Apollo, surpassing a previous proposal by Castlelake.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/cgjxqq9jg8yo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "text": "Global oil prices surged following military exchanges between the United States and Iran, raising concerns over transport through the critical Strait of Hormuz.",
+          "source": "The New York Times",
+          "url": "https://www.nytimes.com/2026/07/12/business/oil-shipping-iran-hormuz.html"
+        },
+        {
+          "text": "US state attorneys general are preparing a lawsuit to block the proposed 111 billion dollar merger between Paramount and Warner Bros.",
+          "source": "The New York Times",
+          "url": "https://www.nytimes.com/2026/07/12/business/state-ag-lawsuit-paramount-warner-bros.html"
+        }
+      ],
+      "trendAnalysis": "Global equity and commodity markets are navigating intense geopolitical turbulence alongside aggressive corporate consolidation. While successful capital market transactions, such as SK Hynix's blockbuster listing and Apollo's acquisition of EasyJet, underscore resilient liquidity, escalating military tensions in the Middle East have injected severe energy price volatility. Furthermore, rigorous antitrust scrutiny continues to challenge mega-mergers, as demonstrated by the regulatory pushback against Paramount and Warner Bros."
+    },
+    "crypto": {
+      "sentiment": "Neutral",
+      "summary": [
+        {
+          "text": "Bitcoin demonstrated resilience, holding steady near 63,800 dollars despite a wider financial sell-off triggered by escalations in the Middle East.",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/07/13/bitcoin-holds-near-usd63-800-as-war-driven-selloff-hits-everything-but-crypto"
+        },
+        {
+          "text": "The aggregate stablecoin market capitalisation contracted by 10 billion dollars since May, though analysts view this as a temporary consolidation rather than a structural crisis.",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/07/12/stablecoin-market-cap-has-shrunk-by-usd10-billion-since-may-but-analyst-sees-no-reason-to-panic"
+        },
+        {
+          "text": "Hedera-based lending protocol Bonzo Lend suffered a 9.05 million dollar oracle exploit, resulting in a precipitous 77 per cent decline in its total value locked.",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/web3/2026/07/11/lending-protocol-bonzo-loses-77-of-value-locked-as-usd9-million-oracle-exploit-rattles-hedera"
+        },
+        {
+          "text": "A temporary ban on a US central bank digital currency is set to become law under restrictive provisions embedded within a new housing bill.",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/policy/2026/07/10/u-s-government-digital-dollar-set-to-be-banned-tonight-under-housing-law-s-cbdc-limit"
+        }
+      ],
+      "trendAnalysis": "The digital asset sector is displaying a mature decoupling from traditional risk-off market behaviours during geopolitical shocks, as evidenced by Bitcoin's price stability amidst global market liquidations. However, systemic challenges persist, including a contraction in stablecoin liquidity and localised DeFi security vulnerabilities. Concurrently, US legislative actions to restrict a sovereign digital dollar are clarifying the boundary between private digital assets and public monetary structures."
+    },
+    "macro": {
+      "brentCrude": {
+        "value": "$79.46",
+        "change": "+4.54%",
+        "trend": "up"
+      },
+      "bitcoin": {
+        "value": "$62,752",
+        "change": "-1.56%",
+        "trend": "down"
+      },
+      "sp500": {
+        "value": "7,575.39",
+        "change": "+0.42%",
+        "trend": "up"
+      },
+      "nasdaq": {
+        "value": "26,281.61",
+        "change": "+0.29%",
+        "trend": "up"
+      }
+    }
+  },
+  {
     "date": "2026-07-12",
     "tech": {
       "sentiment": "Bearish",
