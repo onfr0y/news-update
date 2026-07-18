@@ -1,5 +1,108 @@
 const newsData = [
   {
+    "date": "2026-07-18",
+    "tech": {
+      "sentiment": "Bearish",
+      "summary": [
+        {
+          "text": "Chinese startup Moonshot AI has unveiled Kimi K3, a massive AI model with 2.8 trillion parameters designed to challenge US developers.",
+          "source": "BBC News",
+          "url": "https://www.bbc.com/news/technology"
+        },
+        {
+          "text": "Researchers have announced a new bird-scale flapping robot capable of transitioning between aerial flight and aquatic swimming.",
+          "source": "BBC News",
+          "url": "https://www.bbc.com/news/technology"
+        },
+        {
+          "text": "The BBC under new Director-General Matt Brittin has announced cost-cutting plans to shed approximately 2,000 jobs over the next three years.",
+          "source": "BBC News",
+          "url": "https://www.bbc.com/news/entertainment-arts"
+        },
+        {
+          "text": "Boeing has released its 2026 Commercial Market Outlook, projecting that the global commercial aviation fleet will double by 2045.",
+          "source": "The New York Times",
+          "url": "https://www.nytimes.com/business"
+        }
+      ],
+      "trendAnalysis": "The technology sector is experiencing significant operational adjustments and strategic reorganisation. While Chinese firms are making massive strides in artificial intelligence model parameters, as seen with Moonshot AI's Kimi K3, traditional media giants like the BBC are undergoing extensive staff cuts to stabilise their balance sheets. In aerospace, long-term industry projections remain highly optimistic, though companies must navigate near-term manufacturing and supply chain constraints."
+    },
+    "stocks": {
+      "sentiment": "Bearish",
+      "summary": [
+        {
+          "text": "US markets closed significantly lower on Friday, with the S&P 500 dropping 1.0 per cent to 7,475.69 and the Nasdaq losing 1.4 per cent to close at 25,520.24.",
+          "source": "Bloomberg",
+          "url": "https://www.bloomberg.com/markets"
+        },
+        {
+          "text": "The semiconductor sector faced a sharp correction, with the PHLX Semiconductor Index falling nearly 21 per cent in July amid AI spending caution.",
+          "source": "Bloomberg",
+          "url": "https://www.bloomberg.com/markets"
+        },
+        {
+          "text": "Major US banks reported robust second-quarter earnings, beating Wall Street estimates due to strong trading divisions and resilient consumer spending.",
+          "source": "Bloomberg",
+          "url": "https://www.bloomberg.com/markets"
+        },
+        {
+          "text": "SpaceX shares fell below their June listing price of 135 dollars, pressured by cooling market sentiment and rising debt yields.",
+          "source": "Bloomberg",
+          "url": "https://www.bloomberg.com/markets"
+        }
+      ],
+      "trendAnalysis": "Global equity markets are undergoing a stark sector rotation and valuation correction. Despite strong corporate earnings from major commercial banks, investor anxiety over high AI valuations has triggered a sharp sell-off in the semiconductor sector. Furthermore, macroeconomic headwinds, including elevated debt yields and persistent geopolitical tensions in the Middle East, have damped risk appetite, resulting in broad declines for the major US stock indices at the end of the week."
+    },
+    "crypto": {
+      "sentiment": "Neutral",
+      "summary": [
+        {
+          "text": "Bitcoin has stabilised near the 64,000 dollar level after recovering from a 24-hour low of approximately 62,516 dollars.",
+          "source": "The New York Times",
+          "url": "https://www.nytimes.com/business"
+        },
+        {
+          "text": "The New York State Bar Association has published comprehensive guidance on tracing and recovering digital assets in cross-border litigation.",
+          "source": "The New York Times",
+          "url": "https://www.nytimes.com/business"
+        },
+        {
+          "text": "Congress held hearings on the Digital Asset Market CLARITY Act to address jurisdictional division between the SEC and CFTC.",
+          "source": "The New York Times",
+          "url": "https://www.nytimes.com/business"
+        },
+        {
+          "text": "Senator Elizabeth Warren has demanded that President Trump disclose his cryptocurrency holdings by July 23 due to transparency concerns.",
+          "source": "The New York Times",
+          "url": "https://www.nytimes.com/business"
+        }
+      ],
+      "trendAnalysis": "The cryptocurrency sector is maintaining relative stability, with Bitcoin consolidating around the 64,000 dollar mark despite broader macroeconomic uncertainty. The introduction of standardised legal guidance for asset recovery and discussions surrounding the CLARITY Act reflect a maturing regulatory framework. However, political pressure and demands for transparency continue to introduce near-term friction as regulatory oversight rules are debated."
+    },
+    "macro": {
+      "brentCrude": {
+        "value": "$88.26",
+        "change": "+3.74%",
+        "trend": "up"
+      },
+      "bitcoin": {
+        "value": "$64,000",
+        "change": "+1.99%",
+        "trend": "up"
+      },
+      "sp500": {
+        "value": "7,475.69",
+        "change": "-1.00%",
+        "trend": "down"
+      },
+      "nasdaq": {
+        "value": "25,520.24",
+        "change": "-1.40%",
+        "trend": "down"
+      }
+    }
+  },
+  {
     "date": "2026-07-13",
     "tech": {
       "sentiment": "Bearish",
