@@ -1,5 +1,108 @@
 const newsData = [
   {
+    "date": "2026-07-19",
+    "tech": {
+      "sentiment": "Neutral",
+      "summary": [
+        {
+          "text": "China's Moonshot AI has unveiled Kimi K3, a massive new model with 2.8 trillion parameters that aims to rival OpenAI and Anthropic.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/cy9w4q8pgp0o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "text": "Meta is reportedly in talks to lease massive computing power to Anthropic in a deal worth up to 10 billion dollars.",
+          "source": "The New York Times",
+          "url": "https://www.nytimes.com/2026/07/17/technology/meta-anthropic-ai-computing-power.html"
+        },
+        {
+          "text": "Apple has filed a lawsuit against OpenAI, alleging theft of key trade secrets to aid its nascent hardware business.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/cy8w379e091o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "text": "European Union regulators have threatened Meta with hefty fines, claiming infinite scroll designs cause addictive habits.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/c8j2dje3pldo?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "trendAnalysis": "The technology landscape is witnessing intense rivalry and structural reorganisation. China's Moonshot AI has demonstrated rapid advancement with its Kimi K3 model, directly challenging the American lead in foundational AI systems. This acceleration comes alongside a critical shortage of computing power, prompting innovative resource-sharing discussions such as the proposed ten billion dollar partnership between Meta and Anthropic. At the same time, intellectual property conflicts are intensifying, as shown by Apple's lawsuit against OpenAI, whilst European authorities continue to scrutinise big tech platforms over addictive features."
+    },
+    "stocks": {
+      "sentiment": "Bearish",
+      "summary": [
+        {
+          "text": "The UK government has nationalised British Steel to secure domestic capabilities, drawing sharp criticism from China.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/cjd4kvxpd3do?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "text": "UK fuel prices are rising again following the collapse of diplomatic peace talks to resolve the US-Israel conflict with Iran.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/c20zgjzz0e4o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "text": "The World Cup final has driven billions in transaction volumes and bets on prediction platforms Kalshi and Polymarket.",
+          "source": "The New York Times",
+          "url": "https://www.nytimes.com/2026/07/18/business/world-cup-kalshi-polymarket.html"
+        },
+        {
+          "text": "Trump Media has launched a paid, fast-access feed of market-moving social posts targeting Wall Street traders.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/c79gw4lj89eo?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "trendAnalysis": "Global markets are showing defensive tendencies as geopolitical and national policy developments reshuffle investor focus. The UK government's decision to nationalise British Steel has drawn criticism from China, highlighting the growing trend of state intervention in domestic industrial capabilities. Concurrently, rising energy prices following the breakdown of peace negotiations have renewed concerns about fuel inflation, adding downward pressure to major US equity indices. Meanwhile, alternative asset speculation is booming, with prediction markets like Kalshi and Polymarket recording record betting volumes during the World Cup."
+    },
+    "crypto": {
+      "sentiment": "Neutral",
+      "summary": [
+        {
+          "text": "France has ordered internet service providers to block Polymarket, citing concerns over addictive mechanisms and access controls.",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/policy/2026/07/18/france-orders-country-s-internet-service-providers-to-block-polymarket"
+        },
+        {
+          "text": "Stripe and Swift are competing to capture the next generation of global payments infrastructure and blockchain integration.",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/business/2026/07/17/stripe-and-swift-race-to-control-the-next-generation-of-global-payments-infrastructure"
+        },
+        {
+          "text": "Polymarket traders have cut the odds of the US Clarity Act passing this year to a record low amid ongoing Senate delays.",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/07/17/polymarket-traders-cut-clarity-act-passage-odds-to-record-low-as-senate-delay-drags-on"
+        },
+        {
+          "text": "Japan's SBI Group consolidated Singapore-based Coinhako as it builds an Asian cross-border digital asset empire.",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/business/2026/07/17/japan-s-sbi-group-is-building-asia-s-first-cross-border-digital-asset-empire"
+        }
+      ],
+      "trendAnalysis": "The cryptocurrency sector continues to balance regulatory friction against institutional expansion. France's block on Polymarket demonstrates a growing regulatory focus in Europe on the addictive mechanics of betting platforms. In Washington, the odds of the CLARITY Act passing this year have dropped to record lows due to Senate delays, keeping regulatory divisions unresolved. Nevertheless, traditional finance companies like Stripe and Swift are aggressively competing to control next-generation digital payment rails, and institutional consolidations like SBI Group's expansion in Asia highlight that long-term protocol-level infrastructure building remains robust."
+    },
+    "macro": {
+      "brentCrude": {
+        "value": "$88.10",
+        "change": "+4.59%",
+        "trend": "up"
+      },
+      "bitcoin": {
+        "value": "$64,690",
+        "change": "-0.16%",
+        "trend": "down"
+      },
+      "sp500": {
+        "value": "7,457.69",
+        "change": "-1.01%",
+        "trend": "down"
+      },
+      "nasdaq": {
+        "value": "25,520.24",
+        "change": "-1.40%",
+        "trend": "down"
+      }
+    }
+  },
+  {
     "date": "2026-07-18",
     "tech": {
       "sentiment": "Bearish",
