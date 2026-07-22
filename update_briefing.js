@@ -134,11 +134,98 @@ async function fetchMacroData() {
   return macro;
 }
 
+async function saveAndCommit(newEntry, isDryRun) {
+  console.log('Updating data.js...');
+
+  // Update data.js
+  const dataPath = path.join(__dirname, 'data.js');
+  
+  // Clear require cache to ensure fresh read
+  delete require.cache[require.resolve(dataPath)];
+  const existingData = require(dataPath);
+
+  const existingIndex = existingData.findIndex(entry => entry.date === newEntry.date);
+  if (existingIndex !== -1) {
+    console.log(`Briefing for ${newEntry.date} already exists. Replacing existing record.`);
+    existingData[existingIndex] = newEntry;
+  } else {
+    console.log(`Prepending new briefing for ${newEntry.date}.`);
+    existingData.unshift(newEntry);
+  }
+
+  const newFileContent = `const newsData = ${JSON.stringify(existingData, null, 2)};\n\nif (typeof module !== 'undefined' && module.exports) {\n  module.exports = newsData;\n}\n`;
+  fs.writeFileSync(dataPath, newFileContent, 'utf8');
+
+  console.log('Update complete! data.js has been successfully written.');
+
+  // Auto commit and push to Git (skip on dry runs)
+  if (!isDryRun) {
+    const { execSync } = require('child_process');
+    try {
+      console.log('Checking git status...');
+      const status = execSync('git status --porcelain', { encoding: 'utf8' });
+      if (status.includes('data.js')) {
+        console.log('Staging changes to data.js...');
+        execSync('git add data.js');
+        
+        if (process.env.GITHUB_ACTIONS) {
+          console.log('Configuring git bot credentials...');
+          execSync('git config user.name "github-actions[bot]"');
+          execSync('git config user.email "github-actions[bot]@users.noreply.github.com"');
+        }
+        
+        console.log('Committing changes...');
+        execSync(`git commit -m "auto: update daily briefing for ${newEntry.date} [skip ci]"`);
+        
+        console.log('Pushing to origin...');
+        execSync('git push');
+        console.log('Successfully pushed changes to remote Git!');
+      } else {
+        console.log('No changes detected in data.js. Skipping Git push.');
+      }
+    } catch (gitError) {
+      console.error('Git auto-commit/push failed:', gitError.message);
+    }
+  }
+}
+
 async function main() {
+  const isFetchOnly = process.argv.includes('--fetch-only');
+  const commitOnlyIdx = process.argv.indexOf('--commit-only');
+  const isCommitOnly = commitOnlyIdx !== -1;
+  const commitFile = isCommitOnly ? process.argv[commitOnlyIdx + 1] : null;
+
+  if (isCommitOnly) {
+    if (!commitFile) {
+      console.error('Error: Please specify a JSON file to commit.');
+      process.exit(1);
+    }
+    const cleanPath = path.resolve(commitFile);
+    if (!fs.existsSync(cleanPath)) {
+      console.error(`Error: File ${cleanPath} does not exist.`);
+      process.exit(1);
+    }
+    const newEntry = JSON.parse(fs.readFileSync(cleanPath, 'utf8'));
+    await saveAndCommit(newEntry, false);
+    return;
+  }
+
+  // Load local .env file if it exists (zero-dependency env loading)
+  const envPath = path.join(__dirname, '.env');
+  if (fs.existsSync(envPath)) {
+    const envContent = fs.readFileSync(envPath, 'utf8');
+    envContent.split(/\r?\n/).forEach(line => {
+      const match = line.match(/^\s*GEMINI_API_KEY\s*=\s*(.+)$/);
+      if (match) {
+        process.env.GEMINI_API_KEY = match[1].replace(/['"]/g, '').trim();
+      }
+    });
+  }
+
   const apiKey = process.env.GEMINI_API_KEY;
   const isDryRun = process.argv.includes('--dry-run');
 
-  if (!apiKey && !isDryRun) {
+  if (!apiKey && !isDryRun && !isFetchOnly) {
     console.error('Error: GEMINI_API_KEY environment variable is not set. Use --dry-run to test without API key.');
     process.exit(1);
   }
@@ -174,6 +261,20 @@ async function main() {
   // Fetch real-time ticker data
   const macroQuotes = await fetchMacroData();
   console.log('Macro quotes compiled successfully:', JSON.stringify(macroQuotes));
+
+  if (isFetchOnly) {
+    const rawData = {
+      date: today,
+      macro: macroQuotes,
+      techItems: techItems,
+      stocksItems: stocksItems,
+      cryptoItems: cryptoItems
+    };
+    const rawPath = path.join(__dirname, 'pending_briefing_raw.json');
+    fs.writeFileSync(rawPath, JSON.stringify(rawData, null, 2), 'utf8');
+    console.log(`Raw briefing data saved to ${rawPath}`);
+    return;
+  }
 
   let newEntry;
 
@@ -260,7 +361,7 @@ ${cryptoItems.map((item, idx) => `${idx + 1}. Title: ${item.title}\n   Link: ${i
 `;
 
     console.log('Sending request to Gemini API...');
-    const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey}`;
+    const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent?key=${apiKey}`;
     
     const response = await fetch(geminiUrl, {
       method: 'POST',
@@ -359,55 +460,7 @@ ${cryptoItems.map((item, idx) => `${idx + 1}. Title: ${item.title}\n   Link: ${i
   // Inject computed real-time macro quotes into the entry
   newEntry.macro = macroQuotes;
 
-  console.log('Briefing successfully generated by Gemini. Updating data.js...');
-
-  // Update data.js
-  const dataPath = path.join(__dirname, 'data.js');
-  const existingData = require(dataPath);
-
-  const existingIndex = existingData.findIndex(entry => entry.date === newEntry.date);
-  if (existingIndex !== -1) {
-    console.log(`Briefing for ${newEntry.date} already exists. Replacing existing record.`);
-    existingData[existingIndex] = newEntry;
-  } else {
-    console.log(`Prepending new briefing for ${newEntry.date}.`);
-    existingData.unshift(newEntry);
-  }
-
-  const newFileContent = `const newsData = ${JSON.stringify(existingData, null, 2)};\n\nif (typeof module !== 'undefined' && module.exports) {\n  module.exports = newsData;\n}\n`;
-  fs.writeFileSync(dataPath, newFileContent, 'utf8');
-
-  console.log('Update complete! data.js has been successfully written.');
-
-  // Auto commit and push to Git (skip on dry runs)
-  if (!isDryRun) {
-    const { execSync } = require('child_process');
-    try {
-      console.log('Checking git status...');
-      const status = execSync('git status --porcelain', { encoding: 'utf8' });
-      if (status.includes('data.js')) {
-        console.log('Staging changes to data.js...');
-        execSync('git add data.js');
-        
-        if (process.env.GITHUB_ACTIONS) {
-          console.log('Configuring git bot credentials...');
-          execSync('git config user.name "github-actions[bot]"');
-          execSync('git config user.email "github-actions[bot]@users.noreply.github.com"');
-        }
-        
-        console.log('Committing changes...');
-        execSync(`git commit -m "auto: update daily briefing for ${newEntry.date} [skip ci]"`);
-        
-        console.log('Pushing to origin...');
-        execSync('git push');
-        console.log('Successfully pushed changes to remote Git!');
-      } else {
-        console.log('No changes detected in data.js. Skipping Git push.');
-      }
-    } catch (gitError) {
-      console.error('Git auto-commit/push failed:', gitError.message);
-    }
-  }
+  await saveAndCommit(newEntry, isDryRun);
 }
 
 main().catch(err => {
