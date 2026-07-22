@@ -87,10 +87,6 @@ const newsData = [
       "trendAnalysis": "Cryptocurrency assets continue displaying structural resilience following regulatory clarity advancements in Asian markets. Institutional product expansion remains a central catalyst for digital asset liquidity."
     }
   },
-      ],
-      "trendAnalysis": "Derivative regulatory upgrades combined with multi-asset ETF options are establishing structural liquidity baselines for digital portfolios."
-    }
-  },
   {
     "date": "2026-07-05",
     "macro": {
