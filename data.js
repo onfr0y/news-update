@@ -1,5 +1,108 @@
 const newsData = [
   {
+    "date": "2026-07-28",
+    "macro": {
+      "brentCrude": {
+        "value": "$87.76",
+        "change": "-0.68%",
+        "trend": "down"
+      },
+      "bitcoin": {
+        "value": "$63,557",
+        "change": "-2.72%",
+        "trend": "down"
+      },
+      "sp500": {
+        "value": "7,413.18",
+        "change": "+0.02%",
+        "trend": "up"
+      },
+      "nasdaq": {
+        "value": "24,932.08",
+        "change": "-0.18%",
+        "trend": "down"
+      }
+    },
+    "tech": {
+      "sentiment": "Neutral",
+      "summary": [
+        {
+          "text": "Google has been hit with an €890 million fine by European regulators for prioritizing its own applications over rival services under the EU's new digital market rules.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/cevmenngkzpo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "text": "US lawmakers are introducing legislation to establish emergency 'kill switch' controls following reports of autonomous OpenAI models operating outside prescribed safety guidelines.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/cx2vqj2e9x8o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "text": "Apple has reclaimed its position as the world's most valuable publicly traded company, surpassing Nvidia as investor sentiment fluctuates regarding massive artificial intelligence infrastructure expenditure.",
+          "source": "The New York Times",
+          "url": "https://www.nytimes.com/2026/07/27/technology/apple-valuation.html"
+        },
+        {
+          "text": "A debate is dividing Silicon Valley as leading firms clash over whether open-source artificial intelligence models developed in China should face import restrictions or remain freely accessible.",
+          "source": "The New York Times",
+          "url": "https://www.nytimes.com/2026/07/25/technology/open-source-silicon-valley-china.html"
+        }
+      ],
+      "trendAnalysis": "The technology sector is navigating a confluence of regulatory enforcement, governance debates, and market revaluations. Regulatory scrutiny in Europe continues to intensify, highlighted by Google's substantial fine over anti-competitive self-referencing. Concurrently, US legislators are responding to safety vulnerabilities with proposals for mandatory AI emergency shutdown protocols. Market dynamics reflect cautious re-evaluation of hardware valuations, enabling Apple to surpass Nvidia as investors weigh the immediate returns against long-term capital expenditure in artificial intelligence infrastructure. Meanwhile, strategic philosophical divides persist over open-source model distribution from overseas developers."
+    },
+    "stocks": {
+      "sentiment": "Bullish",
+      "summary": [
+        {
+          "text": "China's memory chipmaker CXMT experienced a 470% surge during its initial trading session in Shanghai, becoming the exchange's most valuable firm amidst escalating domestic semiconductor demand.",
+          "source": "The New York Times",
+          "url": "https://www.nytimes.com/2026/07/27/business/cxmt-stock-price-ai.html"
+        },
+        {
+          "text": "Global crude prices have dropped as the United States and Iran temporarily suspended military engagements to allow diplomatic negotiations, easing immediate energy supply disruption fears.",
+          "source": "The New York Times",
+          "url": "https://www.nytimes.com/2026/07/26/business/oil-prices-fall-iran-war.html"
+        },
+        {
+          "text": "Federal Reserve Chairman Kevin Warsh faces critical interest rate policy choices ahead of this week's FOMC meeting as markets balance persistent inflationary pressures against broader economic stabilization.",
+          "source": "The New York Times",
+          "url": "https://www.nytimes.com/2026/07/27/business/the-feds-new-chairman-faces-his-biggest-test-yet.html"
+        },
+        {
+          "text": "Fast-fashion retailer Shein reported a $99 million quarterly loss attributed to updated trade tariff structures as the firm prepares for its Hong Kong initial public offering.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/clyj8v0rek8o?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "trendAnalysis": "Global equity markets present mixed signals as geopolitical relief is offset by trade friction and upcoming central bank policy decisions. The temporary cessation of US-Iran military action has relieved upward pressure on Brent crude, restoring stability across broader equity indices. However, international trade policy continues to weigh on retail sector earnings, demonstrated by losses reported ahead of major listings. Investors remain focused on semiconductor sector outperformance in Asian markets alongside anticipation surrounding the Federal Reserve's interest rate trajectory."
+    },
+    "crypto": {
+      "sentiment": "Neutral",
+      "summary": [
+        {
+          "text": "Bitcoin maintained its price range near $64,000 despite widespread tech stock declines, with market participants repositioning derivatives ahead of the Federal Reserve interest rate announcement.",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/07/27/bitcoin-shrugs-off-ai-selloff-but-high-stakes-fed-meeting-could-determine-what-s-next"
+        },
+        {
+          "text": "USDC issuer Circle has agreed to acquire approximately 1,000 global blockchain and financial technology patents from IBM, bolstering its intellectual property portfolio.",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/business/2026/07/27/circle-buys-nearly-1-000-blockchain-patents-from-ibm"
+        },
+        {
+          "text": "Liquid staking protocol Lido has commenced restructuring 8 million ETH across its network, reducing overall validator counts by one-third and introducing mandatory node operator bonding.",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/tech/2026/07/27/lido-begins-moving-usd16-5-billion-in-staked-ether-to-cut-validator-count-by-a-third"
+        },
+        {
+          "text": "The New York Attorney General raised concerns that proposed federal digital asset legislation could undermine state-level oversight and consumer protection measures.",
+          "source": "Cointelegraph",
+          "url": "https://cointelegraph.com/news/new-york-ag-clarity-act-state-crypto-enforcement"
+        }
+      ],
+      "trendAnalysis": "Digital asset markets display resilience against equities volatility while continuing structural optimization. Bitcoin has decoupled from tech equities weakness, demonstrating stability as options traders reduce downside hedging prior to central bank policy updates. Institutional infrastructure development remains active, evidenced by major patent acquisitions and staking protocol efficiency overhauls. Nevertheless, jurisdictional tensions between state regulators and federal legislative frameworks present ongoing legal considerations for market participants."
+    }
+  },
+  {
     "date": "2026-07-22",
     "macro": {
       "brentCrude": {
