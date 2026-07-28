@@ -1,5 +1,108 @@
 const newsData = [
   {
+    "date": "2026-07-29",
+    "macro": {
+      "brentCrude": {
+        "value": "$87.49",
+        "change": "+4.04%",
+        "trend": "up"
+      },
+      "bitcoin": {
+        "value": "$63,851",
+        "change": "+0.23%",
+        "trend": "up"
+      },
+      "sp500": {
+        "value": "7,428.78",
+        "change": "+0.21%",
+        "trend": "up"
+      },
+      "nasdaq": {
+        "value": "24,876.91",
+        "change": "-0.22%",
+        "trend": "down"
+      }
+    },
+    "tech": {
+      "sentiment": "Bearish",
+      "summary": [
+        {
+          "text": "Google has been fined €890 million by European regulators in the first major enforcement action under the EU's new digital market regulations for self-favouring its services.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/cevmenngkzpo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "text": "Global semiconductor and hardware equities faced a sharp correction as investors questioned whether massive corporate spending on artificial intelligence infrastructure will yield timely financial returns.",
+          "source": "Bloomberg",
+          "url": "https://www.bloomberg.com/markets"
+        },
+        {
+          "text": "Meta Chief Executive Mark Zuckerberg voiced strong opposition to the centralisation of artificial intelligence control, advocating for open-weights models over proprietary architectures.",
+          "source": "The New York Times",
+          "url": "https://www.nytimes.com/2026/07/28/technology/mark-zuckerberg-meta-ai.html"
+        },
+        {
+          "text": "OpenAI is nearing an agreement for a $500 billion data centre expansion, supported by a $250 billion financial backstop from chipmaker Nvidia.",
+          "source": "The New York Times",
+          "url": "https://www.nytimes.com/2026/07/27/technology/openai-data-center-nvidia.html"
+        }
+      ],
+      "trendAnalysis": "The technology sector is experiencing a pronounced divergence between massive long-term capital allocation and immediate market re-evaluations. Investors are expressing heightened caution over circular artificial intelligence investments and prolonged pay-back horizons for hardware infrastructure, precipitating a widespread sell-off across semiconductor equities. Simultaneously, regulatory and governance pressures are intensifying globally: European authorities continue to enforce stringent digital market competition rules against dominant platforms, while leading industry figures clash over open-weights model distribution and centralised AI governance."
+    },
+    "stocks": {
+      "sentiment": "Neutral",
+      "summary": [
+        {
+          "text": "U.S. blue-chip equities rallied with the Dow Jones gaining over 500 points, offsetting technology sector declines as investors prepared for the Federal Reserve's policy announcement.",
+          "source": "Bloomberg",
+          "url": "https://www.bloomberg.com/markets"
+        },
+        {
+          "text": "Boeing reported a wider second-quarter loss driven by a $280 million charge and a four-year delay in delivering new presidential aircraft.",
+          "source": "The New York Times",
+          "url": "https://www.nytimes.com/2026/07/28/business/boeing-earnings-air-force-one.html"
+        },
+        {
+          "text": "Equity markets across Asia experienced extreme volatility as a semiconductor sell-off triggered a temporary 8% trading halt on South Korea's Kospi index.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/cly8zng43npo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "text": "Global crude oil transit faces renewed disruption risks as alternative shipping routes in the Red Sea encounter regional security threats amidst broader Middle East tensions.",
+          "source": "The New York Times",
+          "url": "https://www.nytimes.com/video/business/energy-environment/100000011050115/red-sea-blockade-oil-route.html"
+        }
+      ],
+      "trendAnalysis": "Global equity markets present a bifurcated landscape as traditional industrial sectors show resilience while technology heavyweights drag on benchmark indices. Blue-chip stocks rallied strongly, driving the Dow Jones higher, supported by easing energy price volatility despite ongoing maritime logistics concerns in key oil transit routes. However, international markets remain fragile, highlighted by sharp halts in Asian trading. Investors maintain a watchful posture ahead of the Federal Reserve's upcoming policy meeting, where interest rate guidance will dictate near-term equity trajectory."
+    },
+    "crypto": {
+      "sentiment": "Bullish",
+      "summary": [
+        {
+          "text": "Financial heavyweights including BlackRock, Fidelity, and Goldman Sachs have publicly endorsed the Clarity Act as US lawmakers accelerate crypto market structure legislation.",
+          "source": "Bloomberg",
+          "url": "https://www.bloomberg.com/crypto"
+        },
+        {
+          "text": "Bitcoin maintained stability near $63,800, decoupling from tech stock volatility as derivative traders anticipated potential monetary easing signals from the Federal Reserve.",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/07/28/remotely-dovish-fed-could-be-good-for-bitcoin-says-analyst"
+        },
+        {
+          "text": "Morgan Stanley launched new low-cost Ether and Solana exchange-traded products following the commercial success of its flagship Bitcoin fund.",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/07/28/morgan-stanley-debuts-ether-and-solana-etps-after-bitcoin-fund-success"
+        },
+        {
+          "text": "International law enforcement authorities reported increased friction in investigating digital asset financial crimes following modifications to Binance's user data sharing protocols.",
+          "source": "The New York Times",
+          "url": "https://www.nytimes.com/2026/07/28/us/binance-crypto-crime.html"
+        }
+      ],
+      "trendAnalysis": "Digital asset markets continue to demonstrate relative stability against broader equity market fluctuations, with Bitcoin holding its ground around the $63,800 threshold. Institutional adoption continues to mature rapidly, evidenced by major Wall Street firms launching new Solana and Ether exchange-traded products and rallying behind federal regulatory frameworks such as the Clarity Act. Nonetheless, compliance and jurisdictional friction persist as law enforcement bodies navigate evolving international data-access frameworks for digital exchanges."
+    }
+  },
+  {
     "date": "2026-07-28",
     "macro": {
       "brentCrude": {
