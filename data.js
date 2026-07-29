@@ -1,5 +1,108 @@
 const newsData = [
   {
+    "date": "2026-07-30",
+    "macro": {
+      "brentCrude": {
+        "value": "$90.40",
+        "change": "-0.37%",
+        "trend": "down"
+      },
+      "bitcoin": {
+        "value": "$63,843",
+        "change": "-0.02%",
+        "trend": "down"
+      },
+      "sp500": {
+        "value": "7,316.15",
+        "change": "-1.52%",
+        "trend": "down"
+      },
+      "nasdaq": {
+        "value": "24,442.94",
+        "change": "-1.74%",
+        "trend": "down"
+      }
+    },
+    "tech": {
+      "sentiment": "Bearish",
+      "summary": [
+        {
+          "text": "Meta's quarterly profits fell 14 per cent as capital expenditure on artificial intelligence infrastructure surged, sparking investor frustration over extended payback timelines.",
+          "source": "The New York Times",
+          "url": "https://www.nytimes.com/2026/07/29/technology/meta-profit-ai.html"
+        },
+        {
+          "text": "Microsoft reported a 31.6 per cent increase in quarterly profit while aggressively expanding capital allocation towards AI infrastructure and security tools.",
+          "source": "The New York Times",
+          "url": "https://www.nytimes.com/2026/07/29/technology/microsoft-quarterly-earnings-report.html"
+        },
+        {
+          "text": "European regulators issued a landmark €890 million fine against Google for anti-competitive self-favouring practices across its digital ecosystem.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/cevmenngkzpo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "text": "Investigations revealed hundreds of user chat transcripts with Anthropic's Claude AI were publicly accessible online without proper authentication controls.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/cly5qgjk5ywo?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "trendAnalysis": "The technology sector is confronting intensified scrutiny regarding capital allocation and regulatory compliance. Heavyweight hyperscalers including Meta and Microsoft continue to accelerate capital expenditure into artificial intelligence infrastructure, yet investor anxiety over extended payback horizons has weighed on equity valuations. Simultaneously, European antitrust enforcement remains robust, as evidenced by Google's landmark fine under digital market competition rules. Heightened focus on data privacy and security vulnerabilities across AI models further underscores a challenging operating environment for major tech conglomerates."
+    },
+    "stocks": {
+      "sentiment": "Bearish",
+      "summary": [
+        {
+          "text": "The US Federal Reserve maintained benchmark interest rates between 3.5 per cent and 3.75 per cent, signaling caution as inflation remains persistent at 4.1 per cent.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/cy07wgqjv08o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "text": "Monetary policy committee members at the Bank of England are projected to hold interest rates unchanged for the fifth consecutive meeting amid sticky domestic inflation.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/cp8e6m4rndgo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "text": "Global equity benchmark indices suffered sharp drops led by an Asian semiconductor slide, pushing credit default swap costs for AI-related debt to record highs.",
+          "source": "Bloomberg",
+          "url": "https://www.bloomberg.com/markets"
+        },
+        {
+          "text": "Global crude oil benchmarks remained elevated above $90 per barrel as supply disruption concerns in key maritime routes counteracted demand forecasts.",
+          "source": "The New York Times",
+          "url": "https://www.nytimes.com/video/business/energy-environment/100000011050115/red-sea-blockade-oil-route.html"
+        }
+      ],
+      "trendAnalysis": "Global equity markets experienced widespread downward pressure as major central banks, including the Federal Reserve and the Bank of England, opted to maintain interest rate pauses. Persistent inflationary pressures combined with tech-driven sell-offs pushed both the S&P 500 (-1.52%) and Nasdaq (-1.74%) lower. Furthermore, sustained geopolitical friction in the Middle East has kept Brent Crude pricing elevated around $90.40, raising concerns over energy-driven cost inflation for the global corporate sector."
+    },
+    "crypto": {
+      "sentiment": "Neutral",
+      "summary": [
+        {
+          "text": "Bitcoin pricing stabilized near $63,850, exhibiting lower volatility compared to broad equity markets despite broader macroeconomic headwinds.",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/07/29/bitcoin-steadies-above-usd64-000-as-crypto-looks-to-fed-interest-rate-decision"
+        },
+        {
+          "text": "Bank of New York Mellon introduced on-chain record-keeping for tokenized funds, marking a significant milestone for institutional digital asset adoption.",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/business/2026/07/29/bny-targets-usd8-6-trillion-transfer-agency-market-on-blockchain-rails"
+        },
+        {
+          "text": "Despite posting strong overall quarterly earnings, Robinhood's digital asset transaction revenue declined sharply as retail spot volume cooled across exchanges.",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/07/29/robinhood-slides-4-despite-earnings-beat-as-crypto-revenue-cools"
+        },
+        {
+          "text": "Proposed amendments to the CLARITY Act by law enforcement officials have created new friction in passing comprehensive digital asset market structure rules.",
+          "source": "The New York Times",
+          "url": "https://www.nytimes.com/2026/07/28/us/binance-crypto-crime.html"
+        }
+      ],
+      "trendAnalysis": "The cryptocurrency ecosystem is navigating a period of structural consolidation. While spot trading volumes have experienced a temporary pullback—impacting exchange revenues—institutional infrastructure development continues unabated, as demonstrated by BNY's rollout of blockchain-based transfer agency records. Regulatory developments in the United States surrounding the CLARITY Act remain pivotal, while Bitcoin's relative stability near $63,850 suggests resilience amidst wider macroeconomic volatility."
+    }
+  },
+  {
     "date": "2026-07-29",
     "macro": {
       "brentCrude": {
