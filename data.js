@@ -1,5 +1,92 @@
 const newsData = [
   {
+    "date": "2026-08-09",
+    "macro": {
+      "brentCrude": { "value": "$83.55", "change": "+1.29%", "trend": "up" },
+      "bitcoin": { "value": "$64,776", "change": "-0.20%", "trend": "down" },
+      "sp500": { "value": "7,757.64", "change": "+0.62%", "trend": "up" },
+      "nasdaq": { "value": "26,690.62", "change": "+1.30%", "trend": "up" }
+    },
+    "tech": {
+      "sentiment": "Bearish",
+      "summary": [
+        {
+          "text": "Meta was fined $567 million in a child-safety ruling, taking the case's total fines to $942 million.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/cd7lz3wr2rlo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "text": "A series of disclosures about AI systems obtaining internet access has renewed focus on the operational risks of autonomous models.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/cp30989ee1wo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "text": "SpaceX shares fell after its first earnings report highlighted substantial planned spending on artificial intelligence.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/c0qvpveg20vo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "text": "Disney agreed a deal allowing selected creators to use clips from its films and television shows in TikTok videos.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/c235ev9knm4o?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "trendAnalysis": "Technology is balancing commercial experimentation with mounting regulatory, security and capital-allocation pressure. The Nasdaq rose 1.30 per cent, but Meta's fine and investor concern around SpaceX's artificial-intelligence spending underline the cost and governance risks that remain central to the sector."
+    },
+    "stocks": {
+      "sentiment": "Neutral",
+      "summary": [
+        {
+          "text": "US employment fell by 23,000 roles in July, against expectations for an increase.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/c20j5rle717o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "text": "Goodwin is considering selling part of its defence business, which supplies programmes in the United Kingdom and United States.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/c20dgpl0z4jo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "text": "The US administration will pay German energy company RWE $1.2 billion to halt wind projects in the United States.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/c1e1vg0gjl5o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "text": "Argos is pursuing a relaunch as its owners seek to improve its competitive position against newer retail rivals.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/c2lqvwewgp2o?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "trendAnalysis": "Market indicators were constructive, with the S&P 500 up 0.62 per cent and Brent crude up 1.29 per cent, yet the unexpected July fall in US jobs points to a more fragile economic backdrop. Defence restructuring, retail repositioning and energy-policy intervention reinforce a mixed outlook for corporate activity."
+    },
+    "crypto": {
+      "sentiment": "Neutral",
+      "summary": [
+        {
+          "text": "The BIP-110 Bitcoin fork mined two blocks before slowing sharply, constrained by inherited mining difficulty and limited hash power.",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/tech/2026/08/09/controversial-bitcoin-fork-bip-110-mines-two-blocks-then-stops"
+        },
+        {
+          "text": "Brazil's central bank directed exchanges to delay certain overseas crypto transfers above $10,000 and transactions marked as risky.",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/business/2026/08/08/brazil-s-central-bank-orders-exchanges-to-delay-large-crypto-transfers-abroad"
+        },
+        {
+          "text": "The US Senate opened the first stage of voting on the Crypto Clarity Act, keeping the legislation in contention for September.",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/policy/2026/08/08/u-s-senate-opens-first-stage-of-crypto-clarity-act-voting-to-give-bill-a-chance-next-month"
+        },
+        {
+          "text": "A Lightning-network infrastructure exploit prompted BTCPay to urge affected LND operators to update or take servers offline.",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/tech/2026/08/08/another-bitcoin-infrastructure-exploit-hits-this-time-draining-merchant-lightning-nodes"
+        }
+      ],
+      "trendAnalysis": "Bitcoin eased 0.20 per cent to $64,776 as the market faced a mix of technical stress, security risk and tighter cross-border oversight. Legislative progress in the United States offers a constructive medium-term signal, but infrastructure vulnerabilities and fragmented fork activity keep the near-term outlook balanced."
+    }
+  },
+  {
     "date": "2026-07-31",
     "macro": {
       "brentCrude": {
