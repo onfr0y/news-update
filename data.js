@@ -1,5 +1,92 @@
 const newsData = [
   {
+    "date": "2026-08-10",
+    "macro": {
+      "brentCrude": { "value": "$84.39", "change": "+1.01%", "trend": "up" },
+      "bitcoin": { "value": "$64,979", "change": "+0.11%", "trend": "up" },
+      "sp500": { "value": "7,757.64", "change": "+0.62%", "trend": "up" },
+      "nasdaq": { "value": "26,690.62", "change": "+1.30%", "trend": "up" }
+    },
+    "tech": {
+      "sentiment": "Neutral",
+      "summary": [
+        {
+          "text": "Electronic Arts agreed to a $55 billion sale to a Saudi-led group, taking the games publisher private and adding debt to the business.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/cjejyl34345o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "text": "Apple lodged a further challenge to the United Kingdom order seeking access to private user data.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/cvg0kk3ek2vo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "text": "The UK AI Safety Institute said recent behaviour involving Anthropic and OpenAI models was malicious and unprecedented, following a hacking campaign using fake profiles.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/c1w1lvn7d9go?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "text": "Meta's $567 million child-safety fine brought the total penalties in the case to $942 million.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/cd7lz3wr2rlo?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "trendAnalysis": "Technology is attracting major strategic capital, as demonstrated by the Electronic Arts deal and the Nasdaq's 1.30 per cent gain, but the operating environment remains constrained by privacy disputes, artificial-intelligence security concerns and intensifying platform regulation."
+    },
+    "stocks": {
+      "sentiment": "Neutral",
+      "summary": [
+        {
+          "text": "EasyJet agreed to a £5.7 billion takeover by US investment firm Apollo after a rival bidder withdrew.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/cjejzjpy98wo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "text": "The United States imposed a 15 per cent tariff on a key chip material in an effort to support domestic firms facing Chinese competition.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/cdrvn686dljo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "text": "Iran said an agreement with Oman on the Strait of Hormuz was in its final stages, although neither the United States nor Oman commented.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/ckg9d3eyeggo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "text": "US employment fell by 23,000 roles in July, contrary to expectations for an increase.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/c20j5rle717o?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "trendAnalysis": "Equities remained resilient, with the S&P 500 up 0.62 per cent, while takeover activity and policy intervention shaped corporate news. A weaker US jobs report and a higher Brent price of $84.39 leave growth and energy risks in balance against improving market sentiment."
+    },
+    "crypto": {
+      "sentiment": "Neutral",
+      "summary": [
+        {
+          "text": "Spot Bitcoin exchange-traded funds received $853.54 million of net inflows last week, their strongest total since mid-April, led by BlackRock's IBIT.",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/08/09/bitcoin-investors-pour-usd853-million-into-spot-etfs-blackrock-s-ibit-claims-the-bulk"
+        },
+        {
+          "text": "Hyperliquid's record open interest in real-world-asset perpetuals has not prevented revenue falling for four consecutive quarters.",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/business/2026/08/09/hyperliquid-s-rwa-perps-boom-is-eating-into-the-revenue-that-backs-hype"
+        },
+        {
+          "text": "More than 100 crypto projects have folded in 2026 as an industry shakeout removes startups without sustainable cash flow or users.",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/business/2026/08/09/crypto-is-going-through-a-massive-dot-com-style-shakeout-as-over-100-projects-fold-in-2026"
+        },
+        {
+          "text": "The Senate's delay of a procedural vote on the Crypto Clarity Act disappointed the industry, but left the legislation's longer-term path open.",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/policy/2026/08/09/is-clarity-s-delay-a-blessing-in-disguise-state-of-crypto"
+        }
+      ],
+      "trendAnalysis": "Bitcoin rose 0.11 per cent to $64,979 as institutional ETF demand improved, but the sector remains selective rather than broadly risk-on. Strong capital flows contrast with falling platform revenue, project failures and legislative uncertainty, supporting a neutral near-term view."
+    }
+  },
+  {
     "date": "2026-08-09",
     "macro": {
       "brentCrude": { "value": "$83.55", "change": "+1.29%", "trend": "up" },
