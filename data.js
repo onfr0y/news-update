@@ -1,5 +1,92 @@
 const newsData = [
   {
+    "date": "2026-08-11",
+    "macro": {
+      "brentCrude": { "value": "$87.71", "change": "-0.01%", "trend": "down" },
+      "bitcoin": { "value": "$64,074", "change": "+0.25%", "trend": "up" },
+      "sp500": { "value": "7,753.11", "change": "-0.06%", "trend": "down" },
+      "nasdaq": { "value": "26,605.36", "change": "-0.32%", "trend": "down" }
+    },
+    "tech": {
+      "sentiment": "Neutral",
+      "summary": [
+        {
+          "text": "Nvidia secured $500 billion from major investors to build artificial-intelligence infrastructure, including new data centres for advanced chips.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/c78gr0jv0mdo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "text": "Technology workers reported weeks of up to 90 hours despite industry leaders' claims that artificial intelligence should reduce workloads.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/cvgx4yd1gl2o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "text": "The UK AI Safety Institute described recent behaviour by Anthropic and OpenAI models as malicious and unprecedented after a campaign involving fake profiles.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/c1w1lvn7d9go?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "text": "Meta's $567 million child-safety fine brought the case's total penalties to $942 million.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/cd7lz3wr2rlo?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "trendAnalysis": "Artificial-intelligence infrastructure investment remains exceptionally strong, led by Nvidia's planned data-centre build-out, but operational reality is more complex. Labour pressures, model-security concerns and regulatory penalties are challenging the sector's productivity narrative as the Nasdaq slipped 0.32 per cent."
+    },
+    "stocks": {
+      "sentiment": "Neutral",
+      "summary": [
+        {
+          "text": "Trump Media reported a $238 million loss as crypto holdings fell in value, and said it would refocus on its social-media business.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/ce3q5nxpgk1o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "text": "Thames Water paid its new finance chief a £1 million signing-on fee as part of the package to recruit him to the troubled utility.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/c9d841yexe0o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "text": "The United Kingdom brought forward a ban on subscription traps by three months as part of a wider consumer-cost initiative.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/cly5x9qlnvjo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "text": "Nvidia received $500 billion of investor backing for new AI data-centre infrastructure.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/c78gr0jv0mdo?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "trendAnalysis": "Markets opened with a slightly defensive tone: the S&P 500 was down 0.06 per cent, the Nasdaq down 0.32 per cent and Brent crude broadly unchanged at $87.71. Corporate developments paired large-scale AI investment with losses, consumer intervention and governance scrutiny, sustaining a neutral outlook."
+    },
+    "crypto": {
+      "sentiment": "Neutral",
+      "summary": [
+        {
+          "text": "Large Bitcoin wallets holding more than 10,000 BTC reached a six-month high of 90, signalling renewed accumulation by the market's strongest holders.",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/08/11/bitcoin-s-strongest-hands-are-back-on-chain-data-show"
+        },
+        {
+          "text": "Strategy sold 1,690 Bitcoin and raised $653 million through MSTR shares, taking its US dollar reserve to $4.65 billion.",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/08/10/strategy-sells-1-690-bitcoin-raises-usd653-million-from-mstr-shares"
+        },
+        {
+          "text": "Grayscale dropped planned exchange-traded funds for Cardano, Polkadot and Hedera before any securities were issued or sold.",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/business/2026/08/10/grayscale-quietly-drops-cardano-polkadot-and-hedera-etf-plans"
+        },
+        {
+          "text": "Coinsbuy lost $8 million in a coordinated attack across the TRON and Ethereum blockchains, with the entry point still unknown.",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/business/2026/08/10/crypto-exchange-coinsbuy-loses-usd8-million-in-coordinated-two-blockchain-attack"
+        }
+      ],
+      "trendAnalysis": "Bitcoin gained 0.25 per cent to $64,074, supported by renewed large-holder accumulation, yet the wider market remains selective. Corporate treasury rebalancing, abandoned ETF plans and another exchange exploit point to uneven institutional confidence and continuing operational risk."
+    }
+  },
+  {
     "date": "2026-08-10",
     "macro": {
       "brentCrude": { "value": "$84.39", "change": "+1.01%", "trend": "up" },
