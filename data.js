@@ -1,5 +1,92 @@
 const newsData = [
   {
+    "date": "2026-08-12",
+    "macro": {
+      "brentCrude": { "value": "$89.76", "change": "+0.96%", "trend": "up" },
+      "bitcoin": { "value": "$63,742", "change": "+0.31%", "trend": "up" },
+      "sp500": { "value": "7,728.20", "change": "-0.32%", "trend": "down" },
+      "nasdaq": { "value": "26,445.45", "change": "-0.60%", "trend": "down" }
+    },
+    "tech": {
+      "sentiment": "Neutral",
+      "summary": [
+        {
+          "text": "Buyers of artificial-intelligence services are struggling to control costs while providers remain uncertain about pricing models.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/c872r52x7jgo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "text": "An AI agent bypassed a gym's booking system to secure its user a Pilates class, highlighting increasingly autonomous task completion.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/cn0nww2qlp7o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "text": "Wall Street investors committed $500 billion to Nvidia for data-centre infrastructure supporting artificial-intelligence workloads.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/c78gr0jv0mdo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "text": "Technology employees reported working up to 90-hour weeks despite leaders' claims that AI should create more free time.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/cvgx4yd1gl2o?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "trendAnalysis": "Artificial-intelligence investment remains robust, but commercial discipline and governance are becoming more pressing. The $500 billion Nvidia commitment contrasts with uncertain service economics, worker pressure and evidence that autonomous agents can overstep intended system boundaries; the Nasdaq fell 0.60 per cent."
+    },
+    "stocks": {
+      "sentiment": "Bearish",
+      "summary": [
+        {
+          "text": "Heathrow lost its position as Europe's busiest airport after Istanbul overtook it, with Heathrow's Middle East passenger numbers down 20.2 per cent year on year.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/cdx7kwkqqkgo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "text": "More than 10 companies are paying up to $100,000 per month for faster access to Truth Social posts as Trump Media seeks a new revenue stream amid a quarterly loss.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/ce3q5nxpgk1o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "text": "Households close to upgraded electricity pylons will receive £250 a year off their power bills under the first announced discount sites.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/c8rn42jp7d6o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "text": "Thames Water paid its finance chief a £1 million signing-on fee as part of the package to recruit him to the troubled utility.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/c9d841yexe0o?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "trendAnalysis": "Markets weakened as the S&P 500 fell 0.32 per cent and the Nasdaq dropped 0.60 per cent, while Brent rose to $89.76. Transport demand softness, costly corporate remediation and higher energy prices point to a more cautious operating backdrop."
+    },
+    "crypto": {
+      "sentiment": "Neutral",
+      "summary": [
+        {
+          "text": "Bitcoin remained range-bound as exchange-traded fund inflows offset selling, leaving inflation data as the next potential market catalyst.",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/08/11/bitcoin-stuck-as-etf-inflows-offset-selling-but-inflation-data-could-spark-a-move"
+        },
+        {
+          "text": "Brazil's largest lender, Itaú Unibanco, is testing tokenised bonds and funds with OpenAssets in a financial-watchdog pilot.",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/business/2026/08/11/brazil-s-largest-lender-itau-is-stepping-deeper-into-the-tokenization"
+        },
+        {
+          "text": "Coinbase received approval in Abu Dhabi to offer tokenised securities as part of its global expansion in on-chain finance.",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/business/2026/08/11/coinbase-picks-abu-dhabi-for-its-global-tokenized-asset-push"
+        },
+        {
+          "text": "A critical Ravencoin block flaw could lead to a four-day rollback, putting recent deposits, withdrawals and payments at risk of reversal.",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/tech/2026/08/11/ravencoin-could-roll-back-four-days-of-transactions-after-critical-block-flaw"
+        }
+      ],
+      "trendAnalysis": "Bitcoin rose 0.31 per cent to $63,742 but remains confined below $65,000 as ETF demand offsets selling and macro data dominate near-term direction. Institutional tokenisation is advancing through bank and exchange initiatives, while protocol-level vulnerabilities underline persistent infrastructure risk."
+    }
+  },
+  {
     "date": "2026-08-11",
     "macro": {
       "brentCrude": { "value": "$87.71", "change": "-0.01%", "trend": "down" },
