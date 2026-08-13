@@ -1,5 +1,92 @@
 const newsData = [
   {
+    "date": "2026-08-13",
+    "macro": {
+      "brentCrude": { "value": "$87.98", "change": "-1.12%", "trend": "down" },
+      "bitcoin": { "value": "$63,396", "change": "-0.02%", "trend": "down" },
+      "sp500": { "value": "7,748.50", "change": "+0.26%", "trend": "up" },
+      "nasdaq": { "value": "26,588.49", "change": "+0.54%", "trend": "up" }
+    },
+    "tech": {
+      "sentiment": "Neutral",
+      "summary": [
+        {
+          "text": "Japanese businesses are adopting artificial intelligence slowly, with risk aversion and conservatism cited as key obstacles.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/cwymw4434v7o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "text": "Brazil's data-protection authority ordered Discord to suspend livestreams; the company said it was reviewing the order and remained committed to user safety.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/cgewpqxyrddo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "text": "AI service buyers are struggling to control costs while providers remain uncertain how to price their products.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/c872r52x7jgo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "text": "Wall Street investors committed $500 billion to Nvidia for artificial-intelligence data-centre infrastructure.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/c78gr0jv0mdo?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "trendAnalysis": "AI investment remains powerful, as reflected in Nvidia's new backing and the Nasdaq's 0.54 per cent gain, but adoption and monetisation are uneven. Enterprise caution in Japan, uncertain service economics and tighter platform oversight show that scaling AI remains as much an organisational challenge as a technical one."
+    },
+    "stocks": {
+      "sentiment": "Neutral",
+      "summary": [
+        {
+          "text": "US annual inflation eased to 3.4 per cent in July as food and fuel costs cooled, although housing kept price growth elevated.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/c0qv2nn1gpeo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "text": "The prime minister warned that the Iran war could weigh on UK growth next year through higher oil and fuel prices and disrupted supply chains.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/c5y3egv4m4mo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "text": "A lawsuit challenged Truth Social's plan to sell early access to Donald Trump's potentially market-moving posts for $100,000.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/cq6dpm5y0yyo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "text": "Tata Group chairman Chandrasekaran said he would not seek reappointment when his term ends, citing insufficient board support.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/c1512909pgpo?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "trendAnalysis": "Equities recovered modestly, with the S&P 500 up 0.26 per cent and Nasdaq up 0.54 per cent, as softer US inflation supported sentiment. However, Brent remained high at $87.98 despite its daily decline, while Middle East disruption and corporate-governance developments sustain a mixed outlook."
+    },
+    "crypto": {
+      "sentiment": "Neutral",
+      "summary": [
+        {
+          "text": "Goldman Sachs agreed to buy NEOS for $2.25 billion, expanding its Bitcoin-income ETF capability and derivative platform.",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/business/2026/08/12/goldman-sachs-leaps-into-bitcoin-income-etfs-with-usd2-25-billion-neos-buyout"
+        },
+        {
+          "text": "Securitize shares fell 20 per cent after an earnings miss, as tokenisation revenue failed to meet expectations despite record tokenised assets and stronger trading activity.",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/08/12/securitize-falls-20-after-earnings-miss-as-tokenization-revenue-falls-short"
+        },
+        {
+          "text": "Solana nearly froze after a network issue, according to Marinade Finance.",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/tech/2026/08/12/smart-contract-blockchain-solana-nearly-froze-wednesday-marinade-finance-says"
+        },
+        {
+          "text": "Russia moved to limit retail crypto trading to Bitcoin, Ether and USDT, with non-qualified investors facing a 300,000-ruble annual purchase cap per intermediary.",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/policy/2026/08/12/russia-moves-to-restrict-retail-crypto-trading-to-bitcoin-ether-and-usdt"
+        }
+      ],
+      "trendAnalysis": "Bitcoin was broadly flat at $63,396 after US inflation matched expectations, while institutional activity continued to expand through Goldman Sachs' ETF acquisition. The picture remains balanced: tokenisation revenue is under pressure, network resilience remains a risk and retail access is tightening in some markets."
+    }
+  },
+  {
     "date": "2026-08-12",
     "macro": {
       "brentCrude": { "value": "$89.76", "change": "+0.96%", "trend": "up" },
