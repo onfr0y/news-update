@@ -1,5 +1,92 @@
 const newsData = [
   {
+    "date": "2026-08-14",
+    "macro": {
+      "brentCrude": { "value": "$86.93", "change": "-0.16%", "trend": "down" },
+      "bitcoin": { "value": "$63,459", "change": "+0.08%", "trend": "up" },
+      "sp500": { "value": "7,798.99", "change": "+0.65%", "trend": "up" },
+      "nasdaq": { "value": "26,803.03", "change": "+0.81%", "trend": "up" }
+    },
+    "tech": {
+      "sentiment": "Neutral",
+      "summary": [
+        {
+          "text": "Twitch users criticised Amazon's opt-out approach to using channel content for generative-AI training.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/cp30pz8d09jo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "text": "Flock's chief executive admitted the surveillance firm was too slow to respond after US police officers misused licence-plate cameras to track romantic partners.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/crrv1rjwgl9o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "text": "Bumble removed its signature women-first chat rule following a successful trial and changing user preferences.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/cvglzlj81x2o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "text": "Japanese businesses continue to adopt AI slowly, with risk aversion and conservatism identified as major constraints.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/cwymw4434v7o?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "trendAnalysis": "Technology equities recovered, with the Nasdaq up 0.81 per cent, but data governance and public trust are becoming more significant operational issues. Twitch's AI-training dispute and Flock's surveillance failures illustrate heightened scrutiny, while slow enterprise adoption in Japan shows that technical opportunity is not translating uniformly into deployment."
+    },
+    "stocks": {
+      "sentiment": "Neutral",
+      "summary": [
+        {
+          "text": "The UK economy grew, helped by hot weather and the men's World Cup, although analysts warned the Iran war could weigh on the months ahead.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/cx2d1gpx2k0o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "text": "Ofwat provisionally approved extra funding for 13 water companies, meaning many customers face higher bills to fund investment.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/cx2j1j5ypjdo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "text": "Harvey Nichols was bought by the owner of Sports Direct after the department store warned it might cease trading.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/cd69p89gl6xo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "text": "Official analysis estimated that the zero-hours-contract crackdown could cost businesses up to £2.9 billion a year.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/c0l525k76d0o?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "trendAnalysis": "The S&P 500 rose 0.65 per cent as equity sentiment improved and Brent eased slightly to $86.93. Growth and takeover activity are constructive, but rising utility costs, labour regulation and geopolitical pressure leave corporate conditions uneven."
+    },
+    "crypto": {
+      "sentiment": "Neutral",
+      "summary": [
+        {
+          "text": "The US Securities and Exchange Commission abruptly postponed its long-awaited Reg Crypto proposal meeting without setting a new date.",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/policy/2026/08/13/sec-cancels-long-awaited-proposal-of-reg-crypto-postponing-meeting-without-new-date"
+        },
+        {
+          "text": "Tether said KPMG US completed a Big Four audit of the finances behind its $180 billion USDT stablecoin, including its gold holdings.",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/business/2026/08/13/tether-says-it-completed-long-promised-big-four-audit-of-finances-behind-usd180-billion-usdt-stablecoin"
+        },
+        {
+          "text": "Trezor warned 14,000 customers after a fulfilment partner breach exposed shipping addresses for the first time.",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/tech/2026/08/13/trezor-warns-14-000-users-after-fulfilment-partner-suffers-data-breach"
+        },
+        {
+          "text": "MUFG is preparing a proof of concept for real-time blockchain settlement of Japanese government-bond trades using the Canton network.",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/business/2026/08/13/mufg-to-test-real-time-blockchain-settlement-for-japanese-government-bond-trades"
+        }
+      ],
+      "trendAnalysis": "Bitcoin gained 0.08 per cent to $63,459 and remains near $64,000 in a low-volatility range. Institutional settlement initiatives and Tether's reported audit support market infrastructure, yet regulatory delays and a fresh customer-data breach keep the near-term risk balance neutral."
+    }
+  },
+  {
     "date": "2026-08-13",
     "macro": {
       "brentCrude": { "value": "$87.98", "change": "-1.12%", "trend": "down" },
