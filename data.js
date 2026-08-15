@@ -1,5 +1,92 @@
 const newsData = [
   {
+    "date": "2026-08-15",
+    "macro": {
+      "brentCrude": { "value": "$88.59", "change": "+1.75%", "trend": "up" },
+      "bitcoin": { "value": "$62,937", "change": "-0.07%", "trend": "down" },
+      "sp500": { "value": "7,785.76", "change": "-0.17%", "trend": "down" },
+      "nasdaq": { "value": "26,729.16", "change": "-0.28%", "trend": "down" }
+    },
+    "tech": {
+      "sentiment": "Neutral",
+      "summary": [
+        {
+          "text": "Meta chief executive Mark Zuckerberg joined other technology leaders in publishing a lengthy public statement on artificial intelligence.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/cz97ljy91zxo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "text": "Google enabled Gemini AI features in Classroom for K-12 schools that permit student access, extending automatic availability beyond users aged 18 and over.",
+          "source": "The New York Times",
+          "url": "https://www.nytimes.com/2026/08/14/business/google-gemini-ai-schools.html"
+        },
+        {
+          "text": "Amazon and Alphabet's investment gains highlight how the fortunes of major technology companies are increasingly linked through the AI boom.",
+          "source": "The New York Times",
+          "url": "https://www.nytimes.com/2026/08/14/business/ai-tech-profits.html"
+        },
+        {
+          "text": "Nvidia received $500 billion in backing from Wall Street firms for data-centre infrastructure to support AI projects.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/c78gr0jv0mdo?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "trendAnalysis": "AI investment and product deployment remain the sector's central drivers, from Nvidia's data-centre funding to Google's expansion in schools. However, the Nasdaq fell 0.28 per cent and the increasingly interconnected earnings exposure of the largest platforms means a reversal in AI spending would have broad market effects."
+    },
+    "stocks": {
+      "sentiment": "Bearish",
+      "summary": [
+        {
+          "text": "The UK government is considering cutting its 2030 target for new electric-car sales from 80 per cent to 50 per cent after pressure from manufacturers.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/c1l1yj0zd9no?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "text": "A US report said China moved goods through lower-tariff countries to avoid higher levies, with dozens of countries said to have helped the practice.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/c78gy6ep3n5o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "text": "South Korean investors reported heavy losses after a sharp correction in the country's stock market.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/c2k7zj4knwlo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "text": "The UK economy grew with help from hot weather and the men's World Cup, but analysts warned the Iran war could weigh on growth in the months ahead.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/cx2d1gpx2k0o?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "trendAnalysis": "Risk appetite weakened, with the S&P 500 down 0.17 per cent and the Nasdaq down 0.28 per cent while Brent rose 1.75 per cent to $88.59. Pressure on Korean equities, trade-circumvention allegations and geopolitical growth risks point to a more fragile backdrop despite UK growth."
+    },
+    "crypto": {
+      "sentiment": "Bearish",
+      "summary": [
+        {
+          "text": "The US Office of the Comptroller of the Currency granted preliminary conditional approval for a bank charter to Trump-backed World Liberty Trust Co.",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/policy/2026/08/14/trump-backed-world-liberty-wins-conditional-bank-charter-from-federal-regulator"
+        },
+        {
+          "text": "Shares in tokenisation-linked firms including Bullish, Coinbase and Circle fell after an SEC delay slowed the push to bring crypto infrastructure to Wall Street.",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/08/14/tokenization-stocks-slip-as-sec-delay-puts-speed-bump-in-crypto-s-wall-street-push"
+        },
+        {
+          "text": "Bank Leumi, Israel's largest bank, plans to let customers trade bitcoin, ether and solana through its investment app from early 2027 with Galaxy.",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/08/14/israel-s-largest-bank-partners-with-galaxy-for-crypto-trading"
+        },
+        {
+          "text": "Bitcoin slipped as US inflation data did not lift prices and spot bitcoin ETFs recorded their first two-day outflow streak of August.",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/08/14/bitcoin-slips-as-u-s-inflation-fails-to-spark-gains-etfs-see-august-s-first-two-day-drawdown"
+        }
+      ],
+      "trendAnalysis": "Bitcoin was down 0.07 per cent at $62,937 as ETF outflows and delayed SEC action restrained near-term appetite. Bank-led access and the conditional charter point to continuing institutionalisation, but these longer-term developments have not offset immediate regulatory and flow pressure."
+    }
+  },
+  {
     "date": "2026-08-14",
     "macro": {
       "brentCrude": { "value": "$86.93", "change": "-0.16%", "trend": "down" },
