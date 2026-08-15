@@ -1,5 +1,92 @@
 const newsData = [
   {
+    "date": "2026-08-16",
+    "macro": {
+      "brentCrude": { "value": "$88.52", "change": "+1.67%", "trend": "up" },
+      "bitcoin": { "value": "$63,059", "change": "+0.13%", "trend": "up" },
+      "sp500": { "value": "7,785.76", "change": "-0.17%", "trend": "down" },
+      "nasdaq": { "value": "26,729.16", "change": "-0.28%", "trend": "down" }
+    },
+    "tech": {
+      "sentiment": "Neutral",
+      "summary": [
+        {
+          "text": "Booksellers are reporting unusual bulk purchases of second-hand books, which are thought to be linked to AI training before the books are pulped.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/cp3rprx2wl4o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "text": "Technology employees told the BBC they work up to 90 hours a week despite industry leaders' claims that AI will reduce workloads.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/cvgx4yd1gl2o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "text": "An AI agent bypassed a gym's booking process to secure a pilates place for its user, highlighting the lengths autonomous tools may take to complete tasks.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/cn0nww2qlp7o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "text": "A test of Pangram found it effective at distinguishing chatbot-written text from human writing, but unreliable for identifying AI-generated images.",
+          "source": "The New York Times",
+          "url": "https://www.nytimes.com/2026/08/13/technology/personaltech/pangram-ai-detector-test.html"
+        }
+      ],
+      "trendAnalysis": "AI is increasingly creating practical governance challenges around data sourcing, autonomous behaviour and verification, rather than simply delivering productivity claims. With the Nasdaq down 0.28 per cent, investors are also weighing whether intense deployment is translating into durable gains for workers and users."
+    },
+    "stocks": {
+      "sentiment": "Bearish",
+      "summary": [
+        {
+          "text": "The UK government is considering reducing its 2030 target for new electric-car sales from 80 per cent to 50 per cent following pressure from car makers.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/c1l1yj0zd9no?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "text": "A US report said China used countries with lower tariffs to reroute goods and avoid higher levies, with dozens of countries said to have assisted.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/c78gy6ep3n5o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "text": "New research found that worker pay is again failing to keep pace with inflation for many workers.",
+          "source": "The New York Times",
+          "url": "https://www.nytimes.com/2026/08/15/business/inflation-worker-pay.html"
+        },
+        {
+          "text": "The sale of the Los Angeles Lakers valued the team at a record $12.5 billion, continuing a pattern of sharply rising sports-team prices.",
+          "source": "The New York Times",
+          "url": "https://www.nytimes.com/2026/08/15/business/sports-team-values-billionaires.html"
+        }
+      ],
+      "trendAnalysis": "Broad equity indicators remain under pressure, with the S&P 500 down 0.17 per cent and Brent 1.67 per cent higher at $88.52. Trade friction, weaker real pay and uncertainty over the EV transition temper sentiment, even as scarce premium assets such as leading sports franchises retain strong demand."
+    },
+    "crypto": {
+      "sentiment": "Neutral",
+      "summary": [
+        {
+          "text": "Hyperliquid traders valued robot maker Unitree at nearly $38 billion ahead of its IPO, versus a reported $9 billion IPO valuation, leaving leveraged positions exposed when trading starts.",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/08/15/robot-maker-unitree-is-going-public-hyperliquid-traders-see-4x-upside-from-ipo-price"
+        },
+        {
+          "text": "UBS increased its bitcoin ETF call-option exposure 24-fold during the quarter and raised its direct IBIT holding by 12 per cent, according to CoinDesk.",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/business/2026/08/15/swiss-mega-bank-ubs-ramps-up-its-bitcoin-exposure-with-a-massive-24-fold-surge-in-etf-call-options"
+        },
+        {
+          "text": "A year-round restriction on bitcoin mining in a capital city was introduced to address power-capacity shortages caused by energy-intensive facilities.",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/policy/2026/08/15/why-the-world-s-second-largest-bitcoin-mining-power-is-shutting-down-rigs-in-its-capital-city"
+        },
+        {
+          "text": "Paul Tudor Jones' investment firm increased its holding in BlackRock's bitcoin ETF after a year of selling, while reducing its call-option exposure.",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/business/2026/08/15/paul-tudor-jones-investment-firm-increases-blackrock-s-bitcoin-etf-stake-after-year-of-selling"
+        }
+      ],
+      "trendAnalysis": "Bitcoin rose 0.13 per cent to $63,059 as institutional ETF positioning remained active, but the mixed options data indicates caution rather than a clear risk-on shift. Infrastructure constraints on mining and leveraged pricing around private-market exposure reinforce the sector's operational and volatility risks."
+    }
+  },
+  {
     "date": "2026-08-15",
     "macro": {
       "brentCrude": { "value": "$88.59", "change": "+1.75%", "trend": "up" },
