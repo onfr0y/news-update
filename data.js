@@ -1,5 +1,92 @@
 const newsData = [
   {
+    "date": "2026-08-17",
+    "macro": {
+      "brentCrude": { "value": "$88.63", "change": "+0.12%", "trend": "up" },
+      "bitcoin": { "value": "$62,864", "change": "-0.25%", "trend": "down" },
+      "sp500": { "value": "7,785.76", "change": "-0.17%", "trend": "down" },
+      "nasdaq": { "value": "26,729.16", "change": "-0.28%", "trend": "down" }
+    },
+    "tech": {
+      "sentiment": "Neutral",
+      "summary": [
+        {
+          "text": "Mobile game No 10: Full Confidence rose above Minecraft in the UK App Store's paid-games chart.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/cq56pzqy6jvo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "text": "The New York Times examined how growing reliance on AI chatbots at work, school and in relationships could reshape online communication as bots interact with one another.",
+          "source": "The New York Times",
+          "url": "https://www.nytimes.com/2026/08/14/magazine/ai-chatbots-internet-communication-loops.html"
+        },
+        {
+          "text": "A judge affirmed a settlement permitting Hewlett Packard Enterprise's acquisition of Juniper after some states opposed the agreement.",
+          "source": "The New York Times",
+          "url": "https://www.nytimes.com/2026/08/13/technology/hpe-juniper-justice-department-settlement.html"
+        },
+        {
+          "text": "Iranian online debate programme Azad has aired discussions that test the limits of the country's authoritarian system, prompting questions over how it has remained available.",
+          "source": "The New York Times",
+          "url": "https://www.nytimes.com/2026/08/15/world/middleeast/iran-youtube-show.html"
+        }
+      ],
+      "trendAnalysis": "Consumer attention, communications platforms and network consolidation are moving in different directions, while AI's social effects are becoming more visible. The Nasdaq's 0.28 per cent decline reflects a cautious backdrop for technology assets even as platform reach and infrastructure scale continue to expand."
+    },
+    "stocks": {
+      "sentiment": "Bearish",
+      "summary": [
+        {
+          "text": "New UK planning rules will make it harder to convert pubs into homes from Monday.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/clyllg1v0kdo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "text": "The UK temporarily banned disposable barbecues and deployed military support to help address wildfire risks during drought and heatwave conditions.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/c0jlyqdj6geo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "text": "US policymakers are seeking ways to ensure communities share in the benefits as AI data centres expand, rather than leaving gains solely with technology companies.",
+          "source": "The New York Times",
+          "url": "https://www.nytimes.com/2026/08/16/business/ai-data-centers.html"
+        },
+        {
+          "text": "Google, Apple, Samsung and Oura are competing to integrate wearable-device data into the healthcare system.",
+          "source": "The New York Times",
+          "url": "https://www.nytimes.com/2026/08/15/business/dealbook/wearables-healthcare.html"
+        }
+      ],
+      "trendAnalysis": "The S&P 500 remains down 0.17 per cent while Brent edged higher to $88.63, preserving pressure on the wider risk outlook. Regulation and climate disruption are creating new costs and constraints, although competition in healthcare wearables and data-centre investment continues to support selected growth areas."
+    },
+    "crypto": {
+      "sentiment": "Bearish",
+      "summary": [
+        {
+          "text": "A US Securities and Exchange Commission meeting expected to advance crypto policy did not take place, leaving hopes for regulatory movement on hold.",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/policy/2026/08/16/the-sec-meeting-that-wasn-t-state-of-crypto"
+        },
+        {
+          "text": "Industry executives said investors are increasingly assessing tokens by usage, economics and value capture rather than market-cap rankings.",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/business/2026/08/16/crypto-investors-are-looking-past-market-cap-rankings-and-back-to-fundamentals"
+        },
+        {
+          "text": "Crypto wallet provider SafePal disclosed a breach exposing order information for nearly 40,000 customers, while saying private keys, seed phrases and assets remained safe.",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/tech/2026/08/16/crypto-wallet-safepal-reveals-a-data-breach-exposing-nearly-40-000-customers-order-info"
+        },
+        {
+          "text": "CoinDesk reported an increase in scams impersonating regulators and licensed exchanges as users migrate accounts following the EU's MiCA deadline.",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/business/2026/08/14/mica-s-cleanup-is-creating-a-new-scam-wave-across-the-european-union"
+        }
+      ],
+      "trendAnalysis": "Bitcoin fell 0.25 per cent to $62,864 as policy uncertainty and security concerns kept the near-term balance negative. A greater focus on token fundamentals may improve market discipline over time, but regulatory delay, customer-data exposure and fraud risks remain immediate headwinds."
+    }
+  },
+  {
     "date": "2026-08-16",
     "macro": {
       "brentCrude": { "value": "$88.52", "change": "+1.67%", "trend": "up" },
