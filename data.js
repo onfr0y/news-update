@@ -1,5 +1,92 @@
 const newsData = [
   {
+    "date": "2026-08-18",
+    "macro": {
+      "brentCrude": { "value": "$91.26", "change": "+0.43%", "trend": "up" },
+      "bitcoin": { "value": "$64,064", "change": "-0.66%", "trend": "down" },
+      "sp500": { "value": "7,745.06", "change": "-0.52%", "trend": "down" },
+      "nasdaq": { "value": "26,644.91", "change": "-0.32%", "trend": "down" }
+    },
+    "tech": {
+      "sentiment": "Bearish",
+      "summary": [
+        {
+          "text": "US states are suing Meta in a child-privacy trial that could force major changes to Instagram and Facebook.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/clyqpx6xk69o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "text": "Spotify, LinkedIn and other platforms are attempting to limit low-quality AI-generated content, according to The New York Times.",
+          "source": "The New York Times",
+          "url": "https://www.nytimes.com/2026/08/17/technology/ai-slop.html"
+        },
+        {
+          "text": "Nvidia plans to back an Ohio data centre that could cost up to $500 billion and is set to be leased by OpenAI.",
+          "source": "The New York Times",
+          "url": "https://www.nytimes.com/2026/08/17/technology/nvidia-ohio-data-center-openai.html"
+        },
+        {
+          "text": "China is seeking to have its data influence global AI chatbots, raising concerns that Beijing's narratives could spread through the technology.",
+          "source": "The New York Times",
+          "url": "https://www.nytimes.com/2026/08/17/world/asia/china-ai-data-chatbots.html"
+        }
+      ],
+      "trendAnalysis": "AI infrastructure investment remains extraordinary, but it is increasingly accompanied by legal, content-quality and geopolitical risk. The Nasdaq fell 0.32 per cent, indicating that investors remain cautious as capital requirements and regulatory exposure grow alongside the technology's reach."
+    },
+    "stocks": {
+      "sentiment": "Bearish",
+      "summary": [
+        {
+          "text": "US-Canada trade negotiations intensified as a tariff deadline approached, with any concessions likely to require political backing in Canada.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/crl7600rpnko?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "text": "Virgin took a step towards running Channel Tunnel rail services, proposing up to 20 daily European journeys subject to further approvals.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/cjrvx4yye81o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "text": "The UK film commission backed Amazon MGM's expansion of its Berkshire studios.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/c9d8wjvd2q4o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "text": "Paramount said its $111 billion Warner Bros. Discovery acquisition could cost millions because the deal has been postponed pending the outcome of a trial.",
+          "source": "The New York Times",
+          "url": "https://www.nytimes.com/2026/08/17/business/paramount-warner-bros-antitrust-trial.html"
+        }
+      ],
+      "trendAnalysis": "The S&P 500 fell 0.52 per cent as trade uncertainty and higher energy costs weighed on sentiment, with Brent at $91.26. Investment in transport and studio capacity offers pockets of expansion, but tariff risk and antitrust delay underline the more difficult operating environment."
+    },
+    "crypto": {
+      "sentiment": "Bearish",
+      "summary": [
+        {
+          "text": "The US Treasury proposed a rule to establish core definitions and jurisdictions under the GENIUS Act stablecoin law.",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/policy/2026/08/17/u-s-treasury-department-proposes-genius-act-stablecoin-rule"
+        },
+        {
+          "text": "DeFi lending protocol Compound committed $52 million and appointed new leadership as it shifts towards institutional users after a decline in assets locked.",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/business/2026/08/17/compound-bets-usd52-million-new-leadership-team-in-switch-to-institutional-focus"
+        },
+        {
+          "text": "BitMine increased its Ethereum holdings to 4.8 per cent of supply after buying another 9,926 ETH, extending a buying programme begun in June 2025.",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/08/17/tom-lee-s-bitmine-now-owns-4-8-of-ethereum-supply-after-latest-eth-purchase"
+        },
+        {
+          "text": "Israel's Bits of Gold disclosed a breach affecting 200,000 customers that may have exposed names, bank details and national ID numbers, though it said funds were untouched.",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/tech/2026/08/17/israel-s-largest-crypto-broker-bits-of-gold-hit-by-data-breach-affecting-200-000-customers"
+        }
+      ],
+      "trendAnalysis": "Bitcoin fell 0.66 per cent to $64,064 as outflows and security concerns continued to cloud market confidence. Progress on stablecoin rules and institutional repositioning may support longer-term integration, but large concentration bets and recurring data breaches keep the immediate risk balance negative."
+    }
+  },
+  {
     "date": "2026-08-17",
     "macro": {
       "brentCrude": { "value": "$88.63", "change": "+0.12%", "trend": "up" },
