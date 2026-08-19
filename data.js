@@ -1,5 +1,92 @@
 const newsData = [
   {
+    "date": "2026-08-19",
+    "macro": {
+      "brentCrude": { "value": "$91.69", "change": "+0.74%", "trend": "up" },
+      "bitcoin": { "value": "$64,288", "change": "-0.61%", "trend": "down" },
+      "sp500": { "value": "7,691.76", "change": "-0.69%", "trend": "down" },
+      "nasdaq": { "value": "26,289.71", "change": "-1.33%", "trend": "down" }
+    },
+    "tech": {
+      "sentiment": "Bearish",
+      "summary": [
+        {
+          "text": "Ukraine's war has prompted greater interest in placing vital technology infrastructure underground to improve its resilience.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/c20ydrndr0wo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "text": "A US court heard allegations that Meta hooked children on Facebook and Instagram; Meta argued that social-media addiction does not exist.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/cly5r7vr7q1o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "text": "OpenAI updated ChatGPT for teenagers to make it less human-like, with the company saying the change was not prompted by a specific incident.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/czxqz91n5n8o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "text": "A UK trial will use AI to help aircraft avoid condensation trails that trap heat in the atmosphere.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/c62em5lpvnjo?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "trendAnalysis": "Technology is being deployed for resilience, climate mitigation and youth safety, but social-platform litigation remains a material risk. The Nasdaq's 1.33 per cent decline signals a sharply weaker market backdrop as investors reassess the sector's regulatory and execution challenges."
+    },
+    "stocks": {
+      "sentiment": "Bearish",
+      "summary": [
+        {
+          "text": "President Trump delayed new tariffs on a broad range of Canadian goods for three days, saying the two countries were close to a trade agreement.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/cy9wz79ze29o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "text": "Chinese humanoid-robot maker Unitree surged in its Shanghai stock-market debut.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/c0qv4w9492zo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "text": "Long-term government borrowing costs in the US, UK, Germany and Japan rose to fresh highs amid pressure from oil, AI investment and inflation.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/c1k1x1zdywdo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "text": "UK job vacancies fell to a five-year low as smaller companies reduced hiring in response to labour and operating costs.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/cn9nwx090v9o?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "trendAnalysis": "The S&P 500 fell 0.69 per cent while the Nasdaq dropped 1.33 per cent and Brent rose to $91.69. Higher global borrowing costs and weaker UK hiring outweigh positive pockets such as Unitree's listing, while the short tariff pause leaves trade uncertainty unresolved."
+    },
+    "crypto": {
+      "sentiment": "Neutral",
+      "summary": [
+        {
+          "text": "The US Securities and Exchange Commission issued its Regulation Crypto proposal after previously cancelling a meeting intended to consider it.",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/policy/2026/08/18/r"
+        },
+        {
+          "text": "The US Financial Accounting Standards Board proposed allowing certain stablecoins to be treated as cash equivalents.",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/policy/2026/08/18/u-s-accounting-standards-group-proposes-way-to-see-stablecoins-as-cash-equivalent"
+        },
+        {
+          "text": "Citi plans to launch bitcoin custody for institutional clients later this year through its Custody+ platform.",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/08/18/citi-plans-to-launch-bitcoin-custody-for-institutional-clients-later-this-year"
+        },
+        {
+          "text": "Kraken said it is offering European customers US equities and tokenised versions of those assets on one regulated platform.",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/08/18/kraken-adds-u-s-stocks-in-europe-as-tradfi-crypto-divide-blurs"
+        }
+      ],
+      "trendAnalysis": "Bitcoin declined 0.61 per cent to $64,288 alongside a broader risk-asset sell-off, but regulatory and institutional developments are constructive. A formal SEC proposal, potential stablecoin accounting treatment and new custody and brokerage services deepen conventional-finance links, keeping the outlook balanced despite market weakness."
+    }
+  },
+  {
     "date": "2026-08-18",
     "macro": {
       "brentCrude": { "value": "$91.26", "change": "+0.43%", "trend": "up" },
