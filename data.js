@@ -1,5 +1,44 @@
 const newsData = [
   {
+    "date": "2026-08-21",
+    "macro": {
+      "brentCrude": { "value": "$93.24", "change": "-0.58%", "trend": "down" },
+      "bitcoin": { "value": "$72,673", "change": "+4.88%", "trend": "up" },
+      "sp500": { "value": "7,641.16", "change": "-0.87%", "trend": "down" },
+      "nasdaq": { "value": "26,067.17", "change": "-1.00%", "trend": "down" }
+    },
+    "tech": {
+      "sentiment": "Neutral",
+      "summary": [
+        { "text": "Short-form video app Divine opened to the public, allowing users to make six-second looping videos and hosting more than two million classic clips.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/c3r05g378w4o?at_medium=RSS&at_campaign=rss" },
+        { "text": "A UK business said its monthly Harvest invoicing-software bill rose from $130 to $2,110, describing the increase as daylight robbery.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/clyq011414eo?at_medium=RSS&at_campaign=rss" },
+        { "text": "A New Jersey teenager dropped a bellwether social-media addiction case that was among lawsuits which could expose Meta, YouTube, Snap and TikTok to damages and design changes.", "source": "The New York Times", "url": "https://www.nytimes.com/2026/08/20/technology/social-media-addiction-lawsuit-dropped.html" },
+        { "text": "Two Binance employees were detained and later released in the United Arab Emirates, highlighting legal pressure on the exchange in the country where its main regulator is based.", "source": "The New York Times", "url": "https://www.nytimes.com/2026/08/20/technology/two-binance-employees-detained-uae.html" }
+      ],
+      "trendAnalysis": "The technology sector faces persistent regulatory, pricing and legal-pressure risks despite continued consumer-platform innovation. The Nasdaq fell 1.00 per cent, reflecting a more defensive environment in which trust, affordability and compliance are increasingly important to product adoption."
+    },
+    "stocks": {
+      "sentiment": "Bearish",
+      "summary": [
+        { "text": "Travelodge's chief executive resigned as the hotel chain addressed security concerns following a sexual assault at one of its properties.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/c2k7e7zwxvyo?at_medium=RSS&at_campaign=rss" },
+        { "text": "Walmart recorded its slowest sales growth in six years as high petrol prices and weaker pharmacy sales made US consumers more cautious.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cpq8rjy7vxlo?at_medium=RSS&at_campaign=rss" },
+        { "text": "The founder of collapsed Chinese property group Evergrande was sentenced to life in prison, marking a major development in the company's fallout.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cd0x9mjjmgjo?at_medium=RSS&at_campaign=rss" },
+        { "text": "Danone's €1 billion acquisition of Huel was approved by the competition watchdog, supporting the French group's expansion in nutrition.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/crl7y671w8go?at_medium=RSS&at_campaign=rss" }
+      ],
+      "trendAnalysis": "Consumer caution, corporate-governance pressure and China's property-sector consequences outweighed selective deal activity, with the S&P 500 down 0.87 per cent. Brent eased 0.58 per cent to $93.24, but the sharp fall in the Nasdaq points to a broader risk-off tone."
+    },
+    "crypto": {
+      "sentiment": "Bullish",
+      "summary": [
+        { "text": "The CFTC chairman directed staff to develop crypto regulations if the Clarity Act does not pass, saying the agency would not remain inactive.", "source": "CoinDesk", "url": "https://www.coindesk.com/policy/2026/08/20/u-s-cftc-chief-puts-staff-on-notice-to-create-crypto-regulations-if-clarity-act-fails" },
+        { "text": "Bitcoin's move above $71,000 created the conditions for a bullish golden-cross pattern, though CoinDesk noted that the rally still faces a key test.", "source": "CoinDesk", "url": "https://www.coindesk.com/markets/2026/08/20/bitcoin-s-jump-above-usd71-000-sets-up-bullish-golden-cross-pattern" },
+        { "text": "Banks are moving deposits on-chain through permissioned systems, with privacy and compliance shaping the adoption of tokenised deposits.", "source": "CoinDesk", "url": "https://www.coindesk.com/coindesk-indices/2026/08/20/crypto-for-advisors-what-are-tokenized-deposits" },
+        { "text": "BitGo secured a South Korean virtual-asset licence after building a locally registered entity to serve institutional and enterprise clients.", "source": "CoinDesk", "url": "https://www.coindesk.com/business/2026/08/20/bitgo-secures-south-korea-virtual-asset-license-says-it-s-the-first-global-crypto-company-to-do-so" }
+      ],
+      "trendAnalysis": "Bitcoin surged 4.88 per cent to $72,673, substantially outperforming falling equity markets. Regulatory contingency planning, tokenised-deposit infrastructure and new institutional licences support the rally's structural case, although technical momentum alone should not be treated as a guarantee of further gains."
+    }
+  },
+  {
     "date": "2026-08-20",
     "macro": {
       "brentCrude": { "value": "$92.11", "change": "+0.53%", "trend": "up" },
