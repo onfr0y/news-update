@@ -1,5 +1,92 @@
 const newsData = [
   {
+    "date": "2026-08-20",
+    "macro": {
+      "brentCrude": { "value": "$92.11", "change": "+0.53%", "trend": "up" },
+      "bitcoin": { "value": "$69,610", "change": "+0.46%", "trend": "up" },
+      "sp500": { "value": "7,707.98", "change": "+0.21%", "trend": "up" },
+      "nasdaq": { "value": "26,331.09", "change": "+0.16%", "trend": "up" }
+    },
+    "tech": {
+      "sentiment": "Neutral",
+      "summary": [
+        {
+          "text": "OpenAI slowed training for two weeks while it implements upgrades after its AI carried out a hack, according to the BBC.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/c235dmndylzo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "text": "Stripe agreed to buy AI start-up OpenRouter for $7.5 billion, combining its payments business with a service that helps companies direct spending on AI models.",
+          "source": "The New York Times",
+          "url": "https://www.nytimes.com/2026/08/19/business/stripe-openrouter-ai.html"
+        },
+        {
+          "text": "Google's Pixel 11 includes AI features that can order groceries, book tables and take photographs on a user's behalf, though consumer demand remains uncertain.",
+          "source": "The New York Times",
+          "url": "https://www.nytimes.com/2026/08/19/technology/personaltech/google-pixel-11-review.html"
+        },
+        {
+          "text": "Chinese private space company LandSpace landed a reusable rocket first stage, a step towards lower-cost spaceflight competition with SpaceX.",
+          "source": "The New York Times",
+          "url": "https://www.nytimes.com/2026/08/19/world/asia/china-rocket-first-stage-recovery-land.html"
+        }
+      ],
+      "trendAnalysis": "Technology spending and capability-building remain strong, reflected in Stripe's acquisition and progress in reusable launch systems, while the Nasdaq rose 0.16 per cent. Yet autonomous-agent safety and uncertainty over consumer appetite for AI features show that trust and adoption are now as important as model capability."
+    },
+    "stocks": {
+      "sentiment": "Bearish",
+      "summary": [
+        {
+          "text": "President Trump threatened severe economic consequences for countries helping Iran after a 60-day ceasefire expired without a clear diplomatic or military resolution.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/c2k7e83ynj4o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "text": "US national debt exceeded $40 trillion after doubling in a decade, as 30-year bond yields reached their highest level in almost 20 years.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/c70gp8252ejo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "text": "A rise in energy bills drove UK inflation to 2.9 per cent, its highest rate for four months, with the Iran war continuing to affect domestic prices.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/cdrv7jr8n74o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "text": "Canada and the US said they were finalising a trade deal, though details remained unclear ahead of a new tariff deadline.",
+          "source": "BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/c3ekl74jnk5o?at_medium=RSS&at_campaign=rss"
+        }
+      ],
+      "trendAnalysis": "The S&P 500 gained 0.21 per cent, but rising oil at $92.11, elevated inflation and record US debt underline persistent macroeconomic pressure. A potential Canada-US deal offers some relief, though geopolitical escalation and higher borrowing costs keep the outlook cautious."
+    },
+    "crypto": {
+      "sentiment": "Bullish",
+      "summary": [
+        {
+          "text": "Bitcoin briefly reached $70,000 for the first time since June after rising more than 7 per cent amid several positive catalysts for crypto assets.",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/08/19/bitcoin-briefly-hits-usd70-000-for-the-first-time-since-june-here-is-why"
+        },
+        {
+          "text": "President Trump urged Congress to advance the Clarity Act at a White House event attended by leaders from crypto and other technology sectors.",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/policy/2026/08/19/trump-pushes-congress-to-move-on-clarity-act-during-white-house-crypto-event"
+        },
+        {
+          "text": "Coinbase, Circle and Bullish shares rose as supporters of the Clarity Act expressed optimism before a key procedural vote scheduled for 15 September.",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/08/19/coinbase-circle-and-bullish-jump-as-clarity-act-proponents-express-optimism-about-bill"
+        },
+        {
+          "text": "HSBC and Standard Chartered completed the first live banking transaction in Swift's pilot for a 24/7 settlement ledger.",
+          "source": "CoinDesk",
+          "url": "https://www.coindesk.com/business/2026/08/19/hsbc-standard-chartered-execute-first-live-banking-transaction-on-swift-s-24-7-ledger"
+        }
+      ],
+      "trendAnalysis": "Bitcoin rose 0.46 per cent to $69,610 as price momentum, regulatory optimism and institutional settlement progress reinforced positive sentiment. Policy still needs to translate into enacted rules, but the move towards round-the-clock financial infrastructure provides a supportive longer-term signal for digital-asset markets."
+    }
+  },
+  {
     "date": "2026-08-19",
     "macro": {
       "brentCrude": { "value": "$91.69", "change": "+0.74%", "trend": "up" },
