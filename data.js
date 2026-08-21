@@ -1,5 +1,44 @@
 const newsData = [
   {
+    "date": "2026-08-22",
+    "macro": {
+      "brentCrude": { "value": "$93.87", "change": "+0.10%", "trend": "up" },
+      "bitcoin": { "value": "$78,381", "change": "+7.35%", "trend": "up" },
+      "sp500": { "value": "7,674.37", "change": "+0.43%", "trend": "up" },
+      "nasdaq": { "value": "26,180.46", "change": "+0.43%", "trend": "up" }
+    },
+    "tech": {
+      "sentiment": "Neutral",
+      "summary": [
+        { "text": "TikTok agreed to pay $400 million to the US in a child-privacy settlement tied to allegations that it and ByteDance collected data on millions of children under 13.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cwyr0l45xjro?at_medium=RSS&at_campaign=rss" },
+        { "text": "Landscape gardening is shifting towards quieter electric equipment, although adoption has been slower than some in the industry would like.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cpq3w3v19veo?at_medium=RSS&at_campaign=rss" },
+        { "text": "HMRC sent 81,000 warning letters to crypto holders in a tax crackdown, almost three times the number issued in 2024, according to a Freedom of Information request.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/c0ej09nywdno?at_medium=RSS&at_campaign=rss" },
+        { "text": "Digital bank Monzo said its card-payment and transfer problems had been resolved and all services were back up and running.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cwyrvxvl1eeo?at_medium=RSS&at_campaign=rss" }
+      ],
+      "trendAnalysis": "Technology adoption remains broad, from electrified equipment to digital banking, but trust and regulatory compliance remain central risks. The Nasdaq rose 0.43 per cent, while TikTok's large settlement and HMRC's tax action show that platform and digital-asset oversight is intensifying."
+    },
+    "stocks": {
+      "sentiment": "Neutral",
+      "summary": [
+        { "text": "Royal Mail again missed regulator-set delivery targets, despite saying its performance had improved.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/c1w1rg208xdo?at_medium=RSS&at_campaign=rss" },
+        { "text": "US borrowing costs rose again after efforts to bring rates down proved short-lived, amid concern over national debt above $40 trillion.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cvg92p3ez17o?at_medium=RSS&at_campaign=rss" },
+        { "text": "UK borrowing exceeded expectations in July as the chancellor prepared for the government's first Budget.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cly8kzkyvwgo?at_medium=RSS&at_campaign=rss" },
+        { "text": "The Panama Canal will cut ship transits because El Niño-related low rainfall has reduced water availability.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cwyl0jkxxryo?at_medium=RSS&at_campaign=rss" }
+      ],
+      "trendAnalysis": "The S&P 500 and Nasdaq each rose 0.43 per cent, but borrowing and supply-chain risks remain material. Higher US and UK funding pressures, weak postal performance and constrained Panama Canal capacity leave the underlying macro outlook more fragile than the modest equity gains suggest."
+    },
+    "crypto": {
+      "sentiment": "Bullish",
+      "summary": [
+        { "text": "Crypto industry groups joined lawsuits challenging Illinois's recently approved 0.2 per cent tax on digital assets.", "source": "CoinDesk", "url": "https://www.coindesk.com/policy/2026/08/21/crypto-advocates-join-in-suing-illinois-over-digital-asset-tax" },
+        { "text": "Coldcard released firmware after a $114 million bitcoin theft and said AI-assisted review uncovered further unrelated bugs, though compromised wallets remain unsafe.", "source": "CoinDesk", "url": "https://www.coindesk.com/tech/2026/08/21/coldcard-ships-firmware-after-usd114-million-bitcoin-theft-says-ai-helped-catch-more-bugs" },
+        { "text": "Nomura-backed Laser Digital won Japan's first crypto approval in four years and plans to provide liquidity and later institutional trading services.", "source": "CoinDesk", "url": "https://www.coindesk.com/policy/2026/08/21/nomura-backed-laser-digital-wins-japan-s-first-crypto-approval-in-four-years" },
+        { "text": "Bitcoin and ether funds drew $606 million and $221 million respectively on 20 August as institutional inflows supported bitcoin's run towards $80,000.", "source": "CoinDesk", "url": "https://www.coindesk.com/tech/2026/08/21/live-updates-bitcoin-ether-etfs-pull-in-usd800-million-as-inflows-surge-for-a-second-day" }
+      ],
+      "trendAnalysis": "Bitcoin rose 7.35 per cent to $78,381, supported by sizeable ETF inflows and new institutional-market access in Japan. Legal disputes and wallet-security failures remain clear risks, but the combination of inflows and regulated adoption keeps near-term sentiment bullish."
+    }
+  },
+  {
     "date": "2026-08-21",
     "macro": {
       "brentCrude": { "value": "$93.24", "change": "-0.58%", "trend": "down" },
