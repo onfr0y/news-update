@@ -1,5 +1,44 @@
 const newsData = [
   {
+    "date": "2026-08-23",
+    "macro": {
+      "brentCrude": { "value": "$94.39", "change": "+0.65%", "trend": "up" },
+      "bitcoin": { "value": "$77,049", "change": "-1.63%", "trend": "down" },
+      "sp500": { "value": "7,674.37", "change": "+0.43%", "trend": "up" },
+      "nasdaq": { "value": "26,180.46", "change": "+0.43%", "trend": "up" }
+    },
+    "tech": {
+      "sentiment": "Neutral",
+      "summary": [
+        { "text": "More than 300 companies showcased robotics advances at a five-day Beijing conference, where a robot horse and rider drew attention.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/videos/cy4k4d3lj21o?at_medium=RSS&at_campaign=rss" },
+        { "text": "Anthropic could seek to raise $100 billion in an IPO that its bankers said may value the AI start-up at $2 trillion.", "source": "The New York Times", "url": "https://www.nytimes.com/2026/08/21/technology/anthropic-ipo-100-billion.html" },
+        { "text": "OpenAI has slowed training for two weeks while it puts safety upgrades in place after an AI carried out a hack.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/c235dmndylzo?at_medium=RSS&at_campaign=rss" },
+        { "text": "The war in Ukraine has prompted interest in putting critical technology infrastructure underground to improve resilience.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/c20ydrndr0wo?at_medium=RSS&at_campaign=rss" }
+      ],
+      "trendAnalysis": "Investment appetite for AI and robotics remains substantial, while security and infrastructure resilience are becoming equally prominent priorities. The Nasdaq rose 0.43 per cent, but the response to AI misuse highlights the operational controls required to sustain confidence in expanding deployment."
+    },
+    "stocks": {
+      "sentiment": "Neutral",
+      "summary": [
+        { "text": "US-Canada trade negotiations went down to the wire ahead of a Friday deadline, with Canadian officials saying more work was needed.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/czjlr0evy0do?at_medium=RSS&at_campaign=rss" },
+        { "text": "Millennials remain less likely to own homes than previous generations at the same age, although recent data suggest affordability may be improving.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cgewlld498xo?at_medium=RSS&at_campaign=rss" },
+        { "text": "A farm-management app designed by a teenage entrepreneur aims to give farmers more time with their families by making businesses easier to manage.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cx2r9gxp3xgo?at_medium=RSS&at_campaign=rss" },
+        { "text": "Iran has found ways around years of sanctions, raising questions over how strongly further US economic measures would affect its economy.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cre4gdvlj9ro?at_medium=RSS&at_campaign=rss" }
+      ],
+      "trendAnalysis": "Equities recovered modestly, with both the S&P 500 and Nasdaq up 0.43 per cent, but Brent rose to $94.39 as geopolitical and trade risks persisted. Improved housing affordability and agricultural technology offer constructive local signals, yet the broader outlook remains dependent on trade negotiations and sanctions pressure."
+    },
+    "crypto": {
+      "sentiment": "Neutral",
+      "summary": [
+        { "text": "BitMart is considering a partial restart and creditor payouts after announcing a shutdown, with restructuring advisers expected to provide a roadmap by 9 September.", "source": "CoinDesk", "url": "https://www.coindesk.com/business/2026/08/22/crypto-exchange-bitmart-weighs-partial-restart-and-creditor-payouts-weeks-after-announcing-shutdown" },
+        { "text": "The Sandbox halted Base and BNB Chain bridging after an exploit, saying the impact was under 0.01 per cent of token supply and warning users not to trade affected SAND tokens.", "source": "CoinDesk", "url": "https://www.coindesk.com/web3/2026/08/22/web3-gaming-network-sandbox-stops-base-and-bnb-chain-bridging-after-exploit" },
+        { "text": "Fairmint's chief executive warned that fragmented systems and standards could make tokenised stocks repeat Wall Street's 1960s paper crisis.", "source": "CoinDesk", "url": "https://www.coindesk.com/tech/2026/08/22/tokenized-stocks-risk-repeating-wall-street-s-1960s-paper-crisis-fairmint-ceo-says" },
+        { "text": "Zcash rose 48 per cent to above $800 as futures volumes increased and Grayscale made progress towards converting its Zcash Trust into a spot ETF.", "source": "CoinDesk", "url": "https://www.coindesk.com/markets/2026/08/22/zcash-tops-usd800-for-first-time-since-2016" }
+      ],
+      "trendAnalysis": "Bitcoin eased 1.63 per cent to $77,049 after its sharp advance, while individual tokens continued to show strong momentum. Exchange restructuring, a bridge exploit and fragmented tokenisation standards reinforce the sector's operational risks, leaving sentiment neutral despite Zcash's ETF-related boost."
+    }
+  },
+  {
     "date": "2026-08-22",
     "macro": {
       "brentCrude": { "value": "$93.87", "change": "+0.10%", "trend": "up" },
