@@ -1,5 +1,44 @@
 const newsData = [
   {
+    "date": "2026-08-24",
+    "macro": {
+      "brentCrude": { "value": "$93.02", "change": "-1.45%", "trend": "down" },
+      "bitcoin": { "value": "$78,935", "change": "+1.55%", "trend": "up" },
+      "sp500": { "value": "7,674.37", "change": "+0.43%", "trend": "up" },
+      "nasdaq": { "value": "26,180.46", "change": "+0.43%", "trend": "up" }
+    },
+    "tech": {
+      "sentiment": "Neutral",
+      "summary": [
+        { "text": "The UK government urged TikTok and other social-media companies to remove videos showing wrong-way driving, calling their sharing truly reprehensible.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/ce308l1w5q5o?at_medium=RSS&at_campaign=rss" },
+        { "text": "Google and Microsoft have used their resources and reach to influence much of the American education supply chain, according to The New York Times.", "source": "The New York Times", "url": "https://www.nytimes.com/2026/08/23/business/schools-big-tech-google-microsoft.html" },
+        { "text": "Growing opposition to data centres has become a midterm-election issue, with candidates from both major US parties campaigning against them.", "source": "The New York Times", "url": "https://www.nytimes.com/2026/08/23/us/politics/data-centers-midterm-elections.html" },
+        { "text": "Florida start-up Powerus is developing low-cost counterdrone interceptors as it expands into the Iran-war supply chain.", "source": "The New York Times", "url": "https://www.nytimes.com/2026/08/23/business/powerus-counter-drone-iran-war.html" }
+      ],
+      "trendAnalysis": "Technology's political exposure is widening, spanning youth safety, education procurement and the local impact of data-centre expansion. The Nasdaq rose 0.43 per cent, but regulatory and community scrutiny is becoming a material constraint on platform and infrastructure growth."
+    },
+    "stocks": {
+      "sentiment": "Neutral",
+      "summary": [
+        { "text": "The US Treasury secretary said Washington would sever economic ties with Iran and isolate countries that maintain financial partnerships with it.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/c0qxew81y83o?at_medium=RSS&at_campaign=rss" },
+        { "text": "Graduate job vacancies fell by almost 50 per cent in a year to their lowest level since 2016, according to Adzuna.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/crerd8l3pw5o?at_medium=RSS&at_campaign=rss" },
+        { "text": "Shein is targeting an almost $27 billion valuation when its shares begin trading in Hong Kong on 1 September.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cdeweewjdxno?at_medium=RSS&at_campaign=rss" },
+        { "text": "Nearly three million Teslas were recalled in China over hidden door handles, alongside recalls involving XPeng, Xiaomi and Geely.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/c4g6ggdg030o?at_medium=RSS&at_campaign=rss" }
+      ],
+      "trendAnalysis": "Equities gained 0.43 per cent while Brent fell 1.45 per cent, supporting a calmer near-term market tone. However, weakening graduate recruitment, trade-related geopolitical threats and a major automotive recall show that labour, policy and execution risks remain elevated."
+    },
+    "crypto": {
+      "sentiment": "Neutral",
+      "summary": [
+        { "text": "Proposed Solana changes could raise daily SOL burns to as much as 9,000 SOL and slow new token creation by reducing supply growth.", "source": "CoinDesk", "url": "https://www.coindesk.com/tech/2026/08/24/new-solana-vote-could-ramp-daily-sol-burns-to-usd800-000-and-slow-new-token-creation" },
+        { "text": "Standard Chartered became the first bank to distribute Anchorpoint's Hong Kong dollar stablecoin to eligible clients and partners.", "source": "CoinDesk", "url": "https://www.coindesk.com/business/2026/08/24/standard-chartered-first-bank-to-distribute-anchorpoint-s-hong-kong-dollar-stablecoin" },
+        { "text": "Pakistan launched a crypto licensing regime, requiring companies to apply for a no-objection certificate by 5 September or cease operating.", "source": "CoinDesk", "url": "https://www.coindesk.com/policy/2026/08/24/pakistan-kicks-off-crypto-licensing-regime-with-sept-5-registration-deadline" },
+        { "text": "Ethereum lending app Term Finance lost $8.5 million after an attacker bought voting power, exposing a governance vulnerability.", "source": "CoinDesk", "url": "https://www.coindesk.com/markets/2026/08/24/ethereum-lending-app-term-finance-loses-usd8-5-million-after-attacker-buys-voting-power" }
+      ],
+      "trendAnalysis": "Bitcoin rose 1.55 per cent to $78,935 as the prior week's strong momentum continued. Stablecoin distribution and formal licensing support institutional adoption, but the Term Finance exploit is a reminder that governance design remains a significant risk in decentralised finance."
+    }
+  },
+  {
     "date": "2026-08-23",
     "macro": {
       "brentCrude": { "value": "$94.39", "change": "+0.65%", "trend": "up" },
