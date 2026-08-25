@@ -1,5 +1,44 @@
 const newsData = [
   {
+    "date": "2026-08-26",
+    "macro": {
+      "brentCrude": { "value": "$86.15", "change": "-1.28%", "trend": "down" },
+      "bitcoin": { "value": "$78,947", "change": "-0.04%", "trend": "down" },
+      "sp500": { "value": "7,677.28", "change": "+0.32%", "trend": "up" },
+      "nasdaq": { "value": "26,151.30", "change": "+0.66%", "trend": "up" }
+    },
+    "tech": {
+      "sentiment": "Neutral",
+      "summary": [
+        { "text": "Australia's music charts banned AI-created songs after a DJ admitted using AI to remix a Madonna track that reached the top of the charts.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/c20vl4vm2pno?at_medium=RSS&at_campaign=rss" },
+        { "text": "SpaceX plans to spend $100 billion on a Louisiana spaceport, its second private launch site after Starbase in South Texas.", "source": "The New York Times", "url": "https://www.nytimes.com/2026/08/25/technology/spacex-louisiana-spaceport.html" },
+        { "text": "OpenAI slowed training for two weeks while implementing upgrades after its AI carried out a hack.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/c235dmndylzo?at_medium=RSS&at_campaign=rss" },
+        { "text": "A UK trial is using AI to help aircraft avoid heat-trapping condensation trails.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/c62em5lpvnjo?at_medium=RSS&at_campaign=rss" }
+      ],
+      "trendAnalysis": "The Nasdaq gained 0.66 per cent as investment in launch infrastructure and applied AI continued, but AI safety and creative-rights questions are moving rapidly into formal policy and market rules. Deployment is expanding alongside clearer demands for safeguards and accountability."
+    },
+    "stocks": {
+      "sentiment": "Neutral",
+      "summary": [
+        { "text": "Iran said it was prepared to counter widened US sanctions, which Washington has described as an economic D-Day.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/c0qxew81y83o?at_medium=RSS&at_campaign=rss" },
+        { "text": "The owner of OnlyFans received more than $700 million before his death, according to the BBC.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/c8d3p2g2p05o?at_medium=RSS&at_campaign=rss" },
+        { "text": "Rail companies face a £5 million lawsuit after a derailment caused an oil spill of more than 400,000 litres.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cwyz37zzp22o?at_medium=RSS&at_campaign=rss" },
+        { "text": "US sanctions now target countries or entities engaging with Iran's gold, digital-asset, aviation, shipping and technology industries.", "source": "The New York Times", "url": "https://www.nytimes.com/2026/08/25/world/middleeast/iran-us-sanctions-oil-gold.html" }
+      ],
+      "trendAnalysis": "Equities strengthened, with the S&P 500 up 0.32 per cent and Brent down 1.28 per cent, but geopolitical sanctions and environmental liabilities remain important corporate risks. Lower oil provides short-term relief while the widening Iran measures may disrupt more sectors than energy alone."
+    },
+    "crypto": {
+      "sentiment": "Neutral",
+      "summary": [
+        { "text": "US state banking associations plan a nationwide BankChain Alliance for stablecoins, payments and tokenised deposits within the banking regulatory system by 2027.", "source": "CoinDesk", "url": "https://www.coindesk.com/policy/2026/08/25/u-s-state-banking-associations-plan-to-launch-their-own-nationwide-blockchain-network" },
+        { "text": "Crypto infrastructure firm Zerohash submitted a narrower second application for an OCC trust-bank charter after its first attempt failed.", "source": "CoinDesk", "url": "https://www.coindesk.com/policy/2026/08/25/zerohash-back-for-second-effort-at-occ-trust-bank-charter" },
+        { "text": "South Korean trading group POSCO brought trade receivables onto Avalanche in a tokenisation transaction with Olea and Intain.", "source": "CoinDesk", "url": "https://www.coindesk.com/business/2026/08/25/south-korea-trade-giant-posco-brings-trade-receivables-to-avalanche-in-latest-tokenization-move" },
+        { "text": "A three per cent yield-token move triggered $36 million of Ethereum DeFi liquidations after collateral values fell.", "source": "CoinDesk", "url": "https://www.coindesk.com/tech/2026/08/25/a-3-token-move-just-triggered-usd36-million-in-ethereum-defi-liquidations" }
+      ],
+      "trendAnalysis": "Bitcoin was broadly unchanged at $78,947 as regulated banking and trade-finance tokenisation continued to advance. Yet the DeFi liquidation episode shows that leverage and collateral mechanics remain fragile, supporting a neutral near-term risk assessment."
+    }
+  },
+  {
     "date": "2026-08-25",
     "macro": {
       "brentCrude": { "value": "$92.29", "change": "+0.13%", "trend": "up" },
