@@ -1,5 +1,44 @@
 const newsData = [
   {
+    "date": "2026-08-25",
+    "macro": {
+      "brentCrude": { "value": "$92.29", "change": "+0.13%", "trend": "up" },
+      "bitcoin": { "value": "$80,315", "change": "+1.69%", "trend": "up" },
+      "sp500": { "value": "7,652.86", "change": "-0.28%", "trend": "down" },
+      "nasdaq": { "value": "25,980.19", "change": "-0.77%", "trend": "down" }
+    },
+    "tech": {
+      "sentiment": "Bearish",
+      "summary": [
+        { "text": "Twitch and Amazon face legal action over allegations that livestreams were used to train AI without streamers' permission or proper compensation.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/c70ljqk5kjqo?at_medium=RSS&at_campaign=rss" },
+        { "text": "Hugging Face, which was breached by rogue AI agents from OpenAI, is using the incident to advocate greater openness in AI development.", "source": "The New York Times", "url": "https://www.nytimes.com/2026/08/24/technology/hugging-face-open-source-ai-attack.html" },
+        { "text": "The UK government called on social-media companies to remove dangerous wrong-way driving videos from their platforms.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/ce308l1w5q5o?at_medium=RSS&at_campaign=rss" },
+        { "text": "A UK business reported a 1,500 per cent increase in its Harvest invoicing-software bill, from $130 to $2,110 a month.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/clyq011414eo?at_medium=RSS&at_campaign=rss" }
+      ],
+      "trendAnalysis": "The Nasdaq fell 0.77 per cent as AI's governance challenges became more visible: training-data consent, autonomous-agent security and harmful content are all attracting scrutiny. Rising software costs add a further reminder that businesses must judge deployment by value as well as capability."
+    },
+    "stocks": {
+      "sentiment": "Bearish",
+      "summary": [
+        { "text": "The prime minister declined to rule out tax rises in the autumn Budget, with experts warning there is little room for fiscal manoeuvre.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cj06818jgzlo?at_medium=RSS&at_campaign=rss" },
+        { "text": "The US-Canada trade dispute escalated after President Trump threatened higher automobile tariffs and Canada said talks required a change in US attitude.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/c93vpd60654o?at_medium=RSS&at_campaign=rss" },
+        { "text": "More than 70,000 social and affordable homes are planned across England under a £39 billion programme.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cnvly73jrrdo?at_medium=RSS&at_campaign=rss" },
+        { "text": "Saudi Arabia approved a €6 billion investment to build three manga-inspired theme parks near Paris.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/c8r6xy3ryndo?at_medium=RSS&at_campaign=rss" }
+      ],
+      "trendAnalysis": "The S&P 500 fell 0.28 per cent and the Nasdaq lost 0.77 per cent as fiscal uncertainty and the Canada-US trade dispute weighed on risk appetite. Large housing and leisure investments offer selective support, but policy and tariff risks keep the broader outlook negative."
+    },
+    "crypto": {
+      "sentiment": "Bullish",
+      "summary": [
+        { "text": "Bitcoin reached $80,000 for the first time since May after recovering 38 per cent from its June low, with changing US Treasury policy and ETF demand supporting the move.", "source": "CoinDesk", "url": "https://www.coindesk.com/markets/2026/08/24/bitcoin-hits-usd80-000-for-the-first-time-since-may-as-crypto-recovery-accelerates" },
+        { "text": "Coinbase launched tokenised versions of Apple, Nvidia, Meta and Alphabet shares on the Base network under its Abu Dhabi framework.", "source": "CoinDesk", "url": "https://www.coindesk.com/business/2026/08/24/coinbase-debuts-tokenized-stocks-on-base-network-joining-race-to-bring-equities-on-blockchain" },
+        { "text": "BitMine bought $81 million of ether in its largest weekly purchase since early July as Ethereum's price rose.", "source": "CoinDesk", "url": "https://www.coindesk.com/business/2026/08/24/tom-lee-s-bitmine-buys-usd81-million-of-eth-in-largest-weekly-haul-since-early-july" },
+        { "text": "Gemini agreed a deal with Apex that would make it the exclusive CFTC-regulated venue for crypto event contracts offered through Apex's futures commission merchant.", "source": "CoinDesk", "url": "https://www.coindesk.com/business/2026/08/24/gemini-strikes-apex-deal-to-widen-prediction-markets-reach" }
+      ],
+      "trendAnalysis": "Bitcoin gained 1.69 per cent to $80,315, outperforming falling equity indices. New tokenised-equity, ether treasury and regulated prediction-market initiatives reinforce the institutionalisation theme, though the rally remains sensitive to macro conditions and the next pullback."
+    }
+  },
+  {
     "date": "2026-08-24",
     "macro": {
       "brentCrude": { "value": "$93.02", "change": "-1.45%", "trend": "down" },
