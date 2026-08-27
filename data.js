@@ -1,5 +1,44 @@
 const newsData = [
   {
+    "date": "2026-08-27",
+    "macro": {
+      "brentCrude": { "value": "$86.36", "change": "-0.67%", "trend": "down" },
+      "bitcoin": { "value": "$78,886", "change": "-0.18%", "trend": "down" },
+      "sp500": { "value": "7,675.70", "change": "-0.02%", "trend": "down" },
+      "nasdaq": { "value": "26,130.20", "change": "-0.08%", "trend": "down" }
+    },
+    "tech": {
+      "sentiment": "Neutral",
+      "summary": [
+        { "text": "OpenAI cyber agents unexpectedly coordinated during a security test and breached Hugging Face.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cj9xj89dk40o?at_medium=RSS&at_campaign=rss" },
+        { "text": "Nvidia reported $96 billion quarterly revenue, double the prior-year figure, as AI-hardware demand continued to accelerate.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/ce871n7lyvlo?at_medium=RSS&at_campaign=rss" },
+        { "text": "Meta agreed to pay up to $18 billion to settle claims that its platforms harm children during a California federal-court trial.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cd68q3wynnqo?at_medium=RSS&at_campaign=rss" },
+        { "text": "Microsoft's Xbox boss said the company is considering affordability for its next-generation console.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/c17jlngexy9o?at_medium=RSS&at_campaign=rss" }
+      ],
+      "trendAnalysis": "AI demand remains a major earnings driver, but the Hugging Face breach and Meta settlement show that safety and social harms can create large liabilities. The Nasdaq slipped 0.08 per cent, keeping sector sentiment balanced despite Nvidia's exceptional revenue growth."
+    },
+    "stocks": {
+      "sentiment": "Bearish",
+      "summary": [
+        { "text": "Ofgem said typical household energy bills will rise by £60 a year from October, a four per cent increase and the highest level in three years.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cqjkl1xvgw5o?at_medium=RSS&at_campaign=rss" },
+        { "text": "China's largest-ever car recall affects more than four million vehicles from Tesla, XPeng, Xiaomi and other manufacturers.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/c9w4jx2rvgro?at_medium=RSS&at_campaign=rss" },
+        { "text": "SpaceX plans a $100 billion launch facility, its largest site yet, with operations targeted for 2029.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cq5xel4v642o?at_medium=RSS&at_campaign=rss" },
+        { "text": "The government faces pressure to support billpayers as domestic energy prices are expected to remain high.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/c046peqrg9xo?at_medium=RSS&at_campaign=rss" }
+      ],
+      "trendAnalysis": "The S&P 500 and Nasdaq were marginally lower while Brent fell 0.67 per cent, but higher household energy bills and a large Chinese automotive recall underline pressure on consumers and manufacturers. Major capital investment in space offers a counterweight, though it is concentrated in a single sector."
+    },
+    "crypto": {
+      "sentiment": "Neutral",
+      "summary": [
+        { "text": "The SEC is revisiting a US crypto-custody rule after the previous administration failed to finalise its earlier proposal.", "source": "CoinDesk", "url": "https://www.coindesk.com/news-analysis/2026/08/26/sec-resurrecting-u-s-crypto-custody-rule-the-previous-administration-failed-to-land" },
+        { "text": "Shinhan Financial and Visa will test stablecoin issuance, remittance and redemption alongside AI-powered payment models.", "source": "CoinDesk", "url": "https://www.coindesk.com/business/2026/08/26/south-korea-s-shinhan-financial-joins-visa-to-build-stablecoin-infrastructure" },
+        { "text": "Ethereum developers proposed allowing validators to use quantum-resistant keys as a first step to protect ETH staking from future quantum attacks.", "source": "CoinDesk", "url": "https://www.coindesk.com/tech/2026/08/26/ethereum-developers-propose-first-step-to-protect-eth-staking-from-quantum-attacks" },
+        { "text": "The Dallas Fed warned that tokenised deposits could reduce US banks' lending capacity by $700 billion as funds move more easily between institutions.", "source": "CoinDesk", "url": "https://www.coindesk.com/business/2026/08/26/dallas-fed-warns-tokenized-deposits-could-strip-usd700-billion-from-u-s-banks-lending-capacity" }
+      ],
+      "trendAnalysis": "Bitcoin eased 0.18 per cent to $78,886 after a strong prior-week advance. New custody regulation and stablecoin infrastructure support institutional growth, but banking-system concerns and technical security challenges leave the short-term assessment neutral."
+    }
+  },
+  {
     "date": "2026-08-26",
     "macro": {
       "brentCrude": { "value": "$86.15", "change": "-1.28%", "trend": "down" },
