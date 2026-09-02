@@ -1,4 +1,43 @@
 const newsData = [
+  {
+    "date": "2026-09-03",
+    "macro": {
+      "brentCrude": { "value": "$95.32", "change": "-0.32%", "trend": "down" },
+      "bitcoin": { "value": "$77,069", "change": "-0.42%", "trend": "down" },
+      "sp500": { "value": "7,666.60", "change": "+0.46%", "trend": "up" },
+      "nasdaq": { "value": "26,217.83", "change": "+0.45%", "trend": "up" }
+    },
+    "tech": {
+      "sentiment": "Neutral",
+      "summary": [
+        { "text": "Uber will cut more than 3,000 roles in a global restructuring intended to make operations simpler and faster.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cp3ky2w4y9no?at_medium=RSS&at_campaign=rss" },
+        { "text": "Peers in the House of Lords called for statutory AI ‘kill switch’ powers, arguing they would provide a safety net against runaway systems.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cn9wv80j9w9o?at_medium=RSS&at_campaign=rss" },
+        { "text": "Criminals published data relating to 8.7 million people after an attack on the owner of Manchester, Stansted and East Midlands airports.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/c74k39g3ee5o?at_medium=RSS&at_campaign=rss" },
+        { "text": "A consumer group said a fake 10 Downing Street listing exposed weaknesses in Booking.com’s listing safeguards; the company disputed the test’s representativeness.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cly4e0wn452o?at_medium=RSS&at_campaign=rss" }
+      ],
+      "trendAnalysis": "Technology is balancing efficiency programmes and AI-safety scrutiny against a sharper cyber-risk backdrop. The Nasdaq’s 0.45 per cent rise indicates continued support for the sector, but governance and trust remain material constraints."
+    },
+    "stocks": {
+      "sentiment": "Neutral",
+      "summary": [
+        { "text": "Rising borrowing costs are being driven by large AI investment plans and the war in Iran, according to the BBC’s analysis of the global bond market.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/c0rez9zegj5o?at_medium=RSS&at_campaign=rss" },
+        { "text": "Some UK government borrowing costs have reached their highest level for 28 years, increasing pressure on households and public finances.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cwyxydr7gv9o?at_medium=RSS&at_campaign=rss" },
+        { "text": "The Dutch central bank moved part of its gold reserves from the US and Canada to London, citing increasing geopolitical unrest.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cvgy51xlz39o?at_medium=RSS&at_campaign=rss" },
+        { "text": "Range Rover launched its first fully electric model, built at JLR’s Solihull manufacturing plant in the West Midlands.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/clyk5016mpyo?at_medium=RSS&at_campaign=rss" }
+      ],
+      "trendAnalysis": "Equities gained modestly, with the S&P 500 up 0.46 per cent, yet bond-market stress and geopolitical positioning are keeping risk appetite restrained. Corporate investment and electrification remain supportive longer-term themes."
+    },
+    "crypto": {
+      "sentiment": "Bearish",
+      "summary": [
+        { "text": "The US Department of Justice said crypto seizures linked to Hamas fundraising reached $560,000 after the FBI took control of relevant domains and servers.", "source": "CoinDesk", "url": "https://www.coindesk.com/business/2026/09/02/doj-says-hamas-crypto-seizures-reached-usd560-000-as-fbi-took-over-fundraising-sites" },
+        { "text": "Kraken parent Payward delayed its prospective US IPO until at least the second quarter of 2027 amid difficult market conditions.", "source": "CoinDesk", "url": "https://www.coindesk.com/business/2026/09/02/kraken-parent-payward-pushes-ipo-back-to-mid-2027-at-earliest" },
+        { "text": "New Jersey became the first state to ask the US Supreme Court to address the legal status of prediction-market sports products.", "source": "CoinDesk", "url": "https://www.coindesk.com/policy/2026/09/02/new-jersey-becomes-first-state-to-ask-supreme-court-to-weigh-in-on-prediction-markets" },
+        { "text": "CrowdStrike and federal authorities dismantled Russian malware that had covertly replaced copied Bitcoin and Ethereum addresses for eight years.", "source": "CoinDesk", "url": "https://www.coindesk.com/tech/2026/09/02/crowdstrike-and-federal-authorities-dismantle-russian-malware-that-secretly-stole-crypto-for-8-years" }
+      ],
+      "trendAnalysis": "Bitcoin fell 0.42 per cent to $77,069 as oil and geopolitical risk weighed on risk assets. Enforcement, litigation and security developments underline that institutional adoption is advancing alongside persistent regulatory and operational hazards."
+    }
+  },
   {"date":"2026-08-28","macro":{"brentCrude":{"value":"$88.62","change":"+0.11%","trend":"up"},"bitcoin":{"value":"$80,315","change":"+1.63%","trend":"up"},"sp500":{"value":"7,730.99","change":"+0.72%","trend":"up"},"nasdaq":{"value":"26,541.35","change":"+1.57%","trend":"up"}},"tech":{"sentiment":"Neutral","summary":[{"text":"Technology firms warned that AI-enabled cyber-attacks could become markedly more sophisticated within months.","source":"BBC News","url":"https://www.bbc.co.uk/news/articles/cwyz11475l1o?at_medium=RSS&at_campaign=rss"},{"text":"The UN said broader social-media reform should accompany Meta's settlement changes.","source":"BBC News","url":"https://www.bbc.co.uk/news/articles/c17j00lnn41o?at_medium=RSS&at_campaign=rss"},{"text":"Nvidia's $96 billion quarter beat forecasts as AI hardware demand accelerated.","source":"BBC News","url":"https://www.bbc.co.uk/news/articles/ce871n7lyvlo?at_medium=RSS&at_campaign=rss"},{"text":"Companies are refitting bitcoin mines for AI amid the AI infrastructure boom.","source":"BBC News","url":"https://www.bbc.co.uk/news/articles/c07ler8x9kpo?at_medium=RSS&at_campaign=rss"}],"trendAnalysis":"AI investment remains powerful, but cyber and platform-safety risks are escalating. The Nasdaq's 1.57 per cent gain reflects confidence in demand despite rising governance requirements."},"stocks":{"sentiment":"Neutral","summary":[{"text":"The UK will launch a trusted-tradespeople database and customer-money protection system next month.","source":"BBC News","url":"https://www.bbc.co.uk/news/articles/cx2z44982e4o?at_medium=RSS&at_campaign=rss"},{"text":"Sports Direct's founder criticised the government's High Street plans.","source":"BBC News","url":"https://www.bbc.co.uk/news/articles/cn74mm2jz8jo?at_medium=RSS&at_campaign=rss"},{"text":"Hackers accessed data on about 8.7 million airport customers and demanded a ransom.","source":"BBC News","url":"https://www.bbc.co.uk/news/articles/c7v4353rry7o?at_medium=RSS&at_campaign=rss"},{"text":"Nearly one million UK young people remain outside education, employment and training.","source":"BBC News","url":"https://www.bbc.co.uk/news/articles/c93epy2yev0o?at_medium=RSS&at_campaign=rss"}],"trendAnalysis":"Equities rose, with the S&P 500 up 0.72 per cent, but consumer protection, data security and youth employment remain structural concerns."},"crypto":{"sentiment":"Neutral","summary":[{"text":"Connecticut sued Kalshi, adding to a nationwide legal fight over prediction markets.","source":"CoinDesk","url":"https://www.coindesk.com/news-analysis/2026/08/27/connecticut-s-new-lawsuit-against-kalshi-piles-on-to-prediction-market-legal-fight"},{"text":"Ethena rose as proposed buybacks and VC-unlock changes aimed to reduce selling pressure.","source":"CoinDesk","url":"https://www.coindesk.com/markets/2026/08/27/ethena-surges-as-buyback-vote-vc-unlock-overhaul-boost-token-outlook"},{"text":"MoonPay added an integration allowing AI agents to handle crypto lending on Solana.","source":"CoinDesk","url":"https://www.coindesk.com/business/2026/08/27/moonpay-s-newest-integration-lets-ai-agents-handle-crypto-lending-on-solana"},{"text":"RQD raised $74 million to expand clearing, custody and tokenisation infrastructure.","source":"CoinDesk","url":"https://www.coindesk.com/business/2026/08/27/clearing-firm-rqd-raises-usd74-million-as-wall-street-prepares-for-tokenized-markets"}],"trendAnalysis":"Bitcoin rose 1.63 per cent to $80,315 as institutional tokenisation continued, though state-level legal challenges keep the regulatory balance mixed."}},
   {
     "date": "2026-08-27",
