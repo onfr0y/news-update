@@ -1,5 +1,44 @@
 const newsData = [
   {
+    "date": "2026-09-04",
+    "macro": {
+      "brentCrude": { "value": "$95.82", "change": "+0.31%", "trend": "up" },
+      "bitcoin": { "value": "$81,200", "change": "+5.03%", "trend": "up" },
+      "sp500": { "value": "7,747.71", "change": "+1.06%", "trend": "up" },
+      "nasdaq": { "value": "26,584.06", "change": "+1.40%", "trend": "up" }
+    },
+    "tech": {
+      "sentiment": "Bullish",
+      "summary": [
+        { "text": "Australia’s AI data-centre boom is drawing investment and job promises, while critics question its resource demands and local benefits.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cgl3we7wdr3o?at_medium=RSS&at_campaign=rss" },
+        { "text": "Nvidia agreed a $12.9 billion deal to acquire AI platform Hugging Face, gaining control of a major open-source developer community.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cr4vnr5g1k7o?at_medium=RSS&at_campaign=rss" },
+        { "text": "Uber launched 15 self-driving taxis in the UK, with safety drivers remaining in the vehicles during the initial rollout.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/ce9e838jzpzo?at_medium=RSS&at_campaign=rss" },
+        { "text": "Autonomous crop-spraying aircraft are emerging as an early practical use of pilot-free flight technology.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/c1l123mmrg7o?at_medium=RSS&at_campaign=rss" }
+      ],
+      "trendAnalysis": "AI infrastructure and platform consolidation are accelerating alongside commercially focused autonomy deployments. The Nasdaq’s 1.40 per cent advance signals strong investor appetite, although power and resource constraints remain a key execution risk."
+    },
+    "stocks": {
+      "sentiment": "Neutral",
+      "summary": [
+        { "text": "Experts warned that low gas-storage levels could drive prices higher and place fresh pressure on household energy bills.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cm274mwxy1vo?at_medium=RSS&at_campaign=rss" },
+        { "text": "More than 600 companies, including B&Q and Five Guys, underpaid workers; the government said £4 million was returned to staff.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/c39mv4vm7exo?at_medium=RSS&at_campaign=rss" },
+        { "text": "A report found almost half of households do not feel economic growth has improved their circumstances, highlighting a regional spending-power divide.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/crerw510gdzo?at_medium=RSS&at_campaign=rss" },
+        { "text": "Business graduates are increasingly borrowing to acquire established companies and install themselves as chief executives.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/czxqpqrzq01o?at_medium=RSS&at_campaign=rss" }
+      ],
+      "trendAnalysis": "The S&P 500 rose 1.06 per cent, but the positive market tone sits beside household energy risks, uneven growth outcomes and labour-compliance costs. Consumer resilience and borrowing conditions remain important watchpoints."
+    },
+    "crypto": {
+      "sentiment": "Bullish",
+      "summary": [
+        { "text": "Standard Chartered began offering institutional Bitcoin and Ether spot trading through its Dubai foreign-exchange platform.", "source": "CoinDesk", "url": "https://www.coindesk.com/business/2026/09/03/standard-chartered-first-top-global-bank-to-offer-bitcoin-and-ether-trading-in-uae" },
+        { "text": "Bitget said it is in talks with Wall Street firms, including BlackRock, to support Asian distribution of tokenised ETF products.", "source": "CoinDesk", "url": "https://www.coindesk.com/business/2026/09/03/bitget-in-talks-with-wall-street-giants-including-blackrock-for-asian-distribution" },
+        { "text": "SoFi and Kraken agreed to connect Kraken to SoFi’s settlement network and list SoFiUSD, extending links between banking and crypto markets.", "source": "CoinDesk", "url": "https://www.coindesk.com/business/2026/09/03/sofi-kraken-tie-up-as-crypto-and-banking-push-into-each-other-s-turf" },
+        { "text": "Bitcoin rose above $81,000 as falling rates and a weaker dollar supported major crypto assets.", "source": "CoinDesk", "url": "https://www.coindesk.com/business/2026/09/03/live-updates-crypto-majors-bounce-while-global-funds-run-their-lowest-dollar-hedges-since-2015" }
+      ],
+      "trendAnalysis": "Bitcoin gained 5.03 per cent to $81,200 as easier rate expectations and dollar weakness improved risk appetite. Institutional trading and distribution initiatives reinforce the constructive backdrop, though regulatory developments remain a persistent constraint."
+    }
+  },
+  {
     "date": "2026-09-03",
     "macro": {
       "brentCrude": { "value": "$95.32", "change": "-0.32%", "trend": "down" },
