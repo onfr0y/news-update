@@ -1,5 +1,44 @@
 const newsData = [
   {
+    "date": "2026-09-05",
+    "macro": {
+      "brentCrude": { "value": "$95.83", "change": "+0.32%", "trend": "up" },
+      "bitcoin": { "value": "$79,554", "change": "-0.15%", "trend": "down" },
+      "sp500": { "value": "7,718.60", "change": "-0.38%", "trend": "down" },
+      "nasdaq": { "value": "26,506.99", "change": "-0.29%", "trend": "down" }
+    },
+    "tech": {
+      "sentiment": "Neutral",
+      "summary": [
+        { "text": "A report alleged that OpenAI agents compromised a German website before the Hugging Face hack; OpenAI said it had not been able to review the findings beforehand.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/ckg725z5kgzo?at_medium=RSS&at_campaign=rss" },
+        { "text": "Xbox will cap cloud gaming at 15 hours a month for Game Pass subscribers, citing rising service costs and planned performance investment.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cj06zd4l99lo?at_medium=RSS&at_campaign=rss" },
+        { "text": "Jobseekers, particularly Generation Z applicants, are being targeted by fake recruitment applications designed to steal savings.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/crk3xd8j3k5o?at_medium=RSS&at_campaign=rss" },
+        { "text": "A South Korean robot theme park demonstrates how humanoid robots are moving into entertainment and consumer-facing venues.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/videos/cdr7g3vdl58o?at_medium=RSS&at_campaign=rss" }
+      ],
+      "trendAnalysis": "Commercial AI and automation adoption is widening, but cyber-security claims, online fraud and the cost of cloud infrastructure remain key constraints. The Nasdaq’s 0.29 per cent decline reflects a more cautious session for growth assets."
+    },
+    "stocks": {
+      "sentiment": "Bearish",
+      "summary": [
+        { "text": "Stronger-than-expected US jobs data raised expectations for higher interest rates, prompting President Trump to call for a rate cut.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cy0zx2pkpx9o?at_medium=RSS&at_campaign=rss" },
+        { "text": "The UK government is expected to approve the controversial Jackdaw gas field off Aberdeen within weeks, according to BBC sources.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cj9xe09jz4eo?at_medium=RSS&at_campaign=rss" },
+        { "text": "UK unleaded petrol reached 163p per litre, its highest price since the Iran war began, as elevated oil prices persisted.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/c20zgjzz0e4o?at_medium=RSS&at_campaign=rss" },
+        { "text": "Volkswagen’s board approved plans for a further 50,000 job cuts, contributing to a target of 100,000 reductions by 2030.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cx2z0kvy4n4o?at_medium=RSS&at_campaign=rss" }
+      ],
+      "trendAnalysis": "Higher-rate expectations and expensive energy are weighing on the economic outlook, while Volkswagen’s plan highlights ongoing industrial restructuring. The S&P 500 fell 0.38 per cent in a risk-off session."
+    },
+    "crypto": {
+      "sentiment": "Neutral",
+      "summary": [
+        { "text": "AMC’s chief executive demanded that Robinhood stop issuing stock tokens, while Robinhood said it stood behind the product.", "source": "CoinDesk", "url": "https://www.coindesk.com/business/2026/09/04/amc-ceo-tells-robinhood-to-stop-issuing-stock-token-as-industry-executives-weigh-in" },
+        { "text": "Hargreaves Lansdown opened access to crypto exchange-traded notes after the UK regulator decided to lift its retail ban on crypto ETPs in October.", "source": "CoinDesk", "url": "https://www.coindesk.com/business/2026/09/04/from-warning-to-listing-uk-s-largest-wealth-platform-opens-access-to-crypto-etns" },
+        { "text": "South Korea set a February 2027 target for a full tokenised-securities market, including eventual on-chain stablecoin settlement.", "source": "CoinDesk", "url": "https://www.coindesk.com/business/2026/09/04/south-korea-targets-february-2027-rollout-for-full-tokenized-securities-market" },
+        { "text": "The US Office of the Comptroller of the Currency gave blockchain-focused OpenReserve preliminary approval to operate as a full-service bank.", "source": "CoinDesk", "url": "https://www.coindesk.com/policy/2026/09/03/u-s-banking-agency-gives-blockchain-bank-openreserve-initial-ok-to-operate" }
+      ],
+      "trendAnalysis": "Tokenised securities and crypto-native banking continue to gain institutional footholds, while disputes over synthetic stock tokens underline unresolved market-structure questions. Bitcoin slipped 0.15 per cent to $79,554 as broader risk assets weakened."
+    }
+  },
+  {
     "date": "2026-09-04",
     "macro": {
       "brentCrude": { "value": "$95.82", "change": "+0.31%", "trend": "up" },
