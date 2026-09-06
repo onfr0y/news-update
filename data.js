@@ -1,5 +1,44 @@
 const newsData = [
   {
+    "date": "2026-09-06",
+    "macro": {
+      "brentCrude": { "value": "$96.28", "change": "+0.80%", "trend": "up" },
+      "bitcoin": { "value": "$79,767", "change": "+0.11%", "trend": "up" },
+      "sp500": { "value": "7,718.60", "change": "-0.38%", "trend": "down" },
+      "nasdaq": { "value": "26,506.99", "change": "-0.29%", "trend": "down" }
+    },
+    "tech": {
+      "sentiment": "Neutral",
+      "summary": [
+        { "text": "Authors and publishers are disputing the distribution of Anthropic’s $1.5 billion AI copyright settlement, which would pay $3,000 per pirated training book.", "source": "The New York Times", "url": "https://www.nytimes.com/2026/09/05/books/anthropic-settlement-ai-copyright-books.html" },
+        { "text": "AI has sharply reduced overseas essay-writing work that supported thousands of Kenyans, illustrating risks for digital gig employment.", "source": "The New York Times", "url": "https://www.nytimes.com/2026/09/05/technology/kenya-college-essays-ai.html" },
+        { "text": "Corporate users are increasingly choosing lower-cost open-source AI models over proprietary offerings from Anthropic and OpenAI.", "source": "The New York Times", "url": "https://www.nytimes.com/2026/09/04/technology/open-source-ai-anthropic-openai.html" },
+        { "text": "US safety regulators opened an investigation into Tesla’s driverless Cybercab to assess whether the steering-wheel-free vehicle meets federal requirements.", "source": "The New York Times", "url": "https://www.nytimes.com/2026/09/04/business/tesla-cybercab-nhtsa-investigation.html" }
+      ],
+      "trendAnalysis": "AI’s commercial expansion is increasingly meeting copyright, labour and safety scrutiny, while open-source alternatives put pressure on closed-model economics. The Nasdaq remained softer, down 0.29 per cent."
+    },
+    "stocks": {
+      "sentiment": "Neutral",
+      "summary": [
+        { "text": "US employers added 162,000 jobs in August and unemployment held at 4.1 per cent, indicating labour-market stability despite high inflation.", "source": "The New York Times", "url": "https://www.nytimes.com/2026/09/04/business/economy/jobs-unemployment.html" },
+        { "text": "Volkswagen agreed a restructuring plan with unions to cut tens of thousands of jobs and reduce production as it seeks a turnaround.", "source": "The New York Times", "url": "https://www.nytimes.com/2026/09/05/business/volkswagen-jobs-layoffs-restructuring-future.html" },
+        { "text": "Novartis’s pelacarsen failed in a major heart-drug trial, disappointing investors and cardiologists who had expected a new treatment option.", "source": "The New York Times", "url": "https://www.nytimes.com/2026/09/04/science/heart-drug-fails-novartis-pelacarsen.html" },
+        { "text": "A private company reached a deal with the US administration to develop 17 Venezuelan oil areas, a project expected to require years and substantial investment.", "source": "The New York Times", "url": "https://www.nytimes.com/2026/09/04/business/energy-environment/venezuela-oil-fields-betancourt-trump.html" }
+      ],
+      "trendAnalysis": "Resilient hiring supports the economic backdrop, but corporate restructuring, pharmaceutical trial risk and high-cost energy investment temper the outlook. The S&P 500 was down 0.38 per cent."
+    },
+    "crypto": {
+      "sentiment": "Neutral",
+      "summary": [
+        { "text": "A Bank of Korea study found that dollar-stablecoin activity can correlate with depreciation in local currencies paired on Binance.", "source": "CoinDesk", "url": "https://www.coindesk.com/business/2026/09/05/dollar-backed-stablecoins-can-push-local-currencies-lower-bank-of-korea-study-finds" },
+        { "text": "Southeast Asian crypto funding rebounded to $680 million, with investors concentrating capital in mature financial-services firms and Singapore.", "source": "CoinDesk", "url": "https://www.coindesk.com/business/2026/09/05/southeast-asia-s-crypto-funding-rebounds-to-usd680-million-as-investors-focus-on-mature-firms" },
+        { "text": "XRP Ledger recorded roughly 40 per cent fewer daily order-book traders than a year earlier, but volume rose 79 per cent and value held exceeded $4 billion.", "source": "CoinDesk", "url": "https://www.coindesk.com/markets/2026/09/05/xrp-ledger-has-fewer-active-accounts-but-bigger-trades-and-more-value" },
+        { "text": "A historical review found that most of Bitcoin’s annual returns have occurred during a very small share of calendar days, underscoring the cost of market timing.", "source": "CoinDesk", "url": "https://www.coindesk.com/markets/2026/09/05/why-crypto-experts-say-buying-and-holding-bitcoin-easily-beats-trying-to-time-the-market" }
+      ],
+      "trendAnalysis": "Institutional funding and on-chain transaction value show continued maturation, but stablecoin currency effects and thinner retail activity point to uneven adoption. Bitcoin was broadly steady, rising 0.11 per cent to $79,767."
+    }
+  },
+  {
     "date": "2026-09-05",
     "macro": {
       "brentCrude": { "value": "$95.83", "change": "+0.32%", "trend": "up" },
