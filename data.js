@@ -1,5 +1,44 @@
 const newsData = [
   {
+    "date": "2026-09-08",
+    "macro": {
+      "brentCrude": { "value": "$97.23", "change": "+0.99%", "trend": "up" },
+      "bitcoin": { "value": "$78,946", "change": "-1.75%", "trend": "down" },
+      "sp500": { "value": "7,718.60", "change": "-0.38%", "trend": "down" },
+      "nasdaq": { "value": "26,506.99", "change": "-0.29%", "trend": "down" }
+    },
+    "tech": {
+      "sentiment": "Neutral",
+      "summary": [
+        { "text": "Grindr agreed to pay £26 million to settle claims that it shared users’ HIV status and other data with third parties in breach of UK privacy law.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cn8e63qdqwzo?at_medium=RSS&at_campaign=rss" },
+        { "text": "OpenAI’s chief scientist warned that society is unprepared for AI’s consequences as the company released GPT-6 Astra.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cwyzrrd0kp7o?at_medium=RSS&at_campaign=rss" },
+        { "text": "Dolly Parton’s sister called for an end to AI-generated posts after the singer’s death prompted a wave of synthetic songs, images and videos.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/c1wxppnrqlqo?at_medium=RSS&at_campaign=rss" },
+        { "text": "Australia proposed giving users a way to switch off social-media algorithms, with potential substantial penalties for non-compliant platforms.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cn9wyvxn95vo?at_medium=RSS&at_campaign=rss" }
+      ],
+      "trendAnalysis": "AI capability gains are colliding with privacy, authenticity and platform-accountability demands. The Nasdaq was down 0.29 per cent as investors remained cautious about technology-sector risks."
+    },
+    "stocks": {
+      "sentiment": "Bearish",
+      "summary": [
+        { "text": "Next won an appeal over a £30 million equal-pay ruling after a judge accepted that it can pay warehouse workers more because recruitment and retention are harder.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/c05r61rqe4yo?at_medium=RSS&at_campaign=rss" },
+        { "text": "Jaguar Land Rover faces falling sales, intense Chinese competition and the electric-vehicle transition as it prepares job cuts.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/c5y4l22p262o?at_medium=RSS&at_campaign=rss" },
+        { "text": "China will inject $54 billion into state banks and insurers as Beijing seeks to bolster its economy amid multiple challenges.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cx2z37qj4wno?at_medium=RSS&at_campaign=rss" },
+        { "text": "Rivian launched the smaller, lower-priced R2 electric SUV, targeting a more mass-market suburban buyer.", "source": "The New York Times", "url": "https://www.nytimes.com/2026/09/07/business/rivian-r2-review.html" }
+      ],
+      "trendAnalysis": "Automotive restructuring and Chinese industrial support underscore intensifying global competition, while consumer affordability remains central to EV demand. The S&P 500 was down 0.38 per cent."
+    },
+    "crypto": {
+      "sentiment": "Neutral",
+      "summary": [
+        { "text": "Ethereum committed to enabling users to pay transaction fees without holding Ether through its forthcoming Frame Transactions feature.", "source": "CoinDesk", "url": "https://www.coindesk.com/tech/2026/09/07/ethereum-commits-to-letting-users-pay-gas-fees-without-having-to-hold-eth" },
+        { "text": "Solana will triple transaction size through a new feature intended to support more complex trades, proofs and multisignature operations.", "source": "CoinDesk", "url": "https://www.coindesk.com/tech/2026/09/07/solana-to-triple-transaction-size-as-apps-get-room-for-more-complex-trades" },
+        { "text": "DBS and Citi completed a weekend US-dollar payment through Swift’s Digital Ledger using tokenised deposits, marking a live cross-border use case.", "source": "CoinDesk", "url": "https://www.coindesk.com/business/2026/09/07/dbs-and-citi-enable-instant-24-7-cross-border-tokenised-deposit-payments-on-the-swift-ledger" },
+        { "text": "Bitcoin slipped as weekend altcoin gains stalled, while wallet cohorts turned to net selling as the $83,000 resistance level held.", "source": "CoinDesk", "url": "https://www.coindesk.com/markets/2026/09/07/bitcoin-investors-turn-to-selling-as-usd83-000-resistance-holds" }
+      ],
+      "trendAnalysis": "Payment and protocol improvements support a longer-term institutional adoption case, but Bitcoin’s 1.75 per cent decline and signs of distribution point to near-term selling pressure."
+    }
+  },
+  {
     "date": "2026-09-07",
     "macro": {
       "brentCrude": { "value": "$96.28", "change": "+0.00%", "trend": "up" },
