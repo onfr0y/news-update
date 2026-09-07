@@ -1,5 +1,44 @@
 const newsData = [
   {
+    "date": "2026-09-07",
+    "macro": {
+      "brentCrude": { "value": "$96.28", "change": "+0.00%", "trend": "up" },
+      "bitcoin": { "value": "$79,851", "change": "-0.62%", "trend": "down" },
+      "sp500": { "value": "7,718.60", "change": "-0.38%", "trend": "down" },
+      "nasdaq": { "value": "26,506.99", "change": "-0.29%", "trend": "down" }
+    },
+    "tech": {
+      "sentiment": "Neutral",
+      "summary": [
+        { "text": "A subsidiary of sanctioned Chinese technology firm Inspur continued shipping advanced Nvidia chips to leading Chinese AI companies, according to a New York Times investigation.", "source": "The New York Times", "url": "https://www.nytimes.com/2026/09/06/technology/ai-chips-china-blacklist.html" },
+        { "text": "Court filings in the New York Times’s copyright action against OpenAI and Microsoft brought additional cultural and legal arguments into the AI dispute.", "source": "The New York Times", "url": "https://www.nytimes.com/2026/09/04/technology/openai-microsoft-new-york-times-lawsuit.html" },
+        { "text": "The FBI is investigating an identity-theft service attempting to sell millions of stolen driving-licence scans and other documents.", "source": "The New York Times", "url": "https://www.nytimes.com/2026/09/04/us/nexus-identity-theft-data-breach-fbi.html" },
+        { "text": "Public-housing tenants in New Hampshire sued over noise and motion sensors installed in 300 homes, raising monitoring-privacy concerns.", "source": "The New York Times", "url": "https://www.nytimes.com/2026/09/02/technology/noise-monitors-public-housing.html" }
+      ],
+      "trendAnalysis": "The AI sector faces widening geopolitical supply-chain, copyright and privacy challenges alongside its rapid expansion. The Nasdaq remained down 0.29 per cent, reflecting restrained risk appetite."
+    },
+    "stocks": {
+      "sentiment": "Bearish",
+      "summary": [
+        { "text": "Five people died and five were seriously injured after an Amazon cargo plane overran the runway and caught fire at Miami airport.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/c0e3p1j7n3ro?at_medium=RSS&at_campaign=rss" },
+        { "text": "Jaguar Land Rover confirmed planned job cuts as it seeks to save about £1.7 billion over the next two years.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/c4gkr3p0ql7o?at_medium=RSS&at_campaign=rss" },
+        { "text": "OPEC Plus held oil production steady as US-Iran strikes resumed, leaving supply policy unchanged amid heightened market uncertainty.", "source": "The New York Times", "url": "https://www.nytimes.com/2026/09/06/business/opec-iran-war-oil-production.html" },
+        { "text": "Iranian attacks continue to disrupt shipping through the Strait of Hormuz despite US support for oil tankers leaving the Persian Gulf.", "source": "The New York Times", "url": "https://www.nytimes.com/2026/09/06/business/iran-us-strait-of-hormuz-shipping.html" }
+      ],
+      "trendAnalysis": "Energy and shipping risks remain elevated as conflict affects the Strait of Hormuz, while industrial cost-saving plans show pressure on manufacturers. The S&P 500 was down 0.38 per cent."
+    },
+    "crypto": {
+      "sentiment": "Neutral",
+      "summary": [
+        { "text": "New Jersey’s dispute with Kalshi moved closer to the US Supreme Court after the state petitioned for review of its prediction-market case.", "source": "CoinDesk", "url": "https://www.coindesk.com/news-analysis/2026/09/06/prediction-markets-inch-closer-to-the-supreme-court-state-of-crypto" },
+        { "text": "Ukrainian police dismantled an alleged crypto scam network said to have stolen up to $1 million per month from at least 62 victims.", "source": "CoinDesk", "url": "https://www.coindesk.com/business/2026/09/06/ukrainian-police-took-down-a-crypto-scam-that-stole-up-to-usd1-million-a-month" },
+        { "text": "Better Mortgage and Coinbase introduced Bitcoin-backed mortgages that permit the lender to reuse pledged collateral while the loan remains outstanding.", "source": "CoinDesk", "url": "https://www.coindesk.com/business/2026/09/06/better-and-coinbase-s-bitcoin-backed-mortgages-can-reuse-borrowers-collateral" },
+        { "text": "Purported white-hat hackers removed 4,000 Bitcoin from the Liquid sidechain in a major security incident, according to Cointelegraph’s weekly digest.", "source": "Cointelegraph", "url": "https://cointelegraph.com/magazine/white-hats-take-4000-btc-from-liquid-btc-etfs-best-week-of-2026-hodlers-digest?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound" }
+      ],
+      "trendAnalysis": "Mortgage products and legal-market development demonstrate deeper financial integration, but fraud and sidechain-security risks remain acute. Bitcoin fell 0.62 per cent to $79,851 amid the cautious backdrop."
+    }
+  },
+  {
     "date": "2026-09-06",
     "macro": {
       "brentCrude": { "value": "$96.28", "change": "+0.80%", "trend": "up" },
