@@ -1,5 +1,44 @@
 const newsData = [
   {
+    "date": "2026-09-09",
+    "macro": {
+      "brentCrude": { "value": "$99.27", "change": "+1.38%", "trend": "up" },
+      "bitcoin": { "value": "$78,557", "change": "-0.68%", "trend": "down" },
+      "sp500": { "value": "7,673.52", "change": "-0.58%", "trend": "down" },
+      "nasdaq": { "value": "26,421.41", "change": "-0.32%", "trend": "down" }
+    },
+    "tech": {
+      "sentiment": "Neutral",
+      "summary": [
+        { "text": "OpenAI said it solved parts of the Navier-Stokes equations in 88 hours, a claim that has prompted rapid controversy among mathematicians.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cy7zygy3rl2o?at_medium=RSS&at_campaign=rss" },
+        { "text": "The UK plans legislation requiring technology firms to prevent children from taking or sharing nude images unless voluntary changes arrive first.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cgrv9ypp5x2o?at_medium=RSS&at_campaign=rss" },
+        { "text": "Instagram users reported ransom demands through fake copyright claims, with scammers exploiting Meta’s difficulty identifying them.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cjw54ww73qjo?at_medium=RSS&at_campaign=rss" },
+        { "text": "Meta introduced Muse, an AI agent designed to send emails and book travel by connecting to its services and third-party apps.", "source": "The New York Times", "url": "https://www.nytimes.com/2026/09/08/technology/meta-muse-ai-agent.html" }
+      ],
+      "trendAnalysis": "AI agents and research claims are advancing quickly, while child-safety and platform-fraud concerns demand stronger safeguards. The Nasdaq fell 0.32 per cent as technology risk appetite weakened."
+    },
+    "stocks": {
+      "sentiment": "Bearish",
+      "summary": [
+        { "text": "Sapporo will shift some non-alcoholic beer production from Canada to the US as tariffs affect its manufacturing decisions.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/c87ve09pgqzo?at_medium=RSS&at_campaign=rss" },
+        { "text": "Major lenders raised rates on new mortgage deals, undermining borrowers’ expectations of lower borrowing costs.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/c770v7y63r0o?at_medium=RSS&at_campaign=rss" },
+        { "text": "Canada announced tariffs of up to 50 per cent on almost $20 billion of US products as its trade conflict with the US escalated.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/c8jdev0422jo?at_medium=RSS&at_campaign=rss" },
+        { "text": "President Trump threatened to halt US sales of Canadian Bombardier aircraft amid the widening trade dispute between the two countries.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/c4gj8xx5010o?at_medium=RSS&at_campaign=rss" }
+      ],
+      "trendAnalysis": "Tariffs are beginning to reshape production and threaten cross-border trade, while mortgage costs remain elevated. The S&P 500 declined 0.58 per cent alongside rising oil prices."
+    },
+    "crypto": {
+      "sentiment": "Neutral",
+      "summary": [
+        { "text": "Circle agreed to buy cross-border payments company Tazapay for $400 million, aiming to connect stablecoins with regulated local-bank infrastructure.", "source": "CoinDesk", "url": "https://www.coindesk.com/business/2026/09/08/circle-agrees-to-buy-cross-border-payments-firm-tazapay-for-usd400-million" },
+        { "text": "Visa said its stablecoin-settlement volume surpassed a $20 billion annualised run rate and is opening payment data to blockchain lenders.", "source": "CoinDesk", "url": "https://www.coindesk.com/business/2026/09/08/visa-opens-settlement-data-to-help-blockchain-lenders-finance-crypto-cards-as-volume-surges" },
+        { "text": "Ethereum set a 2029 deadline for quantum resistance, making protection against future cryptographic attacks a top network priority.", "source": "CoinDesk", "url": "https://www.coindesk.com/tech/2026/09/08/ethereum-makes-quantum-resistance-a-top-priority-with-a-2029-deadline" },
+        { "text": "Cronos rolled back nearly two hours of blockchain history to recover $111 million in user assets after an attack, though $9.19 million was still lost.", "source": "CoinDesk", "url": "https://www.coindesk.com/business/2026/09/08/cronos-executes-controversial-blockchain-rollback-to-recover-crypto-worth-usd111-million" }
+      ],
+      "trendAnalysis": "Stablecoin payment rails are attracting major institutional investment, but security and governance incidents remain material risks. Bitcoin fell 0.68 per cent to $78,557 as the wider market softened."
+    }
+  },
+  {
     "date": "2026-09-08",
     "macro": {
       "brentCrude": { "value": "$97.23", "change": "+0.99%", "trend": "up" },
