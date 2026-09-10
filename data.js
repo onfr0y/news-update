@@ -1,5 +1,44 @@
 const newsData = [
   {
+    "date": "2026-09-10",
+    "macro": {
+      "brentCrude": { "value": "$101.29", "change": "+0.08%", "trend": "up" },
+      "bitcoin": { "value": "$78,021", "change": "-0.35%", "trend": "down" },
+      "sp500": { "value": "7,636.36", "change": "-0.48%", "trend": "down" },
+      "nasdaq": { "value": "26,253.34", "change": "-0.64%", "trend": "down" }
+    },
+    "tech": {
+      "sentiment": "Neutral",
+      "summary": [
+        { "text": "The UK medicines regulator called for new AI healthcare laws as the technology approaches routine NHS use.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/c3wjn3pl63xo?at_medium=RSS&at_campaign=rss" },
+        { "text": "Google selected Finland for a €13 billion data-centre project, its largest single investment in Europe, with tens of thousands of jobs expected.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/c8r6y4me2g6o?at_medium=RSS&at_campaign=rss" },
+        { "text": "An Anthropic researcher said there is more than a 10 per cent chance AI could cause human extinction, adding to recent safety warnings.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/ckgwy1k42w4o?at_medium=RSS&at_campaign=rss" },
+        { "text": "Apple unveiled the $1,999 foldable iPhone Duo alongside other devices and AI demonstrations at its annual product launch.", "source": "The New York Times", "url": "https://www.nytimes.com/2026/09/09/technology/apple-iphone-duo-foldable-phone.html" }
+      ],
+      "trendAnalysis": "Investment in AI infrastructure remains substantial, but healthcare deployment and frontier-model safety intensify regulatory pressure. The Nasdaq fell 0.64 per cent as technology risk appetite weakened."
+    },
+    "stocks": {
+      "sentiment": "Bearish",
+      "summary": [
+        { "text": "An air-traffic-control fault that caused more than 2,000 flight cancellations was avoidable, according to the UK transport secretary.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/c5y42v5n05do?at_medium=RSS&at_campaign=rss" },
+        { "text": "Petrol prices rose 5p in one week to 167.17p per litre as the Iran war lifted oil prices.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cj4jwlx77lro?at_medium=RSS&at_campaign=rss" },
+        { "text": "The US said it would ban imports of some Canadian alcohol, dairy goods and motorbikes, escalating the trade conflict.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/c99dm1000p7o?at_medium=RSS&at_campaign=rss" },
+        { "text": "The US Justice Department is examining whether Nvidia’s deal with Groq sought to avoid antitrust scrutiny.", "source": "The New York Times", "url": "https://www.nytimes.com/2026/09/09/business/nvidia-groq-antitrust.html" }
+      ],
+      "trendAnalysis": "Energy inflation, transport disruption and escalating trade restrictions are clouding the corporate outlook. The S&P 500 declined 0.48 per cent as Brent stayed above $101."
+    },
+    "crypto": {
+      "sentiment": "Neutral",
+      "summary": [
+        { "text": "US Treasury sanctioned Xinbi Guarantee, a Chinese-language platform accused of facilitating crypto transactions for criminal networks.", "source": "CoinDesk", "url": "https://www.coindesk.com/policy/2026/09/09/u-s-treasury-sanctions-another-widespread-cyber-scam-hub-xinbi-guarantee" },
+        { "text": "Tether partnered with Fasanara on a $400 million private-credit fund, providing stablecoin payment infrastructure and lending opportunities.", "source": "CoinDesk", "url": "https://www.coindesk.com/business/2026/09/09/tether-pushes-into-private-credit-with-usd400-million-fund-with-fasanara" },
+        { "text": "PayPal launched a platform for custom stablecoin issuance, extending its PYUSD infrastructure with M0 and MoonPay.", "source": "CoinDesk", "url": "https://www.coindesk.com/business/2026/09/09/paypal-expands-stablecoin-rails-with-launch-of-custom-token-issuance-platform" },
+        { "text": "Germany proposed taxing Bitcoin like stocks, while preserving current treatment for existing holdings that may be sold tax-free after 12 months.", "source": "CoinDesk", "url": "https://www.coindesk.com/business/2026/09/09/germany-moves-to-tax-bitcoin-like-stocks-as-new-draft-bill-targets-tax-free-gains" }
+      ],
+      "trendAnalysis": "Stablecoin use cases are expanding into private credit and custom issuance, while sanctions and tax proposals highlight the regulatory burden. Bitcoin fell 0.35 per cent to $78,021."
+    }
+  },
+  {
     "date": "2026-09-09",
     "macro": {
       "brentCrude": { "value": "$99.27", "change": "+1.38%", "trend": "up" },
