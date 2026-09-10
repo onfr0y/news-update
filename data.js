@@ -1,5 +1,44 @@
 const newsData = [
   {
+    "date": "2026-09-11",
+    "macro": {
+      "brentCrude": { "value": "$108.95", "change": "+1.23%", "trend": "up" },
+      "bitcoin": { "value": "$76,833", "change": "-1.86%", "trend": "down" },
+      "sp500": { "value": "7,591.70", "change": "-0.58%", "trend": "down" },
+      "nasdaq": { "value": "26,081.73", "change": "-0.65%", "trend": "down" }
+    },
+    "tech": {
+      "sentiment": "Neutral",
+      "summary": [
+        { "text": "Meta continued to run paid Instagram adverts promoting child sexual-abuse material in India, according to a report following a BBC Eye investigation.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cqxv2vwjjq3o?at_medium=RSS&at_campaign=rss" },
+        { "text": "More companies are tying career progression to employees’ use of AI, raising questions about fairness and workplace expectations.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/c1j1896e973o?at_medium=RSS&at_campaign=rss" },
+        { "text": "The White House removed a Tetris-style game after copyright concerns; the Tetris Company said it was not involved.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/c9v9djj4m3do?at_medium=RSS&at_campaign=rss" },
+        { "text": "Amazon-owned Zoox is competing with Waymo in San Francisco’s driverless-car market through consumer-focused branding and a purpose-built vehicle.", "source": "The New York Times", "url": "https://www.nytimes.com/2026/09/09/technology/zoox-waymo-san-francisco.html" }
+      ],
+      "trendAnalysis": "AI is reshaping workplaces and autonomous transport, but platform-safety and intellectual-property concerns continue to demand stronger controls. The Nasdaq dropped 0.65 per cent."
+    },
+    "stocks": {
+      "sentiment": "Bearish",
+      "summary": [
+        { "text": "Oil, gas and borrowing costs rose as fears mounted that the Middle East conflict would not be resolved quickly, with oil reaching $105 a barrel.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/c5y48rz2nddo?at_medium=RSS&at_campaign=rss" },
+        { "text": "Alstom will build a new battery-electric train fleet, with the UK government saying the work will support thousands of jobs.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cd94y7d7qyzo?at_medium=RSS&at_campaign=rss" },
+        { "text": "Primark is set to launch home deliveries, four years after its first move into internet shopping.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/c89jdl0j5x4o?at_medium=RSS&at_campaign=rss" },
+        { "text": "Labour mayors in England pledged to cap a proposed tourist tax at 5 per cent.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/c3wjnv3z8nxo?at_medium=RSS&at_campaign=rss" }
+      ],
+      "trendAnalysis": "Energy and funding costs are worsening the macro outlook, although transport investment and retail expansion offer selective support. The S&P 500 fell 0.58 per cent."
+    },
+    "crypto": {
+      "sentiment": "Neutral",
+      "summary": [
+        { "text": "A revised US Clarity Act text changes DeFi and credit-union provisions, but its Senate path remains uncertain ahead of a required 60-vote threshold.", "source": "CoinDesk", "url": "https://www.coindesk.com/policy/2026/09/10/new-clarity-act-text-tweaks-defi-credit-union-provisions-but-road-ahead-for-bill-remains-murky" },
+        { "text": "The SEC proposed changes to transfer-agent rules that could remove duplicate off-chain shareholder records for tokenised securities.", "source": "CoinDesk", "url": "https://www.coindesk.com/business/2026/09/10/why-a-new-sec-plan-could-end-the-legal-headaches-of-holding-tokenized-securities" },
+        { "text": "Europe’s top regulator questioned Polymarket and Kalshi’s EU access, warning that authorisation gaps may trigger binary-options, crypto or gambling rules.", "source": "CoinDesk", "url": "https://www.coindesk.com/business/2026/09/10/europe-s-top-regulator-questions-polymarket-and-kalshi-s-eu-access-warns-of-authorization-gaps" },
+        { "text": "Nasdaq, Boerse Stuttgart and others asked the EU to remove or raise the cap in its tokenisation trial, arguing the limit already constrains projects.", "source": "CoinDesk", "url": "https://www.coindesk.com/business/2026/09/10/nasdaq-boerse-stuttgart-others-ask-eu-to-remove-or-increase-cap-in-tokenization-trial" }
+      ],
+      "trendAnalysis": "Tokenised-market infrastructure is progressing, but legislative and cross-border authorisation uncertainties remain prominent. Bitcoin fell 1.86 per cent to $76,833 as risk assets weakened."
+    }
+  },
+  {
     "date": "2026-09-10",
     "macro": {
       "brentCrude": { "value": "$101.29", "change": "+0.08%", "trend": "up" },
