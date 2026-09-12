@@ -1,5 +1,44 @@
 const newsData = [
   {
+    "date": "2026-09-13",
+    "macro": {
+      "brentCrude": { "value": "$104.61", "change": "-2.81%", "trend": "down" },
+      "bitcoin": { "value": "$77,230", "change": "+0.04%", "trend": "up" },
+      "sp500": { "value": "7,656.98", "change": "+0.86%", "trend": "up" },
+      "nasdaq": { "value": "26,333.04", "change": "+0.96%", "trend": "up" }
+    },
+    "tech": {
+      "sentiment": "Neutral",
+      "summary": [
+        { "text": "Anthropic chief executive Dario Amodei called for AI development to slow as concerns grow over models capable of causing serious global harm.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/c14dpgm0rg4o?at_medium=RSS&at_campaign=rss" },
+        { "text": "A comedian tested an AI avatar trained on his own material, illustrating continued experimentation with generative tools in entertainment.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/videos/c5yjk63ww1ro?at_medium=RSS&at_campaign=rss" },
+        { "text": "The AI industry’s leading executives, including Amodei, Sam Altman and Elon Musk, agreed frontier development may need to slow as capabilities advance.", "source": "CoinDesk", "url": "https://www.coindesk.com/tech/2026/09/12/anthropic-ceo-calls-for-ai-race-to-slow-down-musk-and-openai-s-altman-agrees" },
+        { "text": "Sam Altman said an OpenAI initial public offering will not happen this year, citing the current safety context.", "source": "CoinDesk", "url": "https://www.coindesk.com/markets/2026/09/12/openai-ipo-won-t-happen-this-year-says-sam-altman" }
+      ],
+      "trendAnalysis": "Frontier-model safety is becoming a strategic business issue, affecting executive messaging and public-market timing. The Nasdaq rose 0.96 per cent despite the governance concerns."
+    },
+    "stocks": {
+      "sentiment": "Neutral",
+      "summary": [
+        { "text": "Which? warned of ‘skimpflation’ as cheaper, less nutritious jack mackerel became more prevalent on supermarket shelves.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/crm9xk9eg88o?at_medium=RSS&at_campaign=rss" },
+        { "text": "The TUC called for a bank surcharge to be reversed and said the change could raise £9 billion over four years to cut energy bills.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/c7v4lq969llo?at_medium=RSS&at_campaign=rss" },
+        { "text": "Learner drivers continue to face months-long waits for tests despite a target to bring average waiting times down to seven weeks.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cx2z421xe0zo?at_medium=RSS&at_campaign=rss" },
+        { "text": "The fallout from air-traffic disruption left travellers facing costs exceeding £1,000 and widespread holiday disruption.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cy9znljypnjo?at_medium=RSS&at_campaign=rss" }
+      ],
+      "trendAnalysis": "Consumer budgets remain strained by reduced product value, energy costs and transport disruption, even as equities improved. The S&P 500 rose 0.86 per cent and Brent declined 2.81 per cent."
+    },
+    "crypto": {
+      "sentiment": "Neutral",
+      "summary": [
+        { "text": "Bitcoin Suisse plans to cut up to half of its Swiss jobs while moving work abroad to reduce costs.", "source": "CoinDesk", "url": "https://www.coindesk.com/business/2026/09/12/bitcoin-suisse-plans-to-cut-up-to-half-its-swiss-jobs-as-it-shifts-work-abroad" },
+        { "text": "Ripple sees a $13 trillion corporate-treasury opportunity for its RLUSD stablecoin as it targets payments and capital-markets use cases.", "source": "CoinDesk", "url": "https://www.coindesk.com/business/2026/09/12/ripple-stablecoin-chief-sees-usd13-trillion-corporate-treasury-opportunity-for-rlusd" },
+        { "text": "Revolut disclosed Bitcoin activity and customer identity documents after responding to a fake government request; no customer funds were lost.", "source": "CoinDesk", "url": "https://www.coindesk.com/tech/2026/09/12/bitcoin-activity-passports-exposed-after-revolut-falls-for-fake-government-request" },
+        { "text": "Reform UK received $97 million in donations from two crypto billionaires in a 24-hour period, sharply increasing industry political backing.", "source": "CoinDesk", "url": "https://www.coindesk.com/business/2026/09/12/nigel-farage-s-reform-uk-lands-usd97-million-donations-from-two-crypto-billionaires-in-24-hours" }
+      ],
+      "trendAnalysis": "Stablecoin corporate-treasury ambitions and political influence are expanding, but workforce cuts and data-security failures underline operational risks. Bitcoin was broadly unchanged at $77,230."
+    }
+  },
+  {
     "date": "2026-09-12",
     "macro": {
       "brentCrude": { "value": "$104.42", "change": "-2.98%", "trend": "down" },
