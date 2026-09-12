@@ -1,5 +1,44 @@
 const newsData = [
   {
+    "date": "2026-09-12",
+    "macro": {
+      "brentCrude": { "value": "$104.42", "change": "-2.98%", "trend": "down" },
+      "bitcoin": { "value": "$77,280", "change": "+0.10%", "trend": "up" },
+      "sp500": { "value": "7,656.98", "change": "+0.86%", "trend": "up" },
+      "nasdaq": { "value": "26,333.04", "change": "+0.96%", "trend": "up" }
+    },
+    "tech": {
+      "sentiment": "Neutral",
+      "summary": [
+        { "text": "The UK government rejected a proposed ‘kill switch’ for dangerous AI, saying it cannot simply turn AI off.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/c3eq7kl5l00o?at_medium=RSS&at_campaign=rss" },
+        { "text": "Anthropic said it blocked a possible attempt to use AI to develop biological weapons, according to its threat-intelligence report.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cx2zrrpkx20o?at_medium=RSS&at_campaign=rss" },
+        { "text": "Europe has promising battery technology but remains under pressure to close the gap with Chinese battery manufacturers.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cjeg8ly0qd3o?at_medium=RSS&at_campaign=rss" },
+        { "text": "PlayStation is betting on an 18-rated Wolverine game from Insomniac, testing the commercial appeal of a more mature superhero title.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cy0zq2n9gggo?at_medium=RSS&at_campaign=rss" }
+      ],
+      "trendAnalysis": "AI safety remains a live security and policy challenge, while European battery technology faces intense competitive pressure. The Nasdaq rose 0.96 per cent as technology sentiment improved."
+    },
+    "stocks": {
+      "sentiment": "Neutral",
+      "summary": [
+        { "text": "US consumer prices rose 3.4 per cent in the year to August as fuel costs continued to strain household budgets.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cly41rdkrleo?at_medium=RSS&at_campaign=rss" },
+        { "text": "Energy-led inflation could prompt further interest-rate rises across the world, with central-bank decisions due this month.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cew9nkx7v9eo?at_medium=RSS&at_campaign=rss" },
+        { "text": "The UK economy grew 0.4 per cent in July, beating expectations for no growth, helped by the AI boom.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cq5xjlvn71lo?at_medium=RSS&at_campaign=rss" },
+        { "text": "Ryanair’s chief executive defended his criticism of higher-fare European competitors amid pressure on aviation prices.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/c5yejw9pjjyo?at_medium=RSS&at_campaign=rss" }
+      ],
+      "trendAnalysis": "Inflation and rate concerns remain a headwind, but the stronger UK growth print supported risk appetite. The S&P 500 gained 0.86 per cent as oil prices eased."
+    },
+    "crypto": {
+      "sentiment": "Neutral",
+      "summary": [
+        { "text": "Maharashtra is exploring tokenising state assets, including electricity-transmission infrastructure, to fund new projects.", "source": "CoinDesk", "url": "https://www.coindesk.com/markets/2026/09/11/india-s-richest-state-is-exploring-tokenizing-its-own-assets-to-fund-new-infrastructure" },
+        { "text": "India began tokenising its $620 billion corporate-bond market through a pilot settled in the wholesale digital rupee.", "source": "CoinDesk", "url": "https://www.coindesk.com/markets/2026/09/11/india-starts-tokenizing-usd620-billion-corporate-bond-market-with-digital-rupee-settlement" },
+        { "text": "Kalshi plans to seek US approval for around 60 round-the-clock stock and ETF perpetual products, including Tesla and Nvidia.", "source": "CoinDesk", "url": "https://www.coindesk.com/markets/2026/09/11/kalshi-wants-24-7-tesla-and-nvidia-perps-as-wall-street-fights-over-who-regulates-them" },
+        { "text": "Core US CPI rose 0.3 per cent in August, faster than forecast, reinforcing expectations of a possible Federal Reserve rate increase.", "source": "CoinDesk", "url": "https://www.coindesk.com/markets/2026/09/11/core-cpi-rose-a-faster-than-forecast-0-3-in-august-setting-up-possible-fed-rate-hike" }
+      ],
+      "trendAnalysis": "Tokenisation initiatives continue to scale into public infrastructure and corporate bonds, but hotter inflation keeps crypto sensitive to rate expectations. Bitcoin rose 0.10 per cent to $77,280."
+    }
+  },
+  {
     "date": "2026-09-11",
     "macro": {
       "brentCrude": { "value": "$108.95", "change": "+1.23%", "trend": "up" },
