@@ -1,5 +1,44 @@
 const newsData = [
   {
+    "date": "2026-09-15",
+    "macro": {
+      "brentCrude": { "value": "$106.24", "change": "+0.53%", "trend": "up" },
+      "bitcoin": { "value": "$78,556", "change": "+2.28%", "trend": "up" },
+      "sp500": { "value": "7,619.98", "change": "-0.48%", "trend": "down" },
+      "nasdaq": { "value": "26,186.41", "change": "-0.56%", "trend": "down" }
+    },
+    "tech": {
+      "sentiment": "Neutral",
+      "summary": [
+        { "text": "Valve’s Steam Frame virtual-reality headset drew praise, though its price above £1,000 raises questions about mass-market accessibility.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cn8m1113ym1o?at_medium=RSS&at_campaign=rss" },
+        { "text": "AI is transforming modern life but continues to raise concerns about misuse and environmental impact.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/c2l799gxjjpo?at_medium=RSS&at_campaign=rss" },
+        { "text": "Anthropic co-founder Jack Clark said AI ‘kill switches’ may need to be mandatory despite many laboratories already having ways to halt systems.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cqgk5e2j0gg8o?at_medium=RSS&at_campaign=rss" },
+        { "text": "Nvidia chief Jensen Huang received an onstage call from President Trump, who dismissed calls to slow and regulate AI development.", "source": "The New York Times", "url": "https://www.nytimes.com/2026/09/14/technology/trump-ai-safety-jensen-huang.html" }
+      ],
+      "trendAnalysis": "AI safety debates are moving into policy and corporate leadership, while consumer hardware still faces affordability constraints. The Nasdaq fell 0.56 per cent."
+    },
+    "stocks": {
+      "sentiment": "Bearish",
+      "summary": [
+        { "text": "The government is set to nationalise troubled steel firm SSUK after production at its South Yorkshire and West Midlands sites was paused.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cm9w47ngje9no?at_medium=RSS&at_campaign=rss" },
+        { "text": "Petrol and diesel prices reached their highest level since 2022 as elevated oil prices increased the cost of filling a vehicle.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/c20zgjzz0e4o?at_medium=RSS&at_campaign=rss" },
+        { "text": "Wales will cut business rates by 30 per cent for pubs, hotels and gyms from April, funded partly by higher rates for the largest firms.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/c6n9w87ejqn2o?at_medium=RSS&at_campaign=rss" },
+        { "text": "US sanctions targeted Russia’s VTB Bank over its links to Iran as part of Operation Economic Outcast.", "source": "The New York Times", "url": "https://www.nytimes.com/2026/09/14/business/us-sanctions-russia-vtb-bank-iran.html" }
+      ],
+      "trendAnalysis": "Energy costs, industrial intervention and geopolitical sanctions are raising business uncertainty. The S&P 500 declined 0.48 per cent while Brent rose 0.53 per cent."
+    },
+    "crypto": {
+      "sentiment": "Neutral",
+      "summary": [
+        { "text": "Senator Cynthia Lummis said Democrats continue to seek changes to the US crypto Clarity Act as its legislative prospects remain uncertain.", "source": "CoinDesk", "url": "https://www.coindesk.com/policy/2026/09/14/u-s-senator-lummis-says-democrats-won-t-quit-asking-for-more-on-crypto-clarity-act" },
+        { "text": "Robinhood plans to add share redemptions and voting rights to its stock tokens following criticism over ownership rights.", "source": "CoinDesk", "url": "https://www.coindesk.com/business/2026/09/14/robinhood-plans-share-redemptions-voting-rights-for-stock-tokens-after-criticism" },
+        { "text": "Kaiko extended its Series B funding to $110 million with backing from S&P Global and BNP Paribas for continuous market-data expansion.", "source": "CoinDesk", "url": "https://www.coindesk.com/business/2026/09/14/kaiko-extends-series-b-funding-round-to-usd110-million-with-s-and-p-global-bnp-paribas" },
+        { "text": "Dogecoin ETFs struggled for demand while XRP and Solana funds attracted $3 billion, and Bitwise’s dogecoin ETF will close after 10 months.", "source": "CoinDesk", "url": "https://www.coindesk.com/markets/2026/09/14/dogecoin-etfs-struggled-for-buyers-while-rival-xrp-and-solana-funds-pulled-in-usd3-billion" }
+      ],
+      "trendAnalysis": "Institutional market-data investment and token-holder rights are progressing, but regulatory negotiations and uneven ETF demand remain constraints. Bitcoin rose 2.28 per cent to $78,556."
+    }
+  },
+  {
     "date": "2026-09-14",
     "macro": {
       "brentCrude": { "value": "$107.53", "change": "+2.79%", "trend": "up" },
