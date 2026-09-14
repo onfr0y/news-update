@@ -1,5 +1,44 @@
 const newsData = [
   {
+    "date": "2026-09-14",
+    "macro": {
+      "brentCrude": { "value": "$107.53", "change": "+2.79%", "trend": "up" },
+      "bitcoin": { "value": "$77,625", "change": "+1.07%", "trend": "up" },
+      "sp500": { "value": "7,656.98", "change": "+0.86%", "trend": "up" },
+      "nasdaq": { "value": "26,333.04", "change": "+0.96%", "trend": "up" }
+    },
+    "tech": {
+      "sentiment": "Neutral",
+      "summary": [
+        { "text": "President Trump downplayed AI-risk warnings, arguing that competition with China should take precedence over concerns he called unlikely.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/c7v48vp31mdo?at_medium=RSS&at_campaign=rss" },
+        { "text": "Questions are mounting over how an AI slowdown could work in practice, despite growing calls to pace frontier-model development.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cwyzp47py48o?at_medium=RSS&at_campaign=rss" },
+        { "text": "A former Anthropic researcher said AI staff are genuinely frightened about humanity’s future as the company calls for a slower development pace.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/c1kx0gyje9wo?at_medium=RSS&at_campaign=rss" },
+        { "text": "MPs and peers called for a new law to address AI threats to human rights, arguing that existing rules are insufficient.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cwyzvgj70y4o?at_medium=RSS&at_campaign=rss" }
+      ],
+      "trendAnalysis": "The AI debate has shifted from capability to the governance mechanics of restraint, with political and industry views diverging. The Nasdaq rose 0.96 per cent despite this uncertainty."
+    },
+    "stocks": {
+      "sentiment": "Neutral",
+      "summary": [
+        { "text": "UK rents are forecast to rise by 4 to 5 per cent annually by December, adding pressure on tenants.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/c4gqjv476qeo?at_medium=RSS&at_campaign=rss" },
+        { "text": "The prime minister called for a culture shift in UK business, while critics pointed to rising business costs.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/clyl18x4734o?at_medium=RSS&at_campaign=rss" },
+        { "text": "Amazon paused work with the cargo firm involved in the fatal Miami runway crash.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cx2zg554w9ko?at_medium=RSS&at_campaign=rss" },
+        { "text": "President Trump said he would remove all tariffs on Irish whiskey as he ended a two-day visit.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cx2z79n0eeno?at_medium=RSS&at_campaign=rss" }
+      ],
+      "trendAnalysis": "Housing costs and business confidence remain important domestic risks, while trade policy continues to shift quickly. The S&P 500 gained 0.86 per cent despite Brent’s 2.79 per cent rise."
+    },
+    "crypto": {
+      "sentiment": "Neutral",
+      "summary": [
+        { "text": "Circle’s $400 million Tazapay acquisition will add emerging-market payment connections that would otherwise take years to build.", "source": "CoinDesk", "url": "https://www.coindesk.com/business/2026/09/13/circle-s-usd400m-tazapay-deal-buys-emerging-market-links-that-take-years-to-build" },
+        { "text": "A quantum-security analysis argued that classical mathematics, rather than quantum machines, can provide the basis for quantum-proof blockchains.", "source": "CoinDesk", "url": "https://www.coindesk.com/opinion/2026/09/13/quantum-proof-blockchain-why-math-not-machines-holds-the-key" },
+        { "text": "Bitcoin ETFs recorded $463 million in weekly outflows, while Ether ETFs gained $197 million, according to Cointelegraph.", "source": "Cointelegraph", "url": "https://cointelegraph.com/markets/bitcoin-etfs-shed-463m-ether-etfs-gain-197m?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound" },
+        { "text": "Economists said an expected Federal Reserve rate rise may reflect Wall Street dynamics as much as inflation, after banks revised their forecasts.", "source": "CoinDesk", "url": "https://www.coindesk.com/markets/2026/09/13/fed-rate-hike-is-about-wall-street-not-inflation-says-economist" }
+      ],
+      "trendAnalysis": "Stablecoin payments are expanding into emerging markets, but monetary-policy uncertainty and diverging ETF flows keep sentiment mixed. Bitcoin rose 1.07 per cent to $77,625."
+    }
+  },
+  {
     "date": "2026-09-13",
     "macro": {
       "brentCrude": { "value": "$104.61", "change": "-2.81%", "trend": "down" },
