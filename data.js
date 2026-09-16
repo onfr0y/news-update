@@ -1,5 +1,44 @@
 const newsData = [
   {
+    "date": "2026-09-17",
+    "macro": {
+      "brentCrude": { "value": "$105.57", "change": "-0.25%", "trend": "down" },
+      "bitcoin": { "value": "$75,659", "change": "+0.10%", "trend": "up" },
+      "sp500": { "value": "7,551.81", "change": "-0.45%", "trend": "down" },
+      "nasdaq": { "value": "25,978.42", "change": "-0.01%", "trend": "down" }
+    },
+    "tech": {
+      "sentiment": "Neutral",
+      "summary": [
+        { "text": "Meta chief executive Mark Zuckerberg criticised Anthropic in the debate over an AI slowdown, saying leading labs should focus on safety rather than self-interest.", "source": "The New York Times", "url": "https://www.nytimes.com/2026/09/15/technology/mark-zuckerberg-anthropic-ai-safety.html" },
+        { "text": "The EU outlined proposed social-media age limits that would bar under-13s across the 27-nation bloc.", "source": "The New York Times", "url": "https://www.nytimes.com/2026/09/16/business/european-union-social-media-ban.html" },
+        { "text": "The Gates Foundation pledged $1 billion for AI projects designed to tackle social inequality.", "source": "The New York Times", "url": "https://www.nytimes.com/2026/09/15/technology/bill-gates-ai-foundation-funding.html" },
+        { "text": "Google-trained fruit-fly brain models have been used for tasks from Rubik’s Cubes to video games and parallel parking.", "source": "The New York Times", "url": "https://www.nytimes.com/2026/09/15/technology/fruit-fly-brain-map-google.html" }
+      ],
+      "trendAnalysis": "AI governance is moving from broad warnings to policy proposals and inequality programmes, while research demonstrations continue to widen potential applications. The Nasdaq was broadly flat."
+    },
+    "stocks": {
+      "sentiment": "Bearish",
+      "summary": [
+        { "text": "The US raised interest rates for the first time in three years in a unanimous decision despite presidential opposition.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cw4gmlyvj422o?at_medium=RSS&at_campaign=rss" },
+        { "text": "Higher petrol and diesel prices lifted UK inflation as holiday costs and Middle East oil-supply disruption added to price pressures.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cv2dw7lw4rkpo?at_medium=RSS&at_campaign=rss" },
+        { "text": "Water-company complaints to the watchdog surged, with affordability a major concern after customers faced steep bill rises.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cjy5z9l0395ro?at_medium=RSS&at_campaign=rss" },
+        { "text": "UK officials are discussing joining a Canada-led global defence bank aimed at providing cheaper loans for defence projects.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/c6e30e98v7j1o?at_medium=RSS&at_campaign=rss" }
+      ],
+      "trendAnalysis": "Rate rises, energy-driven inflation and household affordability pressures point to a more difficult consumer and funding environment. The S&P 500 fell 0.45 per cent."
+    },
+    "crypto": {
+      "sentiment": "Bearish",
+      "summary": [
+        { "text": "Revolut hackers demanded $3 million in Monero and threatened to sell customer data, targeting clients with substantial crypto holdings.", "source": "CoinDesk", "url": "https://www.coindesk.com/markets/2026/09/16/revolut-hackers-demand-usd3-million-in-monero-threaten-to-sell-customer-data" },
+        { "text": "The Federal Reserve raised rates by 25 basis points to a 3.75–4.0 per cent target range, its first increase since July 2023.", "source": "CoinDesk", "url": "https://www.coindesk.com/markets/2026/09/16/fed-raises-rates-by-25-basis-points-in-first-hike-since-july-2023" },
+        { "text": "The US House tax committee advanced a crypto-tax bill intended to ease burdens on everyday digital-asset use after the Clarity Act setback.", "source": "CoinDesk", "url": "https://www.coindesk.com/policy/2026/09/16/u-s-house-s-tax-committee-advances-crypto-tax-bill-in-wake-of-clarity-act-loss" },
+        { "text": "Bitcoin Core 32 entered final testing with faster validation, fee-estimation changes and security fixes ahead of its October release.", "source": "CoinDesk", "url": "https://www.coindesk.com/tech/2026/09/16/bitcoin-core-32-enters-final-testing-with-faster-validation-fee-changes-and-security-fixes" }
+      ],
+      "trendAnalysis": "A rate rise and severe customer-data extortion risk weigh on near-term sentiment, even as tax policy and core software infrastructure progress. Bitcoin rose just 0.10 per cent to $75,659."
+    }
+  },
+  {
     "date": "2026-09-16",
     "macro": {
       "brentCrude": { "value": "$108.30", "change": "-0.41%", "trend": "down" },
