@@ -1,5 +1,44 @@
 const newsData = [
   {
+    "date": "2026-09-16",
+    "macro": {
+      "brentCrude": { "value": "$108.30", "change": "-0.41%", "trend": "down" },
+      "bitcoin": { "value": "$75,858", "change": "-2.97%", "trend": "down" },
+      "sp500": { "value": "7,585.73", "change": "-0.45%", "trend": "down" },
+      "nasdaq": { "value": "25,981.57", "change": "-0.78%", "trend": "down" }
+    },
+    "tech": {
+      "sentiment": "Neutral",
+      "summary": [
+        { "text": "Nvidia chief executive Jensen Huang said AI does not need new laws, contrasting with growing safety concerns from AI-sector employees.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cqx2zpj4y525o?at_medium=RSS&at_campaign=rss" },
+        { "text": "Pubs in England and Wales can now accept digital-ID apps as proof of age alongside physical documents.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cm4gl6j53w19o?at_medium=RSS&at_campaign=rss" },
+        { "text": "Aircraft windows are becoming harder to make, with only a small number of companies possessing the required engineering capability.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/c0lr69zeyrwo?at_medium=RSS&at_campaign=rss" },
+        { "text": "Politicians across the ideological spectrum called for AI reforms and criticised the influence of technology ‘oligarchs’.", "source": "The New York Times", "url": "https://www.nytimes.com/2026/09/15/us/steve-bannon-bernie-sanders-ai.html" }
+      ],
+      "trendAnalysis": "Digital identity adoption is advancing while AI regulation remains politically contested. The Nasdaq fell 0.78 per cent amid broader risk aversion."
+    },
+    "stocks": {
+      "sentiment": "Bearish",
+      "summary": [
+        { "text": "US 10-year government borrowing costs reached as high as 5.04 per cent, their highest level since 2007, before easing.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cw804154z90ko?at_medium=RSS&at_campaign=rss" },
+        { "text": "The UK state pension is likely to exceed £13,000 a year as wage growth slowed to 3.9 per cent, renewing affordability concerns.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/c2l8v7l0djqo?at_medium=RSS&at_campaign=rss" },
+        { "text": "President Trump called AI safety fears a hoax and rejected renewed demands for safeguards.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cw980n0nd0qjo?at_medium=RSS&at_campaign=rss" },
+        { "text": "Canada is seeking global-investor backing amid its trade war with the US, leveraging the prime minister’s finance-industry connections.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/c0m3neyyzm7o?at_medium=RSS&at_campaign=rss" }
+      ],
+      "trendAnalysis": "Higher sovereign yields and fiscal pressures are weighing on confidence, while trade tensions continue to shape investment flows. The S&P 500 declined 0.45 per cent."
+    },
+    "crypto": {
+      "sentiment": "Bearish",
+      "summary": [
+        { "text": "The US Senate failed to advance the crypto Clarity Act, leaving the long-awaited market-structure legislation short of its 60-vote threshold.", "source": "CoinDesk", "url": "https://www.coindesk.com/policy/2026/09/15/crypto-clarity-act-flames-out-in-failed-u-s-senate-vote" },
+        { "text": "Crypto-linked stocks including Coinbase, Circle and Galaxy fell after the Senate rejected the Clarity Act.", "source": "CoinDesk", "url": "https://www.coindesk.com/markets/2026/09/15/crypto-stocks-sink-after-senate-rejects-clarity-act" },
+        { "text": "A DeFi-bridge exploit used two software bugs to create 46 billion fake Bitcoin tokens from 25 cents of Bitcoin, with preliminary losses of 9.97 BTC.", "source": "CoinDesk", "url": "https://www.coindesk.com/tech/2026/09/15/a-hacker-turned-25-cents-of-bitcoin-into-46-billion-fake-btc-tokens-on-a-defi-bridge" },
+        { "text": "The European Central Bank invited merchants to join a 12-month digital-euro pilot across online, mobile, in-store and peer-to-peer payments.", "source": "CoinDesk", "url": "https://www.coindesk.com/policy/2026/09/15/european-central-bank-calls-for-merchants-to-participate-in-digital-euro-pilot" }
+      ],
+      "trendAnalysis": "The Senate setback and a major bridge exploit darkened sentiment, even as central-bank digital-currency pilots progress. Bitcoin fell 2.97 per cent to $75,858."
+    }
+  },
+  {
     "date": "2026-09-15",
     "macro": {
       "brentCrude": { "value": "$106.24", "change": "+0.53%", "trend": "up" },
