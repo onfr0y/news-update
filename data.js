@@ -1,5 +1,44 @@
 const newsData = [
   {
+    "date": "2026-09-18",
+    "macro": {
+      "brentCrude": { "value": "$103.93", "change": "-0.85%", "trend": "down" },
+      "bitcoin": { "value": "$76,962", "change": "+0.80%", "trend": "up" },
+      "sp500": { "value": "7,637.76", "change": "+1.14%", "trend": "up" },
+      "nasdaq": { "value": "26,418.30", "change": "+1.69%", "trend": "up" }
+    },
+    "tech": {
+      "sentiment": "Neutral",
+      "summary": [
+        { "text": "Virtual worlds used to train robots to operate in the real world are becoming more sophisticated.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/c79g0j3d4q9o?at_medium=RSS&at_campaign=rss" },
+        { "text": "King Charles warned of the existential danger of AI falling into the wrong hands at a summit involving major AI companies.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/c65ymj7njvl7o?at_medium=RSS&at_campaign=rss" },
+        { "text": "Microsoft warned uncontrolled AI could create a ‘silicon species’ rivalling humans.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/c6n07ypqz8kzo?at_medium=RSS&at_campaign=rss" },
+        { "text": "Snapchat said it is open to teen time limits, calling them an important step forward for the sector.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cr3wjz3edd10o?at_medium=RSS&at_campaign=rss" }
+      ],
+      "trendAnalysis": "Robotics capability and youth-safety measures are advancing alongside sharper warnings about uncontrolled AI. The Nasdaq rose 1.69 per cent, indicating strong technology appetite."
+    },
+    "stocks": {
+      "sentiment": "Neutral",
+      "summary": [
+        { "text": "The UK chancellor will ask EU finance ministers to include Britain in the Made in Europe industry programme.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cr6240ej07ejo?at_medium=RSS&at_campaign=rss" },
+        { "text": "The Bank of England held rates for a sixth consecutive meeting but signalled energy prices could make a future rise more likely.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cm4gjrxez1q0o?at_medium=RSS&at_campaign=rss" },
+        { "text": "Barclays workers asked for additional pay to offset travel and childcare costs associated with returning to the office.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cqlym1n9kpyvo?at_medium=RSS&at_campaign=rss" },
+        { "text": "The EU backed a plan for Canada to become an associate member, although US trade threats add uncertainty.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cjwyzrr9d3dko?at_medium=RSS&at_campaign=rss" }
+      ],
+      "trendAnalysis": "Industrial cooperation and equities improved, but energy-price exposure and labour costs remain material risks. The S&P 500 gained 1.14 per cent while Brent fell 0.85 per cent."
+    },
+    "crypto": {
+      "sentiment": "Bullish",
+      "summary": [
+        { "text": "The SEC opened a regulated US pathway for tokenised-stock trading while restricting volumes, access and issuer rights.", "source": "CoinDesk", "url": "https://www.coindesk.com/business/2026/09/17/real-stocks-are-finally-coming-on-blockchain-here-s-how-the-sec-wants-it-to-work" },
+        { "text": "The SEC issued a five-year innovation exemption for listing and trading tokenised securities without exchange registration.", "source": "CoinDesk", "url": "https://www.coindesk.com/policy/2026/09/17/sec-rolls-out-long-awaited-innovation-exemption-for-tokenized-securities-venues" },
+        { "text": "S&P Global acquired OpenZeppelin to strengthen its management of technological risks in tokenised finance.", "source": "CoinDesk", "url": "https://www.coindesk.com/business/2026/09/17/ratings-giant-s-and-p-global-acquires-openzeppelin-in-tokenized-finance-risk-push" },
+        { "text": "Ethereum’s Glamsterdam upgrade completed a rehearsal for a major capacity increase ahead of a proposed 6 October public test.", "source": "CoinDesk", "url": "https://www.coindesk.com/tech/2026/09/17/ethereum-s-upcoming-glamsterdam-upgrade-clears-rehearsal-for-a-big-jump-in-capacity" }
+      ],
+      "trendAnalysis": "US regulatory clarity for tokenised securities and continued protocol scaling create a constructive backdrop for institutional adoption. Bitcoin rose 0.80 per cent to $76,962."
+    }
+  },
+  {
     "date": "2026-09-17",
     "macro": {
       "brentCrude": { "value": "$105.57", "change": "-0.25%", "trend": "down" },
