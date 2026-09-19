@@ -1,5 +1,44 @@
 const newsData = [
   {
+    "date": "2026-09-19",
+    "macro": {
+      "brentCrude": { "value": "$98.77", "change": "-1.16%", "trend": "down" },
+      "bitcoin": { "value": "$81,249", "change": "+0.46%", "trend": "up" },
+      "sp500": { "value": "7,650.50", "change": "+0.17%", "trend": "up" },
+      "nasdaq": { "value": "26,522.55", "change": "+0.39%", "trend": "up" }
+    },
+    "tech": {
+      "sentiment": "Neutral",
+      "summary": [
+        { "text": "Australia is considering a ban on smart-glasses use in government offices, prompting debate about surveillance and privacy.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/videos/cm9w4nenzv4no?at_medium=RSS&at_campaign=rss" },
+        { "text": "Virtual training worlds that help robots navigate the physical world are becoming more sophisticated.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/c79g0j3d4q9o?at_medium=RSS&at_campaign=rss" },
+        { "text": "King Charles warned of the existential danger of AI falling into the wrong hands at a summit attended by major AI companies.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/c65ymj7njvl7o?at_medium=RSS&at_campaign=rss" },
+        { "text": "Anthropic is pursuing an initial public offering while its chief executive continues to call for slower development of some advanced AI models.", "source": "The New York Times", "url": "https://www.nytimes.com/2026/09/18/technology/anthropic-ipo-ai-safety.html" }
+      ],
+      "trendAnalysis": "AI investment and practical robotics development remain vigorous, but privacy controls and existential-risk concerns are becoming more prominent. The Nasdaq gained 0.39 per cent, signalling continued appetite for technology shares."
+    },
+    "stocks": {
+      "sentiment": "Neutral",
+      "summary": [
+        { "text": "JPMorgan said it is struggling to forecast oil prices amid the US war with Iran, citing uncertainty over possible economic red lines.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cq0m3gmv8n7ko?at_medium=RSS&at_campaign=rss" },
+        { "text": "Warren Buffett stepped down after six decades leading Berkshire Hathaway, having built the business into a global conglomerate.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cvj64dl1w6yno?at_medium=RSS&at_campaign=rss" },
+        { "text": "Japan raised interest rates to a new 31-year high as it sought to curb inflation driven in part by higher energy prices.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cqn74jeek06no?at_medium=RSS&at_campaign=rss" },
+        { "text": "The Bank of England held rates for a sixth consecutive meeting but said sustained high energy prices could require a future increase.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cm4gjrxez1q0o?at_medium=RSS&at_campaign=rss" }
+      ],
+      "trendAnalysis": "Equities edged higher while energy uncertainty and monetary tightening continue to challenge valuations and corporate planning. The S&P 500 rose 0.17 per cent as Brent crude fell 1.16 per cent."
+    },
+    "crypto": {
+      "sentiment": "Neutral",
+      "summary": [
+        { "text": "The CFTC sent proposed crypto-market rules to the White House for review as Congress remained stalled on the Clarity Act.", "source": "CoinDesk", "url": "https://www.coindesk.com/policy/2026/09/18/cftc-sends-crypto-rules-to-white-house-to-review-as-congress-stalls-on-clarity-act" },
+        { "text": "Crypto technology provider Haruko suffered a cyberattack affecting 15 clients, with some funds reportedly lost.", "source": "CoinDesk", "url": "https://www.coindesk.com/business/2026/09/18/crypto-tech-provider-haruko-hit-by-cyberattack-affecting-15-clients-some-funds-lost" },
+        { "text": "Christine Lagarde reportedly intervened in Binance’s EU MiCA licence process, prompting Greece to stall an application regulators had deemed complete.", "source": "CoinDesk", "url": "https://www.coindesk.com/policy/2026/09/18/ecb-president-christine-lagarde-intervened-to-block-binance-s-eu-mica-license-wsj" },
+        { "text": "Layer-2 and DeFi tokens led a broad advance after post-rate-hike nerves eased, with 98 CoinDesk 100 constituents rising.", "source": "CoinDesk", "url": "https://www.coindesk.com/markets/2026/09/18/layer-2-and-defi-tokens-lead-broad-crypto-advance-as-post-fed-hike-nerves-fade" }
+      ],
+      "trendAnalysis": "Regulatory progress and a broad token rebound offer support, but cyber-security losses and licensing uncertainty remain material risks. Bitcoin rose 0.46 per cent to $81,249."
+    }
+  },
+  {
     "date": "2026-09-18",
     "macro": {
       "brentCrude": { "value": "$103.93", "change": "-0.85%", "trend": "down" },
