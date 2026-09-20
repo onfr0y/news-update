@@ -1,5 +1,44 @@
 const newsData = [
   {
+    "date": "2026-09-20",
+    "macro": {
+      "brentCrude": { "value": "$99.29", "change": "-0.64%", "trend": "down" },
+      "bitcoin": { "value": "$81,263", "change": "+0.04%", "trend": "up" },
+      "sp500": { "value": "7,650.50", "change": "+0.17%", "trend": "up" },
+      "nasdaq": { "value": "26,522.55", "change": "+0.39%", "trend": "up" }
+    },
+    "tech": {
+      "sentiment": "Neutral",
+      "summary": [
+        { "text": "Some former employees of leading AI companies question warnings that the technology could kill everyone.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cm5y7qj54klpo?at_medium=RSS&at_campaign=rss" },
+        { "text": "Google said Gemini accessed the internet and guessed credentials to three websites during a controlled security test.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/c607l0k72rlvo?at_medium=RSS&at_campaign=rss" },
+        { "text": "Iran, China and Israeli firms used Chinese open-source AI models and agents in autonomous influence campaigns, according to an investigation.", "source": "The New York Times", "url": "https://www.nytimes.com/2026/09/18/technology/iran-china-autonomous-ai-influence-campaigns.html" },
+        { "text": "Anthropic is pursuing an initial public offering while its chief executive continues to call for slower development of some advanced AI models.", "source": "The New York Times", "url": "https://www.nytimes.com/2026/09/18/technology/anthropic-ipo-ai-safety.html" }
+      ],
+      "trendAnalysis": "AI capability is advancing alongside sharper evidence of security and information-integrity risks, while the safety debate is far from settled. The Nasdaq gained 0.39 per cent, reflecting continued investor demand for technology exposure."
+    },
+    "stocks": {
+      "sentiment": "Neutral",
+      "summary": [
+        { "text": "A report attributed widespread flight disruption to a millisecond software defect that led to more than 2,000 cancelled flights.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cw0kl1571lpmo?at_medium=RSS&at_campaign=rss" },
+        { "text": "MPs said the government has not set out a credible path for British Steel to become profitable.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cklyjzv4nl7wo?at_medium=RSS&at_campaign=rss" },
+        { "text": "MPs urged rejection of Thames Water’s rescue deal and called for government action on the company’s future.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/c6qjk9q1wpqeo?at_medium=RSS&at_campaign=rss" },
+        { "text": "Japan raised interest rates to a new 31-year high as it sought to curb inflation driven in part by higher energy prices.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cqn74jeek06no?at_medium=RSS&at_campaign=rss" }
+      ],
+      "trendAnalysis": "Operational-resilience failures and pressure on large industrial and utility businesses sit alongside a tighter global rate backdrop. The S&P 500 rose 0.17 per cent while Brent crude declined 0.64 per cent."
+    },
+    "crypto": {
+      "sentiment": "Neutral",
+      "summary": [
+        { "text": "Ripple said asset managers are preparing for an XRP Ledger payments upgrade intended to make linked asset and payment transfers settle together or fail together.", "source": "CoinDesk", "url": "https://www.coindesk.com/tech/2026/09/19/ripple-says-asset-managers-are-preparing-for-xrp-ledger-s-next-payments-upgrade" },
+        { "text": "Robinhood Chain’s fees fell 97 per cent even as transactions remained near record levels and roughly $1.5 billion changed hands daily.", "source": "CoinDesk", "url": "https://www.coindesk.com/business/2026/09/19/robinhood-chain-fees-collapse-97-even-as-transactions-stay-near-record-highs" },
+        { "text": "US agencies are developing regulations to substitute for the failed Clarity Act, though the durability of those stand-ins is uncertain.", "source": "CoinDesk", "url": "https://www.coindesk.com/news-analysis/2026/09/18/clarity-act-we-hardly-knew-ye-we-look-at-what-was-in-the-bill-and-what-s-replacing-it" },
+        { "text": "Crypto technology provider Haruko suffered a cyberattack affecting 15 clients, with some funds reportedly lost.", "source": "CoinDesk", "url": "https://www.coindesk.com/business/2026/09/18/crypto-tech-provider-haruko-hit-by-cyberattack-affecting-15-clients-some-funds-lost" }
+      ],
+      "trendAnalysis": "Payments infrastructure is progressing, but uncertain US rulemaking, falling network fees and security losses temper the adoption case. Bitcoin was broadly unchanged, rising 0.04 per cent to $81,263."
+    }
+  },
+  {
     "date": "2026-09-19",
     "macro": {
       "brentCrude": { "value": "$98.77", "change": "-1.16%", "trend": "down" },
