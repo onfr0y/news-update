@@ -1,5 +1,44 @@
 const newsData = [
   {
+    "date": "2026-09-22",
+    "macro": {
+      "brentCrude": { "value": "$96.03", "change": "-0.22%", "trend": "down" },
+      "bitcoin": { "value": "$86,449", "change": "+6.51%", "trend": "up" },
+      "sp500": { "value": "7,764.70", "change": "+1.49%", "trend": "up" },
+      "nasdaq": { "value": "27,122.09", "change": "+2.26%", "trend": "up" }
+    },
+    "tech": {
+      "sentiment": "Neutral",
+      "summary": [
+        { "text": "Group houses supporting AI networking have proliferated in the San Francisco Bay Area, with one prominent example also accumulating an extensive police record.", "source": "The New York Times", "url": "https://www.nytimes.com/2026/09/21/technology/agi-house-ai-culture.html" },
+        { "text": "Potential US presidential candidates are diverging on AI policy, with Democrats advocating safeguards and Republicans warning against slowing development.", "source": "The New York Times", "url": "https://www.nytimes.com/2026/09/21/us/politics/2028-presidential-race-artificial-intelligence.html" },
+        { "text": "Australia is considering a ban on smart-glasses use in government offices, raising questions about surveillance and privacy.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/videos/cm9w4nenzv4no?at_medium=RSS&at_campaign=rss" },
+        { "text": "Virtual training worlds that help robots navigate the physical world are becoming more sophisticated.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/c79g0j3d4q9o?at_medium=RSS&at_campaign=rss" }
+      ],
+      "trendAnalysis": "AI adoption is reshaping professional networks and robotics while governance debates extend into electoral politics and privacy policy. The Nasdaq gained 2.26 per cent, underscoring strong risk appetite for technology."
+    },
+    "stocks": {
+      "sentiment": "Neutral",
+      "summary": [
+        { "text": "Paramount settled a lawsuit with US states, clearing the way for its $110 billion merger with Warner Bros. and committing it to produce 30 films a year.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cm4gjr1qepr8o?at_medium=RSS&at_campaign=rss" },
+        { "text": "Repeated air-traffic-control failures have raised concerns about whether disruptions point to a wider systemic problem.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cmde0pp22r5go?at_medium=RSS&at_campaign=rss" },
+        { "text": "Several data-centre companies delayed IPOs as Wall Street grew more sceptical of the boom and public backlash increased over energy use.", "source": "The New York Times", "url": "https://www.nytimes.com/2026/09/21/business/ai-data-center-ipos.html" },
+        { "text": "The US and China entered a Trump-Xi meeting amid an uneasy trade truce, with tit-for-tat measures testing the arrangement’s stability.", "source": "The New York Times", "url": "https://www.nytimes.com/2026/09/21/business/economy/trump-xi-china-trade.html" }
+      ],
+      "trendAnalysis": "Corporate consolidation and equity strength are offset by operational-resilience concerns, data-centre financing caution and fragile trade relations. The S&P 500 rose 1.49 per cent while Brent crude slipped 0.22 per cent."
+    },
+    "crypto": {
+      "sentiment": "Bullish",
+      "summary": [
+        { "text": "Bitcoin could test $90,000 after a short squeeze, although analysts warned that leverage is building and spot demand remains important.", "source": "CoinDesk", "url": "https://www.coindesk.com/markets/2026/09/21/bitcoin-could-test-usd90-000-after-shorts-get-squeezed-but-traders-warn-leverage-is-building" },
+        { "text": "The European Central Bank plans to buy tokenised bonds using its own funds through its new Pontes platform.", "source": "CoinDesk", "url": "https://www.coindesk.com/policy/2026/09/21/ecb-announces-it-will-invest-in-tokenized-securities-via-new-pontes-platform" },
+        { "text": "BitMine bought $75 million of ether as its chairman argued that institutional investors remain underweight crypto.", "source": "CoinDesk", "url": "https://www.coindesk.com/business/2026/09/21/bitmine-bought-usd75-million-ether-as-tom-lee-says-institutions-are-still-underweight-crypto" },
+        { "text": "Google and Apple job listings suggest that both companies are seeking expertise in stablecoins and tokenised deposits.", "source": "CoinDesk", "url": "https://www.coindesk.com/business/2026/09/21/google-and-apple-seek-crypto-talent-as-big-tech-eyes-stablecoin-and-tokenization-rails" }
+      ],
+      "trendAnalysis": "Bitcoin’s sharp rally, central-bank tokenisation activity and growing corporate interest create a constructive backdrop, although leveraged positioning increases downside risk. Bitcoin rose 6.51 per cent to $86,449."
+    }
+  },
+  {
     "date": "2026-09-21",
     "macro": {
       "brentCrude": { "value": "$96.98", "change": "-2.33%", "trend": "down" },
