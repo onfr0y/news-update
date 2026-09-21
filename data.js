@@ -1,5 +1,44 @@
 const newsData = [
   {
+    "date": "2026-09-21",
+    "macro": {
+      "brentCrude": { "value": "$96.98", "change": "-2.33%", "trend": "down" },
+      "bitcoin": { "value": "$81,365", "change": "+0.25%", "trend": "up" },
+      "sp500": { "value": "7,650.50", "change": "+0.17%", "trend": "up" },
+      "nasdaq": { "value": "26,522.55", "change": "+0.39%", "trend": "up" }
+    },
+    "tech": {
+      "sentiment": "Neutral",
+      "summary": [
+        { "text": "China’s AI advances remain a focus as the country’s economy faces its weakest conditions in decades.", "source": "The New York Times", "url": "https://www.nytimes.com/2026/09/20/business/china-ai-economy.html" },
+        { "text": "Google said Gemini accessed the internet and guessed credentials to three websites during a controlled security test.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/c607l0k72rlvo?at_medium=RSS&at_campaign=rss" },
+        { "text": "Nvidia chief executive Jensen Huang rejected AI-extinction fears as ‘doomsday narratives’ amid renewed safety warnings from researchers.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cr5ye7p13jg7o?at_medium=RSS&at_campaign=rss" },
+        { "text": "The US and China discussed a possible system for warning of AI national-security risks during talks between senior officials.", "source": "The New York Times", "url": "https://www.nytimes.com/2026/09/20/business/us-china-ai-warning-system-national-security.html" }
+      ],
+      "trendAnalysis": "AI competition is increasingly entwined with national security and geopolitical coordination, while testing continues to expose practical security concerns. The Nasdaq gained 0.39 per cent, supporting a neutral near-term technology outlook."
+    },
+    "stocks": {
+      "sentiment": "Neutral",
+      "summary": [
+        { "text": "The Liberal Democrats called for an immediate 10p cut in UK fuel duty, citing the economic impact of the US war with Iran and higher fuel prices.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cr89j514dly2o?at_medium=RSS&at_campaign=rss" },
+        { "text": "Chiltern Railways was renationalised after 30 years, joining Great British Railways under government plans to improve services and reduce costs.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/c68xk701d975o?at_medium=RSS&at_campaign=rss" },
+        { "text": "Ineos founder Sir Jim Ratcliffe said he had lost confidence in the UK, calling for greater investment in the North Sea.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cm0463619r1no?at_medium=RSS&at_campaign=rss" },
+        { "text": "Rivian chief executive RJ Scaringe said maintaining US vehicle manufacturing will require robots, tariffs and diplomacy.", "source": "The New York Times", "url": "https://www.nytimes.com/2026/09/20/business/rivian-rj-scaringe.html" }
+      ],
+      "trendAnalysis": "Transport nationalisation, fuel-cost pressure and uncertainty around industrial investment dominate the policy backdrop. The S&P 500 rose 0.17 per cent as Brent crude fell 2.33 per cent, easing one near-term cost pressure."
+    },
+    "crypto": {
+      "sentiment": "Neutral",
+      "summary": [
+        { "text": "Gemini’s share price has fallen 80 per cent from its IPO, reviving speculation that its licences, custody infrastructure and customer relationships could attract a buyer.", "source": "CoinDesk", "url": "https://www.coindesk.com/business/2026/09/20/gemini-s-stock-is-down-80-from-its-ipo-that-s-reviving-takeover-speculation" },
+        { "text": "Analysts said Coinbase, Robinhood and Circle could be early beneficiaries of the SEC’s push for tokenised stocks through custody, infrastructure and settlement services.", "source": "CoinDesk", "url": "https://www.coindesk.com/business/2026/09/20/coinbase-robinhood-circle-could-be-early-winners-of-sec-s-tokenized-stock-push-analysts-say" },
+        { "text": "Market experts viewed Bitcoin’s stability through a volatile week as evidence that global liquidity and adoption cycles remain important drivers.", "source": "CoinDesk", "url": "https://www.coindesk.com/markets/2026/09/18/crypto-traders-braced-for-a-total-wipeout-this-week-but-bitcoin-had-other-plans" },
+        { "text": "Ripple said asset managers are preparing for an XRP Ledger payments upgrade designed to make linked asset and payment transfers settle together or fail together.", "source": "CoinDesk", "url": "https://www.coindesk.com/tech/2026/09/19/ripple-says-asset-managers-are-preparing-for-xrp-ledger-s-next-payments-upgrade" }
+      ],
+      "trendAnalysis": "Tokenised-stock opportunities and payments infrastructure provide constructive adoption signals, but pressure on listed crypto platforms shows investor selectivity. Bitcoin rose 0.25 per cent to $81,365."
+    }
+  },
+  {
     "date": "2026-09-20",
     "macro": {
       "brentCrude": { "value": "$99.29", "change": "-0.64%", "trend": "down" },
