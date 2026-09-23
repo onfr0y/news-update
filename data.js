@@ -1,5 +1,44 @@
 const newsData = [
   {
+    "date": "2026-09-23",
+    "macro": {
+      "brentCrude": { "value": "$98.56", "change": "-0.70%", "trend": "down" },
+      "bitcoin": { "value": "$86,537", "change": "+0.40%", "trend": "up" },
+      "sp500": { "value": "7,764.64", "change": "-0.00%", "trend": "down" },
+      "nasdaq": { "value": "27,244.28", "change": "+0.45%", "trend": "up" }
+    },
+    "tech": {
+      "sentiment": "Neutral",
+      "summary": [
+        { "text": "The US criticised Australia’s proposed algorithm opt-out laws, under which technology firms could be fined for not letting users switch algorithms off.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cqj3dgy8x3vro?at_medium=RSS&at_campaign=rss" },
+        { "text": "Data centres are switching from copper wiring to light-based technology to reduce power use and add capacity.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/c2dwg3zexkpo?at_medium=RSS&at_campaign=rss" },
+        { "text": "China is expanding AI infrastructure in Inner Mongolia as it seeks to lead globally in artificial intelligence.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cm5ydz4kl65ro?at_medium=RSS&at_campaign=rss" },
+        { "text": "Anthropic released its Opus 5.5 model, describing it as its strongest performer on rigorous internal safety tests while the wider safety debate continues.", "source": "The New York Times", "url": "https://www.nytimes.com/2026/09/22/technology/anthropic-ai-model-safety.html" }
+      ],
+      "trendAnalysis": "AI infrastructure investment and model releases remain rapid, but energy efficiency, user controls and safety assurance are becoming defining constraints. The Nasdaq gained 0.45 per cent, supporting a neutral outlook."
+    },
+    "stocks": {
+      "sentiment": "Bearish",
+      "summary": [
+        { "text": "The IMF chief said rich nations must reduce debt after global shocks pushed borrowing costs higher.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cx305ymq4ldqo?at_medium=RSS&at_campaign=rss" },
+        { "text": "President Trump said he would support banning diesel exports as US diesel prices reached record highs during the Iran war.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cmkg7560epw0o?at_medium=RSS&at_campaign=rss" },
+        { "text": "Ineos suspended production at key UK plants, blaming UK natural-gas prices that it said were twelve times higher than in the US.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cw305ynd69n6o?at_medium=RSS&at_campaign=rss" },
+        { "text": "Unexpectedly high UK borrowing in August added to pre-Budget pressure on the chancellor as inflation weighs on public finances.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/c68049m18435o?at_medium=RSS&at_campaign=rss" }
+      ],
+      "trendAnalysis": "Debt burdens, energy costs and fiscal pressure are tightening the outlook for industrial investment and government finances. The S&P 500 was broadly flat while Brent crude fell 0.70 per cent."
+    },
+    "crypto": {
+      "sentiment": "Bullish",
+      "summary": [
+        { "text": "Solana began testing an upgrade intended to cut transaction finality from 12.8 seconds to 150 milliseconds.", "source": "CoinDesk", "url": "https://www.coindesk.com/tech/2026/09/23/solana-starts-testing-upgrade-that-could-cut-finality-from-12-8-seconds-to-150-milliseconds" },
+        { "text": "Bitcoin’s 10 per cent September gain put it on track for a rare three-month winning streak last seen in 2012.", "source": "CoinDesk", "url": "https://www.coindesk.com/markets/2026/09/23/bitcoin-s-on-a-streak-it-hasn-t-hit-since-2012" },
+        { "text": "Canada’s six largest banks are set to test an interbank tokenised-deposit initiative before linking to wider digital-asset ecosystems.", "source": "CoinDesk", "url": "https://www.coindesk.com/business/2026/09/22/canada-s-big-six-banks-unite-to-launch-interbank-tokenized-deposit-initiative" },
+        { "text": "Binance bought a $100 million stake in Circle as part of a five-year USDC promotion agreement.", "source": "CoinDesk", "url": "https://www.coindesk.com/policy/2026/09/22/binance-buys-usd100-million-circle-stake-in-five-year-usdc-promotion-deal" }
+      ],
+      "trendAnalysis": "Protocol improvements, strong Bitcoin momentum and deeper institutional tokenisation support a positive market tone. Bitcoin rose 0.40 per cent to $86,537, while falling oil prices further supported risk appetite."
+    }
+  },
+  {
     "date": "2026-09-22",
     "macro": {
       "brentCrude": { "value": "$96.03", "change": "-0.22%", "trend": "down" },
