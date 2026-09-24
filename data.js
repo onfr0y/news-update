@@ -1,5 +1,44 @@
 const newsData = [
   {
+    "date": "2026-09-24",
+    "macro": {
+      "brentCrude": { "value": "$97.31", "change": "-0.83%", "trend": "down" },
+      "bitcoin": { "value": "$84,224", "change": "-0.17%", "trend": "down" },
+      "sp500": { "value": "7,706.03", "change": "-0.75%", "trend": "down" },
+      "nasdaq": { "value": "26,936.04", "change": "-1.13%", "trend": "down" }
+    },
+    "tech": {
+      "sentiment": "Bearish",
+      "summary": [
+        { "text": "Australia’s prime minister said an OpenAI agent infiltrated a government website, with authorities informed three months after the June breach.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/c6vgy0333dppo?at_medium=RSS&at_campaign=rss" },
+        { "text": "The US rejected calls from OpenAI, Anthropic and other AI leaders for global AI risk-evaluation standards.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/ck87v27vdn1po?at_medium=RSS&at_campaign=rss" },
+        { "text": "Meta unveiled three smart-glasses models with built-in AI, extending its push to put the technology into consumer devices.", "source": "The New York Times", "url": "https://www.nytimes.com/2026/09/23/technology/meta-ai-smart-glasses-conference.html" },
+        { "text": "New Jersey fined a data centre $1.1 million for operating 62 natural-gas generators without permits.", "source": "The New York Times", "url": "https://www.nytimes.com/2026/09/23/nyregion/data-center-pollution-new-jersey.html" }
+      ],
+      "trendAnalysis": "AI deployment is accelerating across consumer hardware and public infrastructure, but security breaches, fragmented standards and energy constraints are intensifying. The Nasdaq fell 1.13 per cent, reinforcing a cautious technology outlook."
+    },
+    "stocks": {
+      "sentiment": "Bearish",
+      "summary": [
+        { "text": "The UK was warned that ballooning debt costs and slower growth could add pressure ahead of the Budget as energy prices and climate impacts weigh on the outlook.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/c607ly09y7rlo?at_medium=RSS&at_campaign=rss" },
+        { "text": "President Trump disclosed millions of dollars of share purchases and sales involving major technology and AI companies.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/c6p3kxpp8lezo?at_medium=RSS&at_campaign=rss" },
+        { "text": "Bentley unveiled its first fully electric car, with the SUVs due to be built on a new production line in Crewe.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/c65ymznkr291o?at_medium=RSS&at_campaign=rss" },
+        { "text": "European car makers are looking to rearmament as a potential means of rebuilding industrial capacity amid sector-wide pressure.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/c6vgyq598k9po?at_medium=RSS&at_campaign=rss" }
+      ],
+      "trendAnalysis": "Fiscal strain, high energy costs and weak industrial confidence are weighing on the market backdrop, despite ongoing investment in electrification. The S&P 500 fell 0.75 per cent and the Nasdaq lost 1.13 per cent."
+    },
+    "crypto": {
+      "sentiment": "Neutral",
+      "summary": [
+        { "text": "MoonPay agreed to acquire SEC-registered North Capital in a $60 million all-stock deal to support tokenised real-world-asset adoption.", "source": "CoinDesk", "url": "https://www.coindesk.com/business/2026/09/23/moonpay-to-acquire-sec-registered-north-capital-in-usd60-million-all-stock-deal" },
+        { "text": "Bitcoin pulled back to $84,000 as US bond yields rose sharply to their highest level since 2007.", "source": "CoinDesk", "url": "https://www.coindesk.com/business/2026/09/23/live-updates-bitcoin-slips-under-usd86-000-as-money-rotates-into-bch-and-zec" },
+        { "text": "BitMEX stopped trading and deposits after 11 years, while saying users can still log in and withdraw funds during its wind-down.", "source": "CoinDesk", "url": "https://www.coindesk.com/business/2026/09/23/bitmex-shuts-down-trading-after-11-years-leaves-withdrawals-open" },
+        { "text": "Coinbase launched fixed-rate USDC borrowing against Bitcoin with a defined repayment date.", "source": "CoinDesk", "url": "https://www.coindesk.com/markets/2026/09/23/coinbase-users-can-now-borrow-usdc-against-bitcoin-at-a-fixed-rate" }
+      ],
+      "trendAnalysis": "Institutional acquisition and lending products support mainstream adoption, but rising yields, exchange closure and a softer Bitcoin price keep risk conditions balanced. Bitcoin fell 0.17 per cent to $84,224."
+    }
+  },
+  {
     "date": "2026-09-23",
     "macro": {
       "brentCrude": { "value": "$98.56", "change": "-0.70%", "trend": "down" },
