@@ -1,5 +1,44 @@
 const newsData = [
   {
+    "date": "2026-09-25",
+    "macro": {
+      "brentCrude": { "value": "$105.42", "change": "-1.11%", "trend": "down" },
+      "bitcoin": { "value": "$84,208", "change": "-0.20%", "trend": "down" },
+      "sp500": { "value": "7,704.13", "change": "-0.02%", "trend": "down" },
+      "nasdaq": { "value": "26,939.37", "change": "+0.01%", "trend": "up" }
+    },
+    "tech": {
+      "sentiment": "Bearish",
+      "summary": [
+        { "text": "Google is sending an experimental satellite into orbit with enough computing power to answer simple AI queries from space.", "source": "The New York Times", "url": "https://www.nytimes.com/2026/09/24/technology/google-suncatcher-ai-data-center-space.html" },
+        { "text": "Australia disclosed the OpenAI breach at the United Nations, linking the incident to its wider technology-regulation agenda.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cr3eqk15ld14o?at_medium=RSS&at_campaign=rss" },
+        { "text": "Meta’s smart glasses are prompting renewed privacy concerns, but the criticism is not slowing the broader drive into wearable technology.", "source": "The New York Times", "url": "https://www.nytimes.com/2026/09/24/technology/personaltech/meta-glasses-wearables.html" },
+        { "text": "US officials sought to intervene for Elon Musk’s X over a European penalty related to allegations of deceptive behaviour on the platform.", "source": "The New York Times", "url": "https://www.nytimes.com/2026/09/24/technology/us-x-elon-musk-europe-fine.html" }
+      ],
+      "trendAnalysis": "Space-based computing and wearables show how quickly technology ambitions are expanding, while privacy, platform integrity and AI-agent security risks become more acute. The Nasdaq was broadly flat, rising 0.01 per cent."
+    },
+    "stocks": {
+      "sentiment": "Neutral",
+      "summary": [
+        { "text": "Rolls-Royce signed a multi-million-pound deal to build and maintain 18 engines from its Derby aerospace centre.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cmpwle47zxgyo?at_medium=RSS&at_campaign=rss" },
+        { "text": "UK rail services recorded a sharp rise in reported violence and harassment against passengers and workers in the year to March.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/c6z0z5dz884lo?at_medium=RSS&at_campaign=rss" },
+        { "text": "Rising protein prices are squeezing UK consumers, with some paying up to £170 per bag.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cm93e2gz8y41o?at_medium=RSS&at_campaign=rss" },
+        { "text": "The Trump administration continues to struggle to find leverage over China’s excess industrial capacity.", "source": "The New York Times", "url": "https://www.nytimes.com/2026/09/24/business/trump-xi-china-exports.html" }
+      ],
+      "trendAnalysis": "Aerospace investment provides a positive industrial signal, but consumer-cost pressures and US-China trade friction remain constraints. The S&P 500 was nearly unchanged, declining 0.02 per cent."
+    },
+    "crypto": {
+      "sentiment": "Neutral",
+      "summary": [
+        { "text": "The Federal Reserve proposed rules to implement the GENIUS Act for stablecoins, including provisions on yield programmes.", "source": "CoinDesk", "url": "https://www.coindesk.com/policy/2026/09/24/u-s-federal-reserve-moves-on-proposals-to-implement-genius-act-for-stablecoins" },
+        { "text": "Bitget said $352 million was affected in a hack, while maintaining that user funds are safe.", "source": "CoinDesk", "url": "https://www.coindesk.com/markets/2026/09/24/crypto-exchange-bitget-loses-usd352-million-in-hack-claims-user-funds-are-safe" },
+        { "text": "The UK’s largest banks completed interbank transactions using tokenised deposits, including remortgages and marketplace-payment tests.", "source": "CoinDesk", "url": "https://www.coindesk.com/business/2026/09/24/uk-s-largest-banks-complete-world-s-first-interbank-transactions-using-tokenized-deposits" },
+        { "text": "Bullish, Alpaca and Apex Fintech formed a coalition to promote issuer-backed tokenised stocks linked to official shareholder records.", "source": "CoinDesk", "url": "https://www.coindesk.com/business/2026/09/24/bullish-alpaca-and-apex-fintech-form-coalition-to-push-issuer-backed-tokenized-stocks" }
+      ],
+      "trendAnalysis": "Stablecoin regulation and tokenised-deposit adoption are advancing, but the large Bitget security incident underscores persistent operational risk. Bitcoin fell 0.20 per cent to $84,208."
+    }
+  },
+  {
     "date": "2026-09-24",
     "macro": {
       "brentCrude": { "value": "$97.31", "change": "-0.83%", "trend": "down" },
