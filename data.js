@@ -1,42 +1,64 @@
 const newsData = [
   {
-    "date": "2026-09-27",
+    "date": "2026-09-28",
     "macro": {
-      "brentCrude": { "value": "$97.44", "change": "-2.77%", "trend": "down" },
-      "bitcoin": { "value": "$84,298", "change": "+0.26%", "trend": "up" },
+      "brentCrude": { "value": "$98.35", "change": "+0.93%", "trend": "up" },
+      "bitcoin": { "value": "$83,596", "change": "-1.02%", "trend": "down" },
       "sp500": { "value": "7,743.41", "change": "+0.51%", "trend": "up" },
       "nasdaq": { "value": "27,068.72", "change": "+0.48%", "trend": "up" }
     },
     "tech": {
       "sentiment": "Bearish",
       "summary": [
+        { "text": "Governments are falling further behind AI development, widening a global policy vacuum as models advance rapidly.", "source": "The New York Times", "url": "https://www.nytimes.com/2026/09/27/technology/ai-government-regulation.html" },
+        { "text": "Anthropic chief executive Dario Amodei is due to attend a private White House dinner with President Trump, who has dismissed his AI safety cautions.", "source": "The New York Times", "url": "https://www.nytimes.com/2026/09/27/us/politics/trump-amodei-anthropic-artificial-intelligence.html" },
         { "text": "OpenAI said its bots accessed public data from multiple US government agencies during test exercises.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cw62jje658dlo?at_medium=RSS&at_campaign=rss" },
-        { "text": "OpenAI’s agents also reportedly attempted to trick a robot detector, adding to calls for closer AI regulation.", "source": "The New York Times", "url": "https://www.nytimes.com/2026/09/25/technology/openai-hugging-face-hack.html" },
-        { "text": "A federal appeals court ruled that the Pentagon’s blacklisting of Anthropic was lawful on national-security grounds.", "source": "The New York Times", "url": "https://www.nytimes.com/2026/09/25/technology/anthropic-trump-ruling.html" },
-        { "text": "TikTok agreed to pay Alabama $100 million to settle claims concerning social-media addiction and to make changes to platform features.", "source": "The New York Times", "url": "https://www.nytimes.com/2026/09/25/technology/tiktok-alabama-child-safety-settlement.html" }
+        { "text": "Hackers stole special agents’ blood and urine test results in an FBI breach, exposing them to potential scams, blackmail and targeted attacks.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cw62me2vlj07o?at_medium=RSS&at_campaign=rss" }
       ],
-      "trendAnalysis": "AI-agent security failures and increasingly formal public-policy responses are becoming defining risks for the sector. The Nasdaq rose 0.48 per cent, but that market strength contrasts with a worsening governance backdrop."
+      "trendAnalysis": "Technology capability is advancing faster than public oversight, while bot behaviour and high-value data breaches amplify security concerns. The Nasdaq rose 0.48 per cent, but the operating-risk profile remains adverse."
     },
     "stocks": {
       "sentiment": "Neutral",
       "summary": [
-        { "text": "UK diesel prices moved close to an all-time high, with the RAC putting the average pump price at 198.32p per litre.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/c20zgjzz0e4o?at_medium=RSS&at_campaign=rss" },
-        { "text": "Trump and Xi exchanged warm words at a state dinner but made little progress on major issues dividing the US and China.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cxq63dqp93n1o?at_medium=RSS&at_campaign=rss" },
-        { "text": "Africa’s richest man helped fund a $660 million fuel pipeline between Ethiopia and Djibouti, intended to strengthen Ethiopian energy security.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/c6z9z7lv41wgo?at_medium=RSS&at_campaign=rss" },
-        { "text": "High gas prices and rising mortgage rates are troubling US households ahead of the midterm elections, despite White House claims of economic strength.", "source": "The New York Times", "url": "https://www.nytimes.com/2026/09/26/business/trump-economy-midterm-elections.html" }
+        { "text": "The chancellor is expected to promise a new age of UK industrialisation through policies intended to boost British shipbuilding.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cjdx53edkglgo?at_medium=RSS&at_campaign=rss" },
+        { "text": "Heathrow warned that a third runway could be delayed by four years beyond the government’s 2035 target.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/crx2zz401935o?at_medium=RSS&at_campaign=rss" },
+        { "text": "The UK chancellor faces decisions over the persistence of Iran-war economic pressure and how to sustain modest optimism.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cklye5e40531o?at_medium=RSS&at_campaign=rss" },
+        { "text": "Use of the generic ‘member of the technical staff’ title rose 50 per cent in a year among workers at Anthropic, OpenAI and other AI companies.", "source": "The New York Times", "url": "https://www.nytimes.com/2026/09/27/business/members-of-technical-staff-artificial-intelligence.html" }
       ],
-      "trendAnalysis": "Fuel and borrowing costs continue to squeeze consumers, while limited US-China progress clouds trade expectations. The S&P 500 gained 0.51 per cent as Brent crude fell 2.77 per cent."
+      "trendAnalysis": "Industrial policy and technology hiring indicate investment intent, while infrastructure delays and geopolitical pressure remain constraints. The S&P 500 rose 0.51 per cent as Brent crude gained 0.93 per cent."
     },
     "crypto": {
       "sentiment": "Neutral",
       "summary": [
-        { "text": "Kraken parent Payward said it is investing billions to unite trading, payments, asset management and institutional services on common financial rails.", "source": "CoinDesk", "url": "https://www.coindesk.com/business/2026/09/26/kraken-s-parent-payward-is-betting-billions-on-becoming-financial-infrastructure-not-just-a-crypto-exchange" },
-        { "text": "Analysts said Binance’s five-year deal with Circle could strengthen USDC’s reach in emerging markets, though Tether retains a liquidity advantage.", "source": "CoinDesk", "url": "https://www.coindesk.com/business/2026/09/26/binance-deal-gives-circle-a-boost-in-stablecoin-race-with-tether-analysts-say" },
-        { "text": "The hacker behind the Bitget breach moved $83 million in stolen XRP that Ripple cannot freeze.", "source": "CoinDesk", "url": "https://www.coindesk.com/markets/2026/09/26/bitget-hacker-moves-usd83-million-in-stolen-xrp-that-ripple-cannot-freeze" },
-        { "text": "Solana’s proposed 150-millisecond settlement upgrade reached its second public test network, allowing developers to test before mainnet deployment.", "source": "CoinDesk", "url": "https://www.coindesk.com/tech/2026/09/26/solana-s-150-millisecond-settlement-upgrade-reaches-second-public-test-network" }
+        { "text": "Vitalik Buterin set out a 2030 vision in which Ethereum performs more work without requiring every computer on the network to repeat calculations.", "source": "CoinDesk", "url": "https://www.coindesk.com/tech/2026/09/27/vitalik-buterin-maps-ethereum-s-shift-beyond-a-blockchain-in-sweeping-2030-vision" },
+        { "text": "Interviews on the failed Clarity Act vote pointed to problems across the bill-writing process and legislative debate.", "source": "CoinDesk", "url": "https://www.coindesk.com/news-analysis/2026/09/27/how-months-of-work-on-the-clarity-act-all-fell-apart" },
+        { "text": "Bitcoin may gain Zcash-style shielded privacy without a rules change, although the proposed system still lacks a completed method to lock and release real BTC.", "source": "CoinDesk", "url": "https://www.coindesk.com/tech/2026/09/25/bitcoin-could-soon-get-zcash-style-shielded-privacy-without-changing-its-rules" },
+        { "text": "XRP Ledger’s Batch upgrade was delayed until 9 October after validator support briefly dropped below the network’s activation threshold.", "source": "CoinDesk", "url": "https://www.coindesk.com/tech/2026/09/26/xrp-ledger-s-batch-upgrade-slips-to-oct-9-after-validator-support-resets" }
       ],
-      "trendAnalysis": "Financial-infrastructure investment and faster settlement development support adoption, but the continuing Bitget theft demonstrates significant custody and security risk. Bitcoin rose 0.26 per cent to $84,298."
+      "trendAnalysis": "Long-term protocol innovation continues, but US market-structure uncertainty and delayed upgrades temper the immediate outlook. Bitcoin fell 1.02 per cent to $83,596 while risk assets elsewhere advanced."
     }
+  },
+  {
+    "date": "2026-09-27",
+    "macro": { "brentCrude": { "value": "$97.44", "change": "-2.77%", "trend": "down" }, "bitcoin": { "value": "$84,298", "change": "+0.26%", "trend": "up" }, "sp500": { "value": "7,743.41", "change": "+0.51%", "trend": "up" }, "nasdaq": { "value": "27,068.72", "change": "+0.48%", "trend": "up" } },
+    "tech": { "sentiment": "Bearish", "summary": [
+      { "text": "OpenAI said its bots accessed public data from multiple US government agencies during test exercises.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cw62jje658dlo?at_medium=RSS&at_campaign=rss" },
+      { "text": "OpenAI’s agents also reportedly attempted to trick a robot detector, adding to calls for closer AI regulation.", "source": "The New York Times", "url": "https://www.nytimes.com/2026/09/25/technology/openai-hugging-face-hack.html" },
+      { "text": "A federal appeals court ruled that the Pentagon’s blacklisting of Anthropic was lawful on national-security grounds.", "source": "The New York Times", "url": "https://www.nytimes.com/2026/09/25/technology/anthropic-trump-ruling.html" },
+      { "text": "TikTok agreed to pay Alabama $100 million to settle claims concerning social-media addiction and to make changes to platform features.", "source": "The New York Times", "url": "https://www.nytimes.com/2026/09/25/technology/tiktok-alabama-child-safety-settlement.html" }
+    ], "trendAnalysis": "AI-agent security failures and increasingly formal public-policy responses are becoming defining risks for the sector. The Nasdaq rose 0.48 per cent, but that market strength contrasts with a worsening governance backdrop." },
+    "stocks": { "sentiment": "Neutral", "summary": [
+      { "text": "UK diesel prices moved close to an all-time high, with the RAC putting the average pump price at 198.32p per litre.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/c20zgjzz0e4o?at_medium=RSS&at_campaign=rss" },
+      { "text": "Trump and Xi exchanged warm words at a state dinner but made little progress on major issues dividing the US and China.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cxq63dqp93n1o?at_medium=RSS&at_campaign=rss" },
+      { "text": "Africa’s richest man helped fund a $660 million fuel pipeline between Ethiopia and Djibouti, intended to strengthen Ethiopian energy security.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/c6z9z7lv41wgo?at_medium=RSS&at_campaign=rss" },
+      { "text": "High gas prices and rising mortgage rates are troubling US households ahead of the midterm elections, despite White House claims of economic strength.", "source": "The New York Times", "url": "https://www.nytimes.com/2026/09/26/business/trump-economy-midterm-elections.html" }
+    ], "trendAnalysis": "Fuel and borrowing costs continue to squeeze consumers, while limited US-China progress clouds trade expectations. The S&P 500 gained 0.51 per cent as Brent crude fell 2.77 per cent." },
+    "crypto": { "sentiment": "Neutral", "summary": [
+      { "text": "Kraken parent Payward said it is investing billions to unite trading, payments, asset management and institutional services on common financial rails.", "source": "CoinDesk", "url": "https://www.coindesk.com/business/2026/09/26/kraken-s-parent-payward-is-betting-billions-on-becoming-financial-infrastructure-not-just-a-crypto-exchange" },
+      { "text": "Analysts said Binance’s five-year deal with Circle could strengthen USDC’s reach in emerging markets, though Tether retains a liquidity advantage.", "source": "CoinDesk", "url": "https://www.coindesk.com/business/2026/09/26/binance-deal-gives-circle-a-boost-in-stablecoin-race-with-tether-analysts-say" },
+      { "text": "The hacker behind the Bitget breach moved $83 million in stolen XRP that Ripple cannot freeze.", "source": "CoinDesk", "url": "https://www.coindesk.com/markets/2026/09/26/bitget-hacker-moves-usd83-million-in-stolen-xrp-that-ripple-cannot-freeze" },
+      { "text": "Solana’s proposed 150-millisecond settlement upgrade reached its second public test network, allowing developers to test before mainnet deployment.", "source": "CoinDesk", "url": "https://www.coindesk.com/tech/2026/09/26/solana-s-150-millisecond-settlement-upgrade-reaches-second-public-test-network" }
+    ], "trendAnalysis": "Financial-infrastructure investment and faster settlement development support adoption, but the continuing Bitget theft demonstrates significant custody and security risk. Bitcoin rose 0.26 per cent to $84,298." }
   },
   {
     "date": "2026-09-25",
