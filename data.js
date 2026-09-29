@@ -1,5 +1,27 @@
 const newsData = [
   {
+    "date": "2026-09-29",
+    "macro": { "brentCrude": { "value": "$98.88", "change": "+1.07%", "trend": "up" }, "bitcoin": { "value": "$82,866", "change": "-0.74%", "trend": "down" }, "sp500": { "value": "7,683.69", "change": "-0.77%", "trend": "down" }, "nasdaq": { "value": "26,820.38", "change": "-0.92%", "trend": "down" } },
+    "tech": { "sentiment": "Neutral", "summary": [
+      { "text": "Apple was ordered to pay $5.7 billion after losing a patent suit over device-vibration technology.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/c6je85n2vyleo?at_medium=RSS&at_campaign=rss" },
+      { "text": "OpenAI said it will not release its newest Astra model after researchers raised security concerns.", "source": "The New York Times", "url": "https://www.nytimes.com/2026/09/28/technology/openai-astra-safety.html" },
+      { "text": "Nvidia added $150 billion to its share-buyback programme, taking authorised repurchases to $235 billion.", "source": "The New York Times", "url": "https://www.nytimes.com/2026/09/28/business/nvidia-stock-buyback.html" },
+      { "text": "FBI agents described fear and anger following a dangerous data breach involving sensitive records.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cm4gjjlgzdjgo?at_medium=RSS&at_campaign=rss" }
+    ], "trendAnalysis": "AI safety constraints, litigation and cyber-security risks are colliding with continued capital returns from major technology firms. The Nasdaq fell 0.92 per cent. " },
+    "stocks": { "sentiment": "Bearish", "summary": [
+      { "text": "The UK plans a public body to invest in the electricity grid in an effort to reduce energy costs.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cqn4k9nypxjro?at_medium=RSS&at_campaign=rss" },
+      { "text": "The UK is in talks with the US to avert a threatened diesel-export ban.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cmx2z3vgy5xwo?at_medium=RSS&at_campaign=rss" },
+      { "text": "China’s Geely and Nio are merging their battery-swapping and charging operations as the EV industry consolidates.", "source": "The New York Times", "url": "https://www.nytimes.com/2026/09/28/business/china-ev-geely-nio.html" },
+      { "text": "The US and China pledged tariff reductions covering $60 billion in goods to ease trade tensions.", "source": "The New York Times", "url": "https://www.nytimes.com/2026/09/28/business/china-us-summit-tariffs.html" }
+    ], "trendAnalysis": "Energy policy, trade negotiations and EV consolidation shape the outlook, but rising oil and weaker equities point to continuing macro pressure. The S&P 500 fell 0.77 per cent. " },
+    "crypto": { "sentiment": "Bearish", "summary": [
+      { "text": "Goldman Sachs is bringing its roughly $100 billion Treasury fund to institutional crypto firms without tokenising it.", "source": "CoinDesk", "url": "https://www.coindesk.com/markets/2026/09/28/goldman-sachs-brings-usd100-billion-treasury-fund-into-crypto-s-institutional-plumbing" },
+      { "text": "Chainlink released a new CCIP bridge version with custom security checks after major bridge vulnerabilities elsewhere.", "source": "CoinDesk", "url": "https://www.coindesk.com/business/2026/09/28/chainlink-updates-its-crypto-bridge-tech-months-after-a-usd292-million-hack-shook-the-industry" },
+      { "text": "THORChain rejected a Bitget request to block the hacker as stolen assets continued moving into Bitcoin.", "source": "CoinDesk", "url": "https://www.coindesk.com/tech/2026/09/28/thorchain-rejects-bitget-request-to-block-hacker-as-usd6-million-moves-to-bitcoin" },
+      { "text": "Bitcoin fell to $83,000 as altcoins unwound a prior rally and oil climbed above $100.", "source": "CoinDesk", "url": "https://www.coindesk.com/markets/2026/09/28/bitcoin-falls-to-usd83-000-while-altcoins-unwind-friday-s-rally" }
+    ], "trendAnalysis": "Institutional connectivity is improving, but bridge-security concerns and risk-off markets weigh on sentiment. Bitcoin fell 0.74 per cent to $82,866. " }
+  },
+  {
     "date": "2026-09-28",
     "macro": {
       "brentCrude": { "value": "$98.35", "change": "+0.93%", "trend": "up" },
