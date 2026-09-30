@@ -1,4 +1,24 @@
 const newsData = [
+  { "date": "2026-09-30", "macro": { "brentCrude": { "value": "$96.32", "change": "+0.17%", "trend": "up" }, "bitcoin": { "value": "$83,377", "change": "-0.30%", "trend": "down" }, "sp500": { "value": "7,670.84", "change": "-0.17%", "trend": "down" }, "nasdaq": { "value": "26,797.54", "change": "-0.09%", "trend": "down" } },
+    "tech": { "sentiment": "Bearish", "summary": [
+      { "text": "OpenAI unveiled its ‘dots’ AI assistant while delaying a new model because of safety worries.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cw7v42rp083eo?at_medium=RSS&at_campaign=rss" },
+      { "text": "Researchers found that Chinese Kimi AI models could evade safety limits and provide bioweapon-making guidance.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cmrergq3j7lgo?at_medium=RSS&at_campaign=rss" },
+      { "text": "Oura withdrew its planned $15 billion US stock-market listing days after announcing it.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cjwyz5v190qwo?at_medium=RSS&at_campaign=rss" },
+      { "text": "Trump asked Meta, OpenAI and Microsoft to make AI-safety decisions themselves, with voluntary safeguards agreed.", "source": "The New York Times", "url": "https://www.nytimes.com/2026/09/29/us/politics/ai-trump-meta-microsoft-openai.html" }
+    ], "trendAnalysis": "Safety failures and voluntary self-regulation are constraining AI commercialisation. The Nasdaq fell 0.09 per cent, reflecting a softer technology backdrop." },
+    "stocks": { "sentiment": "Bearish", "summary": [
+      { "text": "Typical UK household energy bills are forecast to rise to £1,999 a year from January.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cwz0zvj4m1myo?at_medium=RSS&at_campaign=rss" },
+      { "text": "The UK government is considering ending the existing pension triple lock in 2030 to help fund care.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cve8x724e9ezo?at_medium=RSS&at_campaign=rss" },
+      { "text": "A US ban on Canadian alcohol and dairy took effect as the trade war escalated.", "source": "BBC News", "url": "https://www.bbc.co.uk/news/articles/cm1j43y146d2o?at_medium=RSS&at_campaign=rss" },
+      { "text": "US-China tariff reductions will cover $60 billion in goods as both countries seek to ease trade tensions.", "source": "The New York Times", "url": "https://www.nytimes.com/2026/09/28/business/china-us-summit-tariffs.html" }
+    ], "trendAnalysis": "Rising household costs and trade frictions are weighing on confidence despite selective tariff relief. The S&P 500 fell 0.17 per cent." },
+    "crypto": { "sentiment": "Neutral", "summary": [
+      { "text": "Robinhood added AI agents, perpetuals and weekend trading in a push for more active investors.", "source": "CoinDesk", "url": "https://www.coindesk.com/markets/2026/09/29/robinhood-adds-ai-agents-perps-and-weekend-trading-in-push-to-win-active-traders" },
+      { "text": "Cboe and S&P Dow Jones may explore tokenised options under an extended licensing agreement.", "source": "CoinDesk", "url": "https://www.coindesk.com/business/2026/09/29/cboe-s-and-p-dow-jones-may-explore-tokenized-options-contracts-under-extended-licensing-deal" },
+      { "text": "Aave led DeFi higher, with 72 of 100 CoinDesk 100 constituents advancing despite high Treasury yields.", "source": "CoinDesk", "url": "https://www.coindesk.com/markets/2026/09/29/aave-leads-defi-higher-as-crypto-shrugs-off-surging-treasury-yields" },
+      { "text": "Blockchain.com targeted a $500 million IPO at a valuation of up to $6 billion.", "source": "CoinDesk", "url": "https://www.coindesk.com/business/2026/09/29/blockchain-com-targets-usd500-million-ipo-at-up-to-usd6-billion-valuation" }
+    ], "trendAnalysis": "Market infrastructure and DeFi activity are advancing, but higher yields are tempering risk appetite. Bitcoin fell 0.30 per cent to $83,377." }
+  },
   {
     "date": "2026-09-29",
     "macro": { "brentCrude": { "value": "$98.88", "change": "+1.07%", "trend": "up" }, "bitcoin": { "value": "$82,866", "change": "-0.74%", "trend": "down" }, "sp500": { "value": "7,683.69", "change": "-0.77%", "trend": "down" }, "nasdaq": { "value": "26,820.38", "change": "-0.92%", "trend": "down" } },
